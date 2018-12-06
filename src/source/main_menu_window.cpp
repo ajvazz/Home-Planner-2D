@@ -80,3 +80,17 @@ void MainMenuWindow::on_btnInstructions_clicked()
 {
      QMessageBox::about(this, "Instructions", "To be done...");
 }
+
+void MainMenuWindow::on_btnTemplate_clicked()
+{
+   tempWind = new TemplateWindow(this);
+   hide();
+   tempWind->show();
+}
+
+void MainMenuWindow::on_btnScratch_clicked()
+{
+    designWind = new DesignWindow();
+    hide();
+    designWind->show();
+}

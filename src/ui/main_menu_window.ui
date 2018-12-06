@@ -36,7 +36,7 @@
        <string notr="true"/>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="page1">
        <widget class="QWidget" name="layoutWidget">
@@ -131,7 +131,7 @@ border-radius: 10px;
            <string>Back</string>
           </property>
           <property name="icon">
-           <iconset resource="../resources.qrc">
+           <iconset>
             <normaloff>:/img/back-icon.png</normaloff>:/img/back-icon.png</iconset>
           </property>
           <property name="iconSize">
@@ -236,8 +236,6 @@ border-radius: 10px;
   </widget>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
- <resources>
-  <include location="../resources.qrc"/>
- </resources>
+ <resources/>
  <connections/>
 </ui>
