@@ -16,15 +16,11 @@ public:
     ~MainMenuWindow();
 
 private slots:
-    void on_btnQuit_clicked();
-
     void on_btnCreateNew_clicked();
-
-    void on_btnBack_clicked();
-
-    void on_btnAbout_clicked();
-
     void on_btnInstructions_clicked();
+    void on_btnAbout_clicked();
+    void on_btnQuit_clicked();
+    void on_btnBack_clicked();
 
 private:
     Ui::MainMenuWindow *ui;

@@ -12,10 +12,8 @@ MainMenuWindow::MainMenuWindow(QWidget *parent) :
 
     setWindowCenter(2.5, 1.5);
     setFixedSize(size());   // Main menu window is non-resizable
-
-    ui->stackedWidget->setCurrentIndex(0);
-
     setWindowTitle("Home Planner 2D");
+    ui->stackedWidget->setCurrentIndex(0);
 }
 
 MainMenuWindow::~MainMenuWindow()
