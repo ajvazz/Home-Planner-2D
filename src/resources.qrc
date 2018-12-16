@@ -1,5 +1,6 @@
 <RCC>
     <qresource prefix="/">
-        <file>img/back-icon.png</file>
+        <file>img/grid.jpg</file>
+        <file>img/back_icon.png</file>
     </qresource>
 </RCC>
