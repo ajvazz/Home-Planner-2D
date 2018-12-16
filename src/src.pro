@@ -16,12 +16,14 @@ SOURCES += \
         source/main.cpp \
         source/main_menu_window.cpp \
         source/template_window.cpp \
-        source/design_window.cpp
+        source/design_window.cpp \
+        source/centered_window.cpp
 
 HEADERS += \
         headers/main_menu_window.hpp \
         headers/template_window.hpp \
-        headers/design_window.hpp
+        headers/design_window.hpp \
+        headers/centered_window.hpp
 
 FORMS += \
         ui/main_menu_window.ui \
