@@ -17,6 +17,7 @@ public:
 
 private:
     Ui::DesignWindow *ui;
+    void setWindowCenter(double widthCoefficient, double heightCoefficient);
 };
 
 #endif // DESIGN_WINDOW_HPP

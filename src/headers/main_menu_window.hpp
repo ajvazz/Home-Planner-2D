@@ -1,9 +1,10 @@
 #ifndef MAIN_MENU_WINDOW_HPP
 #define MAIN_MENU_WINDOW_HPP
 
+#include <QMainWindow>
+
 #include "headers/template_window.hpp"
 #include "headers/design_window.hpp"
-#include <QMainWindow>
 
 namespace Ui {
 class MainMenuWindow;
@@ -24,7 +25,6 @@ private slots:
     void on_btnQuit_clicked();
     void on_btnBack_clicked();
     void on_btnTemplate_clicked();
-
     void on_btnScratch_clicked();
 
 private:

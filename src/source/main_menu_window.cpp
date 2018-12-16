@@ -1,8 +1,8 @@
-#include "headers/main_menu_window.hpp"
-#include "ui_main_menu_window.h"
-
 #include <QDesktopWidget>
 #include <QMessageBox>
+
+#include "ui_main_menu_window.h"
+#include "../headers/main_menu_window.hpp"
 
 MainMenuWindow::MainMenuWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -14,6 +14,7 @@ MainMenuWindow::MainMenuWindow(QWidget *parent) :
     setFixedSize(size());   // Main menu window is non-resizable
     setWindowTitle("Home Planner 2D");
     ui->stackedWidget->setCurrentIndex(0);
+
 }
 
 MainMenuWindow::~MainMenuWindow()
