@@ -1,5 +1,6 @@
-#include "headers/main_menu_window.hpp"
 #include <QApplication>
+
+#include "../headers/main_menu_window.hpp"
 
 int main(int argc, char *argv[])
 {
