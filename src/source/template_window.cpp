@@ -11,7 +11,9 @@ TemplateWindow::TemplateWindow(QWidget *parent) :
     ui->setupUi(this);
     setWindowCenter(1.25, 1.25);
     setWindowTitle("Home Planner 2D");
+
     drawGraphicsScene();
+//    createList();
 }
 
 TemplateWindow::~TemplateWindow()
@@ -26,8 +28,8 @@ void TemplateWindow::drawGraphicsScene()
     ui->graphicsView->setScene(scene);
 //    ui->graphicsView->setDragMode(QGraphicsView::ScrollHandDrag);
     ui->graphicsView->resize(600, 400);
-    qDebug() << ui->graphicsView->height();
-    qDebug() << ui->graphicsView->width();
+//    qDebug() << ui->graphicsView->height();
+//    qDebug() << ui->graphicsView->width();
 }
 
 void TemplateWindow::setWindowCenter(double widthCoefficient, double heightCoefficient)
@@ -56,4 +58,11 @@ void TemplateWindow::setWindowCenter(double widthCoefficient, double heightCoeff
 void TemplateWindow::on_actionQuit_triggered()
 {
     close();
+}
+
+void TemplateWindow::on_toolBox_currentChanged(int index)
+{
+    if(index == 0) {
+
+    }
 }

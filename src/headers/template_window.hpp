@@ -21,6 +21,8 @@ public:
 private slots:
     void on_actionQuit_triggered();
 
+    void on_toolBox_currentChanged(int index);
+
 private:
     Ui::TemplateWindow *ui;
     QGraphicsScene *scene;
