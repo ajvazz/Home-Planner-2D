@@ -33,3 +33,7 @@
 
 # Directories
 build-src-Desktop_Qt_5_12_0_GCC_64bit-Debug/
+
+# Qt-es
+*.pro.user
+*.pro.user.*
