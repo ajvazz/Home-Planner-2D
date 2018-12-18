@@ -1,52 +1,31 @@
+#include <QApplication>
 #include <QDesktopWidget>
 #include <QMessageBox>
 
 #include "ui_main_menu_window.h"
 #include "../headers/main_menu_window.hpp"
 
-MainMenuWindow::MainMenuWindow(QWidget *parent) :
-    QMainWindow(parent),
-    ui(new Ui::MainMenuWindow)
+MainMenuWindow::MainMenuWindow(QWidget *parent)
+    : CenteredWindow(parent), ui(new Ui::MainMenuWindow)
 {
     ui->setupUi(this);
 
-    setWindowCenter(2.5, 1.5);
-    setFixedSize(size());   // Main menu window is non-resizable
-    setWindowTitle("Home Planner 2D");
+    /* Resizing stacked widget proportionally to screen size */
+    double width  = QApplication::desktop()->width()  / 2.5;
+    double height = QApplication::desktop()->height() / 1.5;
+    ui->stackedWidget->resize(int(width), int(height));
     ui->stackedWidget->setCurrentIndex(0);
 
+    /* Only main menu window is non-resizable */
+    setWindowCenter(2.5, 1.5);
+    setFixedSize(size());
+
+    setWindowTitle("Home Planner 2D");
 }
 
 MainMenuWindow::~MainMenuWindow()
 {
     delete ui;
-}
-
-void MainMenuWindow::setWindowCenter(double widthCoefficient, double heightCoefficient)
-{
-    /*
-     * Code for window centering partly used from:
-     * http://zetcode.com/gui/qt4/firstprograms/
-     */
-    int screenWidth  = QApplication::desktop()->width();
-    int screenHeight = QApplication::desktop()->height();
-
-    // i.e. height = 650, width = 500
-    double width  = screenWidth / widthCoefficient;
-    double height = screenHeight / heightCoefficient;
-
-    int x = (screenWidth - int(width)) / 2;
-    int y = (screenHeight - int(height)) / 2;
-
-    /* These two lines are required if the window needs to be resized
-       after the setFixedSize() has been set. */
-    setMaximumSize(QWIDGETSIZE_MAX, QWIDGETSIZE_MAX);
-    setMinimumSize(0, 0);
-
-    ui->stackedWidget->resize(int(width), int(height));
-    resize(int(width), int(height));
-    setFixedSize(size());
-    move(x, y);
 }
 
 void MainMenuWindow::on_btnQuit_clicked()

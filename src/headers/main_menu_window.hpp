@@ -1,16 +1,15 @@
 #ifndef MAIN_MENU_WINDOW_HPP
 #define MAIN_MENU_WINDOW_HPP
 
-#include <QMainWindow>
-
-#include "headers/template_window.hpp"
-#include "headers/design_window.hpp"
+#include "centered_window.hpp"
+#include "template_window.hpp"
+#include "design_window.hpp"
 
 namespace Ui {
 class MainMenuWindow;
 }
 
-class MainMenuWindow : public QMainWindow
+class MainMenuWindow : public CenteredWindow /*QMainWindow*/
 {
     Q_OBJECT
 
@@ -31,7 +30,6 @@ private:
     Ui::MainMenuWindow *ui;
     TemplateWindow *tempWind;
     DesignWindow *designWind;
-    void setWindowCenter(double widthCoefficient, double heightCoefficient);
 };
 
 #endif // MAIN_MENU_WINDOW_HPP
