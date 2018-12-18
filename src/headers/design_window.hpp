@@ -1,13 +1,13 @@
 #ifndef DESIGN_WINDOW_HPP
 #define DESIGN_WINDOW_HPP
 
-#include <QMainWindow>
+#include "centered_window.hpp"
 
 namespace Ui {
 class DesignWindow;
 }
 
-class DesignWindow : public QMainWindow
+class DesignWindow : public CenteredWindow /*QMainWindow*/
 {
     Q_OBJECT
 
@@ -17,7 +17,6 @@ public:
 
 private:
     Ui::DesignWindow *ui;
-    void setWindowCenter(double widthCoefficient, double heightCoefficient);
 };
 
 #endif // DESIGN_WINDOW_HPP

@@ -3,15 +3,20 @@
 
 #include <QMainWindow>
 
+namespace Ui {
+class CenteredWindow;
+}
+
 class CenteredWindow : public QMainWindow
 {
     Q_OBJECT
-// Is this needed?
+
 public:
     explicit CenteredWindow(QWidget *parent = nullptr);
+    ~CenteredWindow();
 
-protected:
-    void setWindowCenter(double widthCoefficient, double heightCoefficient);
+private:
+    Ui::CenteredWindow *ui;
 };
 
 #endif // CENTERED_WINDOW_HPP

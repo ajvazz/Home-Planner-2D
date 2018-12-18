@@ -1,16 +1,14 @@
 #ifndef TEMPLATE_WINDOW_HPP
 #define TEMPLATE_WINDOW_HPP
 
-#include <QMainWindow>
 #include <QGraphicsScene>
-
-//#include "centered_window.hpp"
+#include "centered_window.hpp"
 
 namespace Ui {
 class TemplateWindow;
 }
 
-class TemplateWindow : public QMainWindow /*, public CenteredWindow */
+class TemplateWindow : public CenteredWindow /*QMainWindow*/
 {
     Q_OBJECT
 
@@ -20,7 +18,6 @@ public:
 
 private slots:
     void on_actionQuit_triggered();
-
     void on_toolBox_currentChanged(int index);
 
 private:
@@ -28,7 +25,6 @@ private:
     QGraphicsScene *scene;
 
     void drawGraphicsScene();
-    void setWindowCenter(double widthCoefficient, double heightCoefficient);
 };
 
 #endif // TEMPLATE_WINDOW_HPP
