@@ -7,7 +7,7 @@ namespace Ui {
 class DesignWindow;
 }
 
-class DesignWindow : public CenteredWindow /*QMainWindow*/
+class DesignWindow : public CenteredWindow
 {
     Q_OBJECT
 

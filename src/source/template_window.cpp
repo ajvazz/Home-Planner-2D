@@ -39,3 +39,4 @@ void TemplateWindow::on_toolBox_currentChanged(int index)
         // TODO
     }
 }
+

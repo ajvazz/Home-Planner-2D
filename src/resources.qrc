@@ -2,5 +2,7 @@
     <qresource prefix="/">
         <file>img/grid.jpg</file>
         <file>img/back_icon.png</file>
+        <file>img/blueprint_blue_1.jpg</file>
+        <file>img/qt_logo.png</file>
     </qresource>
 </RCC>
