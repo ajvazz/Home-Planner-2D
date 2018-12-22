@@ -1,6 +1,7 @@
 #include <QApplication>
 #include <QDesktopWidget>
 #include <QMessageBox>
+#include <QPainter>
 
 #include "ui_main_menu_window.h"
 #include "../headers/main_menu_window.hpp"
@@ -10,15 +11,11 @@ MainMenuWindow::MainMenuWindow(QWidget *parent)
 {
     ui->setupUi(this);
 
-    /* Resizing stacked widget proportionally to screen size */
-    double width  = QApplication::desktop()->width()  / 2.5;
-    double height = QApplication::desktop()->height() / 1.5;
-    ui->stackedWidget->resize(int(width), int(height));
-    ui->stackedWidget->setCurrentIndex(0);
-
     /* Only main menu window is non-resizable */
     setWindowCenter(2.5, 1.5);
     setFixedSize(size());
+    setBackgroundImage();
+    ui->stackedWidget->setCurrentIndex(0);
 
     setWindowTitle("Home Planner 2D");
 }
@@ -26,6 +23,16 @@ MainMenuWindow::MainMenuWindow(QWidget *parent)
 MainMenuWindow::~MainMenuWindow()
 {
     delete ui;
+}
+
+void MainMenuWindow::setBackgroundImage()
+{
+    QPixmap background(":/img/blueprint_blue_1.jpg");
+
+    background = background.scaled(this->size(), Qt::IgnoreAspectRatio);
+    QPalette palette;
+    palette.setBrush(QPalette::Background, background);
+    this->setPalette(palette);
 }
 
 void MainMenuWindow::on_btnQuit_clicked()
@@ -36,15 +43,15 @@ void MainMenuWindow::on_btnQuit_clicked()
 void MainMenuWindow::on_btnCreateNew_clicked()
 {
     ui->stackedWidget->setCurrentIndex(1);
-    // Resizing the window to default size
     setWindowCenter(2, 1.75);
+    setFixedSize(size());
 }
 
 void MainMenuWindow::on_btnBack_clicked()
 {
     ui->stackedWidget->setCurrentIndex(0);
-    // Making the window wider and shorter
     setWindowCenter(2.5, 1.5);
+    setFixedSize(size());
 }
 
 void MainMenuWindow::on_btnAbout_clicked()
@@ -73,4 +80,9 @@ void MainMenuWindow::on_btnScratch_clicked()
     designWind = new DesignWindow();
     hide();
     designWind->show();
+}
+
+void MainMenuWindow::on_btnQt_clicked()
+{
+    QMessageBox::aboutQt(this);
 }

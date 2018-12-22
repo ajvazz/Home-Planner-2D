@@ -9,7 +9,7 @@ namespace Ui {
 class MainMenuWindow;
 }
 
-class MainMenuWindow : public CenteredWindow /*QMainWindow*/
+class MainMenuWindow : public CenteredWindow
 {
     Q_OBJECT
 
@@ -25,11 +25,13 @@ private slots:
     void on_btnBack_clicked();
     void on_btnTemplate_clicked();
     void on_btnScratch_clicked();
+    void on_btnQt_clicked();
 
 private:
     Ui::MainMenuWindow *ui;
     TemplateWindow *tempWind;
     DesignWindow *designWind;
+    void setBackgroundImage();
 };
 
 #endif // MAIN_MENU_WINDOW_HPP
