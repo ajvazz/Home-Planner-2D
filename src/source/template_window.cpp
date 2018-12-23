@@ -23,9 +23,16 @@ TemplateWindow::~TemplateWindow()
 void TemplateWindow::drawGraphicsScene()
 {
     scene = new QGraphicsScene(this);
-    scene->setSceneRect(-200, -200, 300, 300);
+    scene->setSceneRect(0,0, 500,500);
+
+    Furniture *f = new Furniture;
+    scene->addItem(f);
+    f->setFocus();
+
     ui->graphicsView->setScene(scene);
-    ui->graphicsView->resize(600, 400);
+    scene->addText("Living room");
+
+//    ui->graphicsView->resize(600, 400);
 }
 
 void TemplateWindow::on_actionQuit_triggered()
@@ -33,10 +40,7 @@ void TemplateWindow::on_actionQuit_triggered()
     close();
 }
 
-void TemplateWindow::on_toolBox_currentChanged(int index)
+void TemplateWindow::on_actionClearAll_triggered()
 {
-    if(index == 0) {
-        // TODO
-    }
+    ui->graphicsView->scene()->clear();
 }
-

@@ -3,6 +3,7 @@
 
 #include <QGraphicsScene>
 #include "centered_window.hpp"
+#include "furniture.hpp"
 
 namespace Ui {
 class TemplateWindow;
@@ -18,7 +19,7 @@ public:
 
 private slots:
     void on_actionQuit_triggered();
-    void on_toolBox_currentChanged(int index);
+    void on_actionClearAll_triggered();
 
 private:
     Ui::TemplateWindow *ui;
