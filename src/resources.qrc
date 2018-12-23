@@ -4,5 +4,139 @@
         <file>img/back_icon.png</file>
         <file>img/blueprint_blue_1.jpg</file>
         <file>img/qt_logo.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/wardrobe_3.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/wardrobe_2_white.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/wardrobe_2_normal.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/wardrobe_2_light.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/wardrobe_2_grey.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/wardrobe_2_dark.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/wardrobe_2_black.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/wardrobe_1_white.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/wardrobe_1_normal.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/wardrobe_1_light.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/wardrobe_1_grey.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/wardrobe_1_brown.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/wardrobe_1_black.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/night_table_1_white.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/night_table_1_normal.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/night_table_1_darkblue.png</file>
+        <file>img/furniture/tables/tv_stand_table_2_white.png</file>
+        <file>img/furniture/tables/tv_stand_table_2_dark.png</file>
+        <file>img/furniture/tables/tv_stand_table_1_lightgrey.png</file>
+        <file>img/furniture/tables/tv_stand_table_1_darkgrey.png</file>
+        <file>img/furniture/tables/tv_stand_table_1_brown.png</file>
+        <file>img/furniture/tables/table_6_light.png</file>
+        <file>img/furniture/tables/table_6_dark.png</file>
+        <file>img/furniture/tables/table_5_complete_dark.png</file>
+        <file>img/furniture/tables/table_5_complete_brown.png</file>
+        <file>img/furniture/tables/table_5_complete_blue.png</file>
+        <file>img/furniture/tables/table_4_light_wood.png</file>
+        <file>img/furniture/tables/table_4_dark_wood.png</file>
+        <file>img/furniture/tables/table_3_round_light_wood.png</file>
+        <file>img/furniture/tables/table_3_round_dark_wood.png</file>
+        <file>img/furniture/tables/table_2_white.png</file>
+        <file>img/furniture/tables/table_2_light.png</file>
+        <file>img/furniture/tables/table_2_grey.png</file>
+        <file>img/furniture/tables/table_2_darkblue.png</file>
+        <file>img/furniture/tables/table_2_dark.png</file>
+        <file>img/furniture/tables/table_1_white.png</file>
+        <file>img/furniture/tables/table_1_light.png</file>
+        <file>img/furniture/tables/table_1_grey.png</file>
+        <file>img/furniture/tables/table_1_dark.png</file>
+        <file>img/furniture/sofas/sofa_3_wooden_light.png</file>
+        <file>img/furniture/sofas/sofa_3_wooden_dark.png</file>
+        <file>img/furniture/sofas/sofa_3_bamboo.png</file>
+        <file>img/furniture/sofas/sofa_2_yellow.png</file>
+        <file>img/furniture/sofas/sofa_2_white.png</file>
+        <file>img/furniture/sofas/sofa_2_red.png</file>
+        <file>img/furniture/sofas/sofa_2_grey.png</file>
+        <file>img/furniture/sofas/sofa_1_white.png</file>
+        <file>img/furniture/sofas/sofa_1_red.png</file>
+        <file>img/furniture/sofas/sofa_1_purple.png</file>
+        <file>img/furniture/sofas/sofa_1_light_brown.png</file>
+        <file>img/furniture/sofas/sofa_1_light_blue.png</file>
+        <file>img/furniture/sofas/sofa_1_green.png</file>
+        <file>img/furniture/sofas/sofa_1_black.png</file>
+        <file>img/furniture/sinks/sink_6.png</file>
+        <file>img/furniture/sinks/sink_5.png</file>
+        <file>img/furniture/sinks/sink_4.png</file>
+        <file>img/furniture/sinks/sink_3.png</file>
+        <file>img/furniture/sinks/sink_2.png</file>
+        <file>img/furniture/sinks/sink_1.png</file>
+        <file>img/furniture/other/rubber_duck.png</file>
+        <file>img/furniture/other/plant.png</file>
+        <file>img/furniture/other/piano_brown.png</file>
+        <file>img/furniture/other/piano_black.png</file>
+        <file>img/furniture/other/ironing_board_white.png</file>
+        <file>img/furniture/other/ironing_board_lightblue.png</file>
+        <file>img/furniture/other/fruit_bowl.png</file>
+        <file>img/furniture/other/exercise_bicycle.png</file>
+        <file>img/furniture/other/christmas_tree.png</file>
+        <file>img/furniture/other/carpet_2_colorful_3.png</file>
+        <file>img/furniture/other/carpet_2_colorful_2.png</file>
+        <file>img/furniture/other/carpet_2_colorful_1.png</file>
+        <file>img/furniture/other/carpet_1_purple.png</file>
+        <file>img/furniture/other/carpet_1_dark.png</file>
+        <file>img/furniture/other/carpet_1_brown.png</file>
+        <file>img/furniture/other/carpet_1_blue.png</file>
+        <file>img/furniture/other/books.png</file>
+        <file>img/furniture/other/bench_press.png</file>
+        <file>img/furniture/electronic devices/washing_machine_white.png</file>
+        <file>img/furniture/electronic devices/washing_machine_grey.png</file>
+        <file>img/furniture/electronic devices/vent.png</file>
+        <file>img/furniture/electronic devices/tv_2_white.png</file>
+        <file>img/furniture/electronic devices/tv_2_black.png</file>
+        <file>img/furniture/electronic devices/tv_1_white.png</file>
+        <file>img/furniture/electronic devices/tv_1_black.png</file>
+        <file>img/furniture/electronic devices/speakers_2_brown.png</file>
+        <file>img/furniture/electronic devices/speakers_2_black.png</file>
+        <file>img/furniture/electronic devices/speakers_1_brown.png</file>
+        <file>img/furniture/electronic devices/speakers_1_black.png</file>
+        <file>img/furniture/electronic devices/refridgerator.png</file>
+        <file>img/furniture/electronic devices/pc.png</file>
+        <file>img/furniture/electronic devices/microwave.png</file>
+        <file>img/furniture/electronic devices/laptop_white.png</file>
+        <file>img/furniture/electronic devices/laptop_mac.png</file>
+        <file>img/furniture/electronic devices/laptop_black.png</file>
+        <file>img/furniture/electronic devices/fridge_white.png</file>
+        <file>img/furniture/electronic devices/fridge_dark.png</file>
+        <file>img/furniture/electronic devices/air_conditioner.png</file>
+        <file>img/furniture/chairs/chair_1_yellow.png</file>
+        <file>img/furniture/chairs/chair_1_red.png</file>
+        <file>img/furniture/chairs/chair_1_grey.png</file>
+        <file>img/furniture/chairs/chair_1_blue.png</file>
+        <file>img/furniture/chairs/chair_1_black.png</file>
+        <file>img/furniture/beds/single_bed_white.png</file>
+        <file>img/furniture/beds/single_bed_lightyellow.png</file>
+        <file>img/furniture/beds/single_bed_lightblue.png</file>
+        <file>img/furniture/beds/single_bed_2_purple.png</file>
+        <file>img/furniture/beds/single_bed_2_green.png</file>
+        <file>img/furniture/beds/single_bed_2_blue.png</file>
+        <file>img/furniture/beds/king_bed_2_white.png</file>
+        <file>img/furniture/beds/king_bed_2_lightred.png</file>
+        <file>img/furniture/beds/king_bed_1_white.png</file>
+        <file>img/furniture/beds/king_bed_1_lightred.png</file>
+        <file>img/furniture/beds/king_bed_1_lightblue.png</file>
+        <file>img/furniture/beds/baby_bed_lightyellow.png</file>
+        <file>img/furniture/beds/baby_bed_lightblue.png</file>
+        <file>img/furniture/bathroom/toilet_2_white.png</file>
+        <file>img/furniture/bathroom/toilet_2_grey.png</file>
+        <file>img/furniture/bathroom/toilet_1.png</file>
+        <file>img/furniture/bathroom/sink_2.png</file>
+        <file>img/furniture/bathroom/sink_1.png</file>
+        <file>img/furniture/bathroom/shower_1.png</file>
+        <file>img/furniture/bathroom/cabinet.png</file>
+        <file>img/furniture/bathroom/bath_2.png</file>
+        <file>img/furniture/bathroom/bath_1_white.png</file>
+        <file>img/furniture/bathroom/bath_1_light.png</file>
+        <file>img/furniture/bathroom/bath_1_dark.png</file>
+        <file>img/furniture/armchairs/armchair_2_lightgrey.png</file>
+        <file>img/furniture/armchairs/armchair_2_lightgreen.png</file>
+        <file>img/furniture/armchairs/armchair_1_white.png</file>
+        <file>img/furniture/armchairs/armchair_1_red.png</file>
+        <file>img/furniture/armchairs/armchair_1_orange.png</file>
+        <file>img/furniture/armchairs/armchair_1_green.png</file>
+        <file>img/furniture/armchairs/armchair_1_blue.png</file>
+        <file>img/furniture/armchairs/armchair_1_black.png</file>
     </qresource>
 </RCC>
