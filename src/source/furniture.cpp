@@ -12,13 +12,15 @@ Furniture::Furniture(QGraphicsItem *parent) : QGraphicsItem(parent)
 void Furniture::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
     // Testing...
-    painter->drawPixmap(0,0,25,25, QPixmap(":/img/furniture/armchairs/armchair_1_green.png"));
+    Q_UNUSED(option);
+    Q_UNUSED(widget);
+    painter->drawPixmap(0,0,75,75, QPixmap(":/img/furniture/beds/king_bed_1_white.png"));
 }
 
 QRectF Furniture::boundingRect() const
 {
     // Testing...
-    return QRectF(0,0, 25,25);
+    return QRectF(0,0, 75,75);
 }
 
 void Furniture::keyPressEvent(QKeyEvent *event)
