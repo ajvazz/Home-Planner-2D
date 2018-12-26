@@ -16,6 +16,9 @@ public:
     ~CenteredWindow();
     void setWindowCenter(double widthCoefficient, double heightCoefficient);
 
+    int screenWidth;
+    int screenHeight;
+
 private:
     Ui::CenteredWindow *ui;
 };

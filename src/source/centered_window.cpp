@@ -22,8 +22,8 @@ void CenteredWindow::setWindowCenter(double widthCoefficient, double heightCoeff
      * Code for window centering partly used from:
      * http://zetcode.com/gui/qt4/firstprograms/
      */
-    int screenWidth  = QApplication::desktop()->width();
-    int screenHeight = QApplication::desktop()->height();
+    screenWidth  = QApplication::desktop()->width();
+    screenHeight = QApplication::desktop()->height();
 
     // i.e. height = 650, width = 500
     double width  = screenWidth / widthCoefficient;
