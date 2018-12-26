@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>711</width>
-    <height>490</height>
+    <width>988</width>
+    <height>452</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,9 +20,9 @@
      <verstretch>0</verstretch>
     </sizepolicy>
    </property>
-   <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="7,3">
+   <layout class="QHBoxLayout" name="horizontalLayout_28" stretch="7,3">
     <item>
-     <layout class="QVBoxLayout" name="verticalLayout" stretch="0,0">
+     <layout class="QVBoxLayout" name="vertLayoutLeft">
       <item>
        <widget class="QGraphicsView" name="graphicsView">
         <property name="cursor" stdset="0">
@@ -46,27 +46,170 @@
        </widget>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="controls">
+       <layout class="QHBoxLayout" name="horizontalLayout_2">
         <item>
-         <widget class="QPushButton" name="pushButton">
+         <spacer name="horizSpacerControlsLeft">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnRotateSceneLeft">
           <property name="text">
            <string>Rotate Left</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_2">
+         <widget class="QPushButton" name="btnRotateSceneRight">
           <property name="text">
            <string>Rotate Right</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="pushButton_3">
+         <widget class="QPushButton" name="btnCenterScene">
+          <property name="text">
+           <string>Center</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnZoomOut">
+          <property name="text">
+           <string>Zoom Out</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnZoomIn">
+          <property name="text">
+           <string>Zoom In</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="horizSpacerControlsRight">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_27" stretch="3,1,1,1,1,1,1,1,3">
+        <property name="spacing">
+         <number>10</number>
+        </property>
+        <item>
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnMoveLeft1">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>&lt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnMoveRight1">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>&gt;</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnRotateLeft">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Rotate Left</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnRotateRight">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Rotate Right</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnRotate90Left">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Rotate 90L</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnRotate90Right">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="text">
+           <string>Rotate 90R</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btnDeleteItem">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
           <property name="text">
            <string>Delete</string>
           </property>
          </widget>
+        </item>
+        <item>
+         <spacer name="horizontalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
         </item>
        </layout>
       </item>
@@ -78,7 +221,7 @@
        <enum>QFrame::NoFrame</enum>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <property name="tabSpacing">
        <number>6</number>
@@ -86,9 +229,9 @@
       <widget class="QWidget" name="tbSofaArmCh">
        <property name="geometry">
         <rect>
-         <x>-26</x>
-         <y>-278</y>
-         <width>242</width>
+         <x>0</x>
+         <y>-279</y>
+         <width>275</width>
          <height>476</height>
         </rect>
        </property>
@@ -352,6 +495,9 @@ height: 50px;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Bench bamboo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">border-image: url(:/img/furniture/sofas/sofa_3_bamboo.png);
 width: 70px;
@@ -380,6 +526,9 @@ height: 50px;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Bench light wood&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="whatsThis">
              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;aaaaaaaaaaaaaa&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
@@ -403,6 +552,9 @@ height: 50px;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Bench dark wood&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">border-image: url(:/img/furniture/sofas/sofa_3_wooden_dark.png);
@@ -601,9 +753,9 @@ height: 50px;</string>
       <widget class="QWidget" name="tbTablesChairs">
        <property name="geometry">
         <rect>
-         <x>-13</x>
-         <y>-215</y>
-         <width>272</width>
+         <x>0</x>
+         <y>-309</y>
+         <width>275</width>
          <height>544</height>
         </rect>
        </property>
@@ -1074,6 +1226,9 @@ background-repeat: none;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;TV stand - wood&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/tables/tv_stand_table_1_brown.png);
@@ -1098,6 +1253,9 @@ background-repeat: none;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;TV stand - grey&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/tables/tv_stand_table_1_darkgrey.png);
@@ -1121,6 +1279,9 @@ background-repeat: none;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;TV stand - light&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
@@ -1155,6 +1316,9 @@ background-repeat: none;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;TV stand - dark&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
@@ -1303,8 +1467,8 @@ background-repeat: none;</string>
       <widget class="QWidget" name="tbCabinets">
        <property name="geometry">
         <rect>
-         <x>-29</x>
-         <y>-11</y>
+         <x>0</x>
+         <y>0</y>
          <width>272</width>
          <height>300</height>
         </rect>
@@ -1726,8 +1890,8 @@ background-repeat: none;</string>
       <widget class="QWidget" name="tbBeds">
        <property name="geometry">
         <rect>
-         <x>-74</x>
-         <y>0</y>
+         <x>0</x>
+         <y>-102</y>
          <width>272</width>
          <height>312</height>
         </rect>
@@ -1748,6 +1912,9 @@ background-repeat: none;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#000000;&quot;&gt;Baby cot - blue&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: none;
@@ -1772,6 +1939,9 @@ background-repeat: none;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Baby cot - yellow&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
@@ -1931,6 +2101,9 @@ background-repeat: none;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>Pera</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/beds/single_bed_2_purple.png);
@@ -2089,7 +2262,7 @@ background-repeat: none;</string>
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>-150</y>
+         <y>-188</y>
          <width>222</width>
          <height>384</height>
         </rect>
@@ -2110,6 +2283,9 @@ background-repeat: none;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Fridge - dark&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
@@ -2135,6 +2311,9 @@ background-repeat: none;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Fridge - white&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/electronic devices/fridge_white.png);
@@ -2158,6 +2337,9 @@ background-repeat: none;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#3465a4;&quot;&gt;Refrigerator&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
@@ -2187,6 +2369,9 @@ background-repeat: none;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Washing machine - dark&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/electronic devices/washing_machine_grey.png);
@@ -2211,6 +2396,9 @@ background-repeat: none;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#888a85;&quot;&gt;Washing machine - white&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/electronic devices/washing_machine_white.png);
@@ -2234,6 +2422,9 @@ background-repeat: none;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Microwave&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
@@ -2263,6 +2454,9 @@ background-repeat: none;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Vent&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/electronic devices/vent.png);
@@ -2287,6 +2481,9 @@ background-repeat: none;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Air conditioner&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/electronic devices/air_conditioner.png);
@@ -2310,6 +2507,9 @@ background-repeat: none;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#ef2929;&quot;&gt;TV - black&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
@@ -2348,6 +2548,9 @@ background-repeat: none;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#000000;&quot;&gt;TV - white&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/electronic devices/tv_1_white.png);
@@ -2372,6 +2575,9 @@ background-repeat: none;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#ef2929;&quot;&gt;TV - black&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/electronic devices/tv_2_black.png);
@@ -2395,6 +2601,9 @@ background-repeat: none;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#000000;&quot;&gt;TV - white&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
@@ -2424,6 +2633,9 @@ background-repeat: none;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#ff6de5;&quot;&gt;Macbook&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/electronic devices/laptop_mac.png);
@@ -2448,6 +2660,9 @@ background-repeat: none;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Laptop - black&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/electronic devices/laptop_black.png);
@@ -2471,6 +2686,9 @@ background-repeat: none;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Laptop - white&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
@@ -2530,6 +2748,9 @@ background-repeat: none;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Speakers - dark&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/electronic devices/speakers_1_black.png);
@@ -2553,6 +2774,9 @@ background-repeat: none;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Speakers - wood&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
@@ -2582,6 +2806,9 @@ background-repeat: none;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Speakers - dark&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/electronic devices/speakers_2_black.png);
@@ -2606,6 +2833,9 @@ background-repeat: none;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Speakers - wood&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/electronic devices/speakers_2_brown.png);
@@ -2626,10 +2856,10 @@ background-repeat: none;</string>
       <widget class="QWidget" name="tbBathroom">
        <property name="geometry">
         <rect>
-         <x>-20</x>
-         <y>-36</y>
+         <x>0</x>
+         <y>-38</y>
          <width>212</width>
-         <height>244</height>
+         <height>234</height>
         </rect>
        </property>
        <attribute name="label">
@@ -2748,6 +2978,9 @@ height: 50px;
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#555753;&quot;&gt;Shower&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/bathroom/shower_1.png);
@@ -2771,6 +3004,9 @@ background-repeat: none;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#555753;&quot;&gt;Cabinet&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
@@ -2870,8 +3106,8 @@ height: 50px;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">border-image: url(:/img/furniture/bathroom/toilet_2_white.png);
-width: 40px;
-height: 50px;</string>
+width: 30px;
+height: 40px;</string>
             </property>
             <property name="text">
              <string/>
@@ -2891,8 +3127,8 @@ height: 50px;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">border-image: url(:/img/furniture/bathroom/toilet_2_grey.png);
-width: 40px;
-height: 50px;</string>
+width: 30px;
+height: 40px;</string>
             </property>
             <property name="text">
              <string/>
@@ -2906,10 +3142,10 @@ height: 50px;</string>
       <widget class="QWidget" name="tbOther">
        <property name="geometry">
         <rect>
-         <x>-3</x>
-         <y>-162</y>
+         <x>0</x>
+         <y>0</y>
          <width>252</width>
-         <height>360</height>
+         <height>370</height>
         </rect>
        </property>
        <attribute name="label">
@@ -2928,6 +3164,9 @@ height: 50px;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Carpet - black&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
@@ -2953,6 +3192,9 @@ background-repeat: none;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Carpet - brown&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/other/carpet_1_brown.png);
@@ -2976,6 +3218,9 @@ background-repeat: none;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Carpet - blue&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
@@ -3005,6 +3250,9 @@ background-repeat: none;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Carpet - purple&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/other/carpet_1_purple.png);
@@ -3029,6 +3277,9 @@ background-repeat: none;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Carpet - colorful 1&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/other/carpet_2_colorful_2.png);
@@ -3052,6 +3303,9 @@ background-repeat: none;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Carpet - colorful 2&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
@@ -3080,6 +3334,9 @@ background-repeat: none;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Carpet - colorful 3&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
@@ -3158,12 +3415,9 @@ background-repeat: none;</string>
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-color: transparent;
-border-image: url(:/img/furniture/other/bench_press.png);
+             <string notr="true">border-image: url(:/img/furniture/other/bench_press.png);
 width: 40px;
-height: 40px;
-background: none;
-background-repeat: none;</string>
+height: 50px;</string>
             </property>
             <property name="text">
              <string/>
@@ -3182,12 +3436,9 @@ background-repeat: none;</string>
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-color: transparent;
-border-image: url(:/img/furniture/other/ironing_board_white.png);
-width: 80px;
-height: 40px;
-background: none;
-background-repeat: none;</string>
+             <string notr="true">border-image: url(:/img/furniture/other/ironing_board_white.png);
+width: 65px;
+height: 25px;</string>
             </property>
             <property name="text">
              <string/>
@@ -3206,12 +3457,9 @@ background-repeat: none;</string>
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-color: transparent;
-border-image: url(:/img/furniture/other/ironing_board_lightblue.png);
-width: 80px;
-height: 40px;
-background: none;
-background-repeat: none;</string>
+             <string notr="true">border-image: url(:/img/furniture/other/ironing_board_lightblue.png);
+width: 65px;
+height: 25px;</string>
             </property>
             <property name="text">
              <string/>
@@ -3234,12 +3482,10 @@ background-repeat: none;</string>
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-color: transparent;
-border-image: url(:/img/furniture/other/exercise_bicycle.png);
-width: 40px;
-height: 40px;
-background: none;
-background-repeat: none;</string>
+             <string notr="true">border-image: url(:/img/furniture/other/exercise_bicycle.png);
+width: 30px;
+height: 50px;
+</string>
             </property>
             <property name="text">
              <string/>
@@ -3258,12 +3504,9 @@ background-repeat: none;</string>
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-color: transparent;
-border-image: url(:/img/furniture/other/christmas_tree.png);
-width: 40px;
-height: 40px;
-background: none;
-background-repeat: none;</string>
+             <string notr="true">border-image: url(:/img/furniture/other/christmas_tree.png);
+width: 50px;
+height: 50px;</string>
             </property>
             <property name="text">
              <string/>
@@ -3282,12 +3525,9 @@ background-repeat: none;</string>
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-color: transparent;
-border-image: url(:/img/furniture/other/plant.png);
-width: 40px;
-height: 40px;
-background: none;
-background-repeat: none;</string>
+             <string notr="true">border-image: url(:/img/furniture/other/plant.png);
+width: 50px;
+height: 50px;</string>
             </property>
             <property name="text">
              <string/>
@@ -3298,6 +3538,9 @@ background-repeat: none;</string>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_50">
+          <property name="rightMargin">
+           <number>20</number>
+          </property>
           <item>
            <widget class="QPushButton" name="pushButton_143">
             <property name="sizePolicy">
@@ -3310,12 +3553,9 @@ background-repeat: none;</string>
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
             <property name="styleSheet">
-             <string notr="true">background-color: transparent;
-border-image: url(:/img/furniture/other/books.png);
-width: 40px;
-height: 40px;
-background: none;
-background-repeat: none;</string>
+             <string notr="true">border-image: url(:/img/furniture/other/books.png);
+width: 35px;
+height: 25px;</string>
             </property>
             <property name="text">
              <string/>
@@ -3360,10 +3600,8 @@ background-repeat: none;</string>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/other/rubber_duck.png);
-width: 20px;
-height: 20px;
-background: none;
-background-repeat: none;</string>
+width: 15px;
+height: 20px;</string>
             </property>
             <property name="text">
              <string/>
@@ -3383,13 +3621,23 @@ background-repeat: none;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>711</width>
+     <width>988</width>
      <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="separator"/>
+    <addaction name="actionClear_All"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuEdit"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionClearAll">
+  <action name="actionClear_All">
    <property name="text">
     <string>Clear All</string>
    </property>
