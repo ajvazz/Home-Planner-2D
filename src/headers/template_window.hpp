@@ -18,8 +18,18 @@ public:
     ~TemplateWindow();
 
 private slots:
+    void on_actionClear_All_triggered();
     void on_actionQuit_triggered();
-    void on_actionClearAll_triggered();
+
+    /* Item manipulation */
+    void on_btnDeleteItem_clicked();
+
+    /* Scene manipulation */
+    void on_btnZoomIn_clicked();
+    void on_btnZoomOut_clicked();
+    void on_btnCenterScene_clicked();
+    void on_btnRotateSceneLeft_clicked();
+    void on_btnRotateSceneRight_clicked();
 
 private:
     Ui::TemplateWindow *ui;
