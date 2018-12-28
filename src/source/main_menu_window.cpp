@@ -57,7 +57,7 @@ void MainMenuWindow::on_btnBack_clicked()
 void MainMenuWindow::on_btnAbout_clicked()
 {
     QMessageBox::about(this, "About Us",
-       "This is a project done by Nevena Ajvaz and Nenad Ajvaz "
+       "This is a university project done by Nenad Ajvaz and Nevena Ajvaz "
        "for a Software Development course.\n\nThis course is "
        "held at Computer Science department of Faculty of "
        "Mathematics, University of Belgrade, Serbia.");
