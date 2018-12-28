@@ -31,6 +31,9 @@ private slots:
     void on_btnRotateSceneLeft_clicked();
     void on_btnRotateSceneRight_clicked();
 
+    /* Buttons */
+    void on_btnSofa1_Black_clicked();
+
 private:
     Ui::TemplateWindow *ui;
     QGraphicsScene *scene;

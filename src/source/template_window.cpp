@@ -27,13 +27,13 @@ void TemplateWindow::drawGraphicsScene()
 {
     scene = new QGraphicsScene(this);
     /* screenWidth and screenHeight are inherited from CenteredWindow */
-    scene->setSceneRect(0,0, screenWidth,screenHeight);
+    scene->setSceneRect(0,0, screenWidth/1.5,screenHeight/1.5);
 
-    Furniture *f1 = new Furniture;
-    Furniture *f2 = new Furniture;
+//    Furniture *f1 = new Furniture;
+//    Furniture *f2 = new Furniture;
 
-    scene->addItem(f1);
-    scene->addItem(f2);
+//    scene->addItem(f1);
+//    scene->addItem(f2);
 
     ui->graphicsView->setScene(scene);
     ui->graphicsView->setRenderHint(QPainter::Antialiasing);
@@ -47,8 +47,7 @@ void TemplateWindow::on_btnDeleteItem_clicked()
     // TODO
 }
 
-void TemplateWindow::on_actionClear_All_triggered()
-{
+void TemplateWindow::on_actionClear_All_triggered() {
     ui->graphicsView->scene()->clear();
 }
 
@@ -74,4 +73,9 @@ void TemplateWindow::on_btnZoomIn_clicked() {
 
 void TemplateWindow::on_btnZoomOut_clicked() {
     ui->graphicsView->scale(0.9, 0.9);
+}
+
+void TemplateWindow::on_btnSofa1_Black_clicked() {
+    Furniture *f = new Furniture(":/img/furniture/sofas/sofa_1_black.png", 50, 30);
+    scene->addItem(f);
 }
