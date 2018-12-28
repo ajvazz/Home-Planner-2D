@@ -7,7 +7,7 @@
 class Furniture : public QGraphicsItem
 {
 public:
-    Furniture (QGraphicsItem *parent = nullptr);
+    Furniture (QString urlPath, int width, int height, QGraphicsItem *parent = nullptr);
 
 protected:
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
@@ -27,6 +27,9 @@ protected:
 private:
     QPen m_pen;
     qreal angle;
+    QString m_urlPath;
+    int m_width;
+    int m_height;
 };
 
 #endif // FURNITURE_HPP

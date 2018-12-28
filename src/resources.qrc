@@ -138,5 +138,69 @@
         <file>img/furniture/armchairs/armchair_1_green.png</file>
         <file>img/furniture/armchairs/armchair_1_blue.png</file>
         <file>img/furniture/armchairs/armchair_1_black.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/cabinet_3_light.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/cabinet_3_dark.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/cabinet_2_dark_brown.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/cabinet_2_brown.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/cabinet_1_white.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/cabinet_1_light.png</file>
+        <file>img/furniture/wardrobes &amp; cabinets/cabinet_1_brown.png</file>
+        <file>img/furniture/tables/table_7_light.png</file>
+        <file>img/furniture/tables/table_7_dark.png</file>
+        <file>img/furniture/tables/glass_table.png</file>
+        <file>img/furniture/sofas/corner_sofa_4_white.png</file>
+        <file>img/furniture/sofas/corner_sofa_4_black.png</file>
+        <file>img/furniture/sofas/corner_sofa_3_white.png</file>
+        <file>img/furniture/sofas/corner_sofa_3_red.png</file>
+        <file>img/furniture/sofas/corner_sofa_3_purple.png</file>
+        <file>img/furniture/sofas/corner_sofa_3_blue.png</file>
+        <file>img/furniture/sofas/corner_sofa_3_black.png</file>
+        <file>img/furniture/sofas/corner_sofa_3_beige.png</file>
+        <file>img/furniture/sofas/corner_sofa_2_yellow.png</file>
+        <file>img/furniture/sofas/corner_sofa_2_purple.png</file>
+        <file>img/furniture/sofas/corner_sofa_2_blue.png</file>
+        <file>img/furniture/sofas/corner_sofa_1_white.png</file>
+        <file>img/furniture/sofas/corner_sofa_1_skyblue.png</file>
+        <file>img/furniture/sofas/corner_sofa_1_red.png</file>
+        <file>img/furniture/sofas/corner_sofa_1_purple.png</file>
+        <file>img/furniture/sofas/corner_sofa_1_light.png</file>
+        <file>img/furniture/sofas/corner_sofa_1_green.png</file>
+        <file>img/furniture/sofas/corner_sofa_1_brown.png</file>
+        <file>img/furniture/sofas/corner_sofa_1_blue.png</file>
+        <file>img/furniture/sofas/corner_sofa_1_black.png</file>
+        <file>img/furniture/other/shelf_white.png</file>
+        <file>img/furniture/other/shelf_light.png</file>
+        <file>img/furniture/other/shelf_grey.png</file>
+        <file>img/furniture/other/shelf_dark.png</file>
+        <file>img/furniture/other/lamp_3.png</file>
+        <file>img/furniture/other/lamp_2.png</file>
+        <file>img/furniture/other/lamp_1.png</file>
+        <file>img/furniture/other/fireplace.png</file>
+        <file>img/furniture/other/cat.png</file>
+        <file>img/furniture/other/bin.png</file>
+        <file>img/furniture/kitchen/top_cabinet_3.png</file>
+        <file>img/furniture/kitchen/top_cabinet_2.png</file>
+        <file>img/furniture/kitchen/top_cabinet_1.png</file>
+        <file>img/furniture/kitchen/stove.png</file>
+        <file>img/furniture/kitchen/bottom_cabinet_3.png</file>
+        <file>img/furniture/kitchen/bottom_cabinet_2.png</file>
+        <file>img/furniture/kitchen/bottom_cabinet_1.png</file>
+        <file>img/furniture/chairs/stool_light_brown.png</file>
+        <file>img/furniture/chairs/stool_brown.png</file>
+        <file>img/furniture/chairs/chair_3_light.png</file>
+        <file>img/furniture/chairs/chair_3_dark.png</file>
+        <file>img/furniture/chairs/chair_2_light.png</file>
+        <file>img/furniture/chairs/chair_2_dark.png</file>
+        <file>img/furniture/armchairs/tabouret_grey.png</file>
+        <file>img/furniture/armchairs/tabouret_brown.png</file>
+        <file>img/furniture/armchairs/tabouret_blue.png</file>
+        <file>img/furniture/armchairs/tabouret_black.png</file>
+        <file>img/furniture/armchairs/armchair_4_purple.png</file>
+        <file>img/furniture/armchairs/armchair_4_blue.png</file>
+        <file>img/furniture/armchairs/armchair_3_red.png</file>
+        <file>img/furniture/armchairs/armchair_3_purple.png</file>
+        <file>img/furniture/armchairs/armchair_3_green.png</file>
+        <file>img/furniture/armchairs/armchair_3_blue.png</file>
+        <file>img/furniture/armchairs/armchair_3_black.png</file>
     </qresource>
 </RCC>

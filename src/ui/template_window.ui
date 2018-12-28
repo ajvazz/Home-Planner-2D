@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>988</width>
-    <height>452</height>
+    <width>960</width>
+    <height>505</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -46,9 +46,9 @@
        </widget>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_2">
+       <layout class="QHBoxLayout" name="controlsTop">
         <item>
-         <spacer name="horizSpacerControlsLeft">
+         <spacer name="horizSpacerControlsTopLeft">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
@@ -96,7 +96,7 @@
          </widget>
         </item>
         <item>
-         <spacer name="horizSpacerControlsRight">
+         <spacer name="horizSpacerControlsTopRight">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
@@ -111,12 +111,12 @@
        </layout>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_27" stretch="3,1,1,1,1,1,1,1,3">
+       <layout class="QHBoxLayout" name="controlsBottom" stretch="0,1,1,1,1,1,1,1,0">
         <property name="spacing">
          <number>10</number>
         </property>
         <item>
-         <spacer name="horizontalSpacer">
+         <spacer name="horizSpacerControlsBottomLeft">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
@@ -129,7 +129,7 @@
          </spacer>
         </item>
         <item>
-         <widget class="QPushButton" name="btnMoveLeft1">
+         <widget class="QPushButton" name="btnMoveLeft">
           <property name="cursor">
            <cursorShape>PointingHandCursor</cursorShape>
           </property>
@@ -139,7 +139,7 @@
          </widget>
         </item>
         <item>
-         <widget class="QPushButton" name="btnMoveRight1">
+         <widget class="QPushButton" name="btnMoveRight">
           <property name="cursor">
            <cursorShape>PointingHandCursor</cursorShape>
           </property>
@@ -199,7 +199,7 @@
          </widget>
         </item>
         <item>
-         <spacer name="horizontalSpacer_2">
+         <spacer name="horizSpacerControlsBottomRight">
           <property name="orientation">
            <enum>Qt::Horizontal</enum>
           </property>
@@ -230,9 +230,9 @@
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>-279</y>
-         <width>275</width>
-         <height>476</height>
+         <y>-838</y>
+         <width>248</width>
+         <height>1365</height>
         </rect>
        </property>
        <attribute name="label">
@@ -240,9 +240,12 @@
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout_7">
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_14">
+         <layout class="QHBoxLayout" name="horLO_sofas_1">
+          <property name="topMargin">
+           <number>15</number>
+          </property>
           <item>
-           <widget class="QPushButton" name="pushButton_11">
+           <widget class="QPushButton" name="btnSofa1_Black">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -263,7 +266,7 @@ height: 50px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_8">
+           <widget class="QPushButton" name="btnSofa1_White">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -284,7 +287,7 @@ height: 50px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_10">
+           <widget class="QPushButton" name="btnSofa1_Blue">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -307,9 +310,12 @@ height: 50px;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_15">
+         <layout class="QHBoxLayout" name="horLO_sofas_2">
+          <property name="topMargin">
+           <number>15</number>
+          </property>
           <item>
-           <widget class="QPushButton" name="pushButton_12">
+           <widget class="QPushButton" name="btnSofa1_Purple">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -330,7 +336,7 @@ height: 50px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_9">
+           <widget class="QPushButton" name="btnSofa1_Red">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -351,7 +357,7 @@ height: 50px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_13">
+           <widget class="QPushButton" name="btnSofa1_Beige">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -374,9 +380,12 @@ height: 50px;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_16">
+         <layout class="QHBoxLayout" name="horLO_sofas_3">
+          <property name="topMargin">
+           <number>15</number>
+          </property>
           <item>
-           <widget class="QPushButton" name="pushButton_16">
+           <widget class="QPushButton" name="btnSofa1_Green">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -397,7 +406,7 @@ height: 50px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_17">
+           <widget class="QPushButton" name="btnSofa2_Grey">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -418,7 +427,7 @@ height: 50px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_18">
+           <widget class="QPushButton" name="btnSofa2_White">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -441,9 +450,12 @@ height: 50px;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_17">
+         <layout class="QHBoxLayout" name="horLO_sofas_4">
+          <property name="topMargin">
+           <number>15</number>
+          </property>
           <item>
-           <widget class="QPushButton" name="pushButton_21">
+           <widget class="QPushButton" name="btnSofa2_Red">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -464,7 +476,7 @@ height: 50px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_22">
+           <widget class="QPushButton" name="btnSofa2_Yellow">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -484,8 +496,57 @@ height: 50px;</string>
             </property>
            </widget>
           </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_sofas_5">
+          <property name="topMargin">
+           <number>15</number>
+          </property>
           <item>
-           <widget class="QPushButton" name="pushButton_23">
+           <widget class="QPushButton" name="btnCornerSofa1_Black">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sofas/corner_sofa_1_black.png);
+width: 70px;
+height: 60px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnCornerSofa1_Beige">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sofas/corner_sofa_1_light.png);
+width: 70px;
+height: 60px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnCornerSofa1_White">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -499,7 +560,226 @@ height: 50px;</string>
              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Bench bamboo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
-             <string notr="true">border-image: url(:/img/furniture/sofas/sofa_3_bamboo.png);
+             <string notr="true">border-image: url(:/img/furniture/sofas/corner_sofa_1_white.png);
+width: 70px;
+height: 60px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_sofas_6">
+          <property name="topMargin">
+           <number>15</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnCornerSofa1_Brown">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sofas/corner_sofa_1_brown.png);
+width: 70px;
+height: 60px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnCornerSofa1_Red">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sofas/corner_sofa_1_red.png);
+width: 70px;
+height: 60px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnCornerSofa1_Purple">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Bench bamboo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sofas/corner_sofa_1_purple.png);
+width: 70px;
+height: 60px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_sofas_7">
+          <property name="topMargin">
+           <number>15</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnCornerSofa1_Blue">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sofas/corner_sofa_1_blue.png);
+width: 70px;
+height: 60px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnCornerSofa1_Skyblue">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sofas/corner_sofa_1_skyblue.png);
+width: 70px;
+height: 60px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnCornerSofa1_Green">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Bench bamboo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sofas/corner_sofa_1_green.png);
+width: 70px;
+height: 60px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_sofas_8">
+          <property name="topMargin">
+           <number>15</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnCornerSofa2_Beige">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sofas/corner_sofa_2_yellow.png);
+width: 70px;
+height: 50px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnCornerSofa2_Purple">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sofas/corner_sofa_2_purple.png);
+width: 70px;
+height: 50px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnCornerSofa2_Blue">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Bench bamboo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sofas/corner_sofa_2_blue.png);
 width: 70px;
 height: 50px;</string>
             </property>
@@ -511,12 +791,54 @@ height: 50px;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_18">
-          <property name="rightMargin">
-           <number>14</number>
+         <layout class="QHBoxLayout" name="horLO_sofas_9">
+          <property name="topMargin">
+           <number>15</number>
           </property>
           <item>
-           <widget class="QPushButton" name="pushButton_24">
+           <widget class="QPushButton" name="btnCornerSofa3_Black">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sofas/corner_sofa_3_black.png);
+width: 70px;
+height: 45px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnCornerSofa3_White">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sofas/corner_sofa_3_white.png);
+width: 70px;
+height: 45px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnCornerSofa3_Beige">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -527,7 +849,187 @@ height: 50px;</string>
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
             <property name="toolTip">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Bench light wood&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Bench bamboo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sofas/corner_sofa_3_beige.png);
+width: 70px;
+height: 45px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_sofas_10">
+          <property name="topMargin">
+           <number>15</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnCornerSofa3_Red">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sofas/corner_sofa_3_red.png);
+width: 70px;
+height: 45px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnCornerSofa3_Purple">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sofas/corner_sofa_3_purple.png);
+width: 70px;
+height: 45px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnCornerSofa3_Blue">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Bench bamboo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sofas/corner_sofa_3_blue.png);
+width: 70px;
+height: 45px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_sofas_11">
+          <property name="topMargin">
+           <number>15</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnCornerSofa4_Black">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sofas/corner_sofa_4_black.png);
+width: 50px;
+height: 50px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnCornerSofa4_White">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sofas/corner_sofa_4_white.png);
+width: 50px;
+height: 50px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_sofas_12">
+          <property name="topMargin">
+           <number>15</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnBenchBamboo">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Bench - bamboo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sofas/sofa_3_bamboo.png);
+width: 70px;
+height: 50px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnBenchWooden_Light">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Bench - light wood&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="whatsThis">
              <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;aaaaaaaaaaaaaa&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
@@ -543,7 +1045,7 @@ height: 50px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_25">
+           <widget class="QPushButton" name="btnBenchWooden_Dark">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -554,7 +1056,7 @@ height: 50px;</string>
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
             <property name="toolTip">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Bench dark wood&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Bench - dark wood&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">border-image: url(:/img/furniture/sofas/sofa_3_wooden_dark.png);
@@ -566,8 +1068,15 @@ height: 50px;</string>
             </property>
            </widget>
           </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_sofas_13">
+          <property name="topMargin">
+           <number>15</number>
+          </property>
           <item>
-           <widget class="QPushButton" name="pushButton_68">
+           <widget class="QPushButton" name="btnArmchair1_black">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -587,12 +1096,8 @@ height: 50px;</string>
             </property>
            </widget>
           </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_24">
           <item>
-           <widget class="QPushButton" name="pushButton_69">
+           <widget class="QPushButton" name="btnArmchair1_white">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -613,95 +1118,7 @@ height: 50px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_71">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="cursor">
-             <cursorShape>PointingHandCursor</cursorShape>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">border-image: url(:/img/furniture/armchairs/armchair_1_orange.png);
-width: 50px;
-height: 50px;</string>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton_70">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="cursor">
-             <cursorShape>PointingHandCursor</cursorShape>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">border-image: url(:/img/furniture/armchairs/armchair_1_red.png);
-width: 50px;
-height: 50px;</string>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-         </layout>
-        </item>
-        <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_25">
-          <item>
-           <widget class="QPushButton" name="pushButton_72">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="cursor">
-             <cursorShape>PointingHandCursor</cursorShape>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">border-image: url(:/img/furniture/armchairs/armchair_1_blue.png);
-width: 50px;
-height: 50px;</string>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton_74">
-            <property name="sizePolicy">
-             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-              <horstretch>0</horstretch>
-              <verstretch>0</verstretch>
-             </sizepolicy>
-            </property>
-            <property name="cursor">
-             <cursorShape>PointingHandCursor</cursorShape>
-            </property>
-            <property name="styleSheet">
-             <string notr="true">border-image: url(:/img/furniture/armchairs/armchair_2_lightgrey.png);
-width: 50px;
-height: 50px</string>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
-          </item>
-          <item>
-           <widget class="QPushButton" name="pushButton_76">
+           <widget class="QPushButton" name="btnArmchair1_green">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -724,9 +1141,103 @@ height: 50px;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_26">
+         <layout class="QHBoxLayout" name="horLO_sofas_14">
+          <property name="topMargin">
+           <number>15</number>
+          </property>
           <item>
-           <widget class="QPushButton" name="pushButton_75">
+           <widget class="QPushButton" name="btnArmchair1_blue">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/armchairs/armchair_1_blue.png);
+width: 50px;
+height: 50px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnArmchair1_orange">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/armchairs/armchair_1_orange.png);
+width: 50px;
+height: 50px</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnArmchair1_red">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/armchairs/armchair_1_red.png);
+width: 50px;
+height: 50px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_sofas_15">
+          <property name="topMargin">
+           <number>15</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnArmchair2_lightgrey">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/armchairs/armchair_2_lightgrey.png);
+width: 50px;
+height: 50px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnArmchair2_lightgreen">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -739,7 +1250,278 @@ height: 50px;</string>
             <property name="styleSheet">
              <string notr="true">border-image: url(:/img/furniture/armchairs/armchair_2_lightgreen.png);
 width: 50px;
+height: 50px</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnArmchair3_black">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/armchairs/armchair_3_black.png);
+width: 50px;
 height: 50px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_sofas_16">
+          <property name="topMargin">
+           <number>15</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnArmchair3_red">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/armchairs/armchair_3_red.png);
+width: 50px;
+height: 50px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnArmchair3_purple">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/armchairs/armchair_3_purple.png);
+width: 50px;
+height: 50px</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnArmchair3_blue">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/armchairs/armchair_3_blue.png);
+width: 50px;
+height: 50px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_sofas_17">
+          <property name="topMargin">
+           <number>15</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnArmchair3_green">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/armchairs/armchair_3_green.png);
+width: 50px;
+height: 50px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnArmchair4_purple">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/armchairs/armchair_4_purple.png);
+width: 50px;
+height: 50px</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnArmchair4_blue">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/armchairs/armchair_4_blue.png);
+width: 50px;
+height: 50px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_sofas_18">
+          <property name="topMargin">
+           <number>15</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnTabouret_black">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Tabouret&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/armchairs/tabouret_black.png);
+width: 35px;
+height: 35px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnTabouret_brown">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#d3d7cf;&quot;&gt;Tabouret&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/armchairs/tabouret_brown.png);
+width: 35px;
+height: 35px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnTabouret_white">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Tabouret&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/armchairs/tabouret_grey.png);
+width: 35px;
+height: 35px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_sofas_19">
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnTabouret_blue">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Tabouret&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/armchairs/tabouret_blue.png);
+width: 35px;
+height: 35px;</string>
             </property>
             <property name="text">
              <string/>
@@ -754,9 +1536,9 @@ height: 50px;</string>
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>-309</y>
-         <width>275</width>
-         <height>544</height>
+         <y>0</y>
+         <width>272</width>
+         <height>721</height>
         </rect>
        </property>
        <attribute name="label">
@@ -764,9 +1546,9 @@ height: 50px;</string>
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout_3">
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout">
+         <layout class="QHBoxLayout" name="horLO_tables_1">
           <item>
-           <widget class="QPushButton" name="pushButton_14">
+           <widget class="QPushButton" name="btnTable1_dark">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -775,6 +1557,9 @@ height: 50px;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#d3d7cf;&quot;&gt;Dining table&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">border-image: url(:/img/furniture/tables/table_1_dark.png);
@@ -787,7 +1572,7 @@ height: 50px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_19">
+           <widget class="QPushButton" name="btnTable1_grey">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -796,6 +1581,9 @@ height: 50px;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#000000;&quot;&gt;Dining table&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">border-image: url(:/img/furniture/tables/table_1_grey.png);
@@ -808,7 +1596,7 @@ height: 50px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_26">
+           <widget class="QPushButton" name="btnTable1_light">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -817,6 +1605,9 @@ height: 50px;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#2e3436;&quot;&gt;Dining table&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">border-image: url(:/img/furniture/tables/table_1_light.png);
@@ -831,7 +1622,7 @@ height: 50px;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_5">
+         <layout class="QHBoxLayout" name="horLO_tables_2">
           <property name="spacing">
            <number>20</number>
           </property>
@@ -839,7 +1630,7 @@ height: 50px;</string>
            <number>15</number>
           </property>
           <item>
-           <widget class="QPushButton" name="pushButton_15">
+           <widget class="QPushButton" name="btnTable1_white">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -848,6 +1639,9 @@ height: 50px;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#2e3436;&quot;&gt;Dining table&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">border-image: url(:/img/furniture/tables/table_1_white.png);
@@ -860,7 +1654,7 @@ height: 50px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_27">
+           <widget class="QPushButton" name="btnTable2_darkblue">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -869,6 +1663,9 @@ height: 50px;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Coffee table&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">border-image: url(:/img/furniture/tables/table_2_darkblue.png);
@@ -881,7 +1678,7 @@ height: 50px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_20">
+           <widget class="QPushButton" name="btnTable2_dark">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -890,6 +1687,9 @@ height: 50px;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Coffee table&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">border-image: url(:/img/furniture/tables/table_2_dark.png);
@@ -904,9 +1704,9 @@ height: 50px;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <layout class="QHBoxLayout" name="horLO_tables_3">
           <item>
-           <widget class="QPushButton" name="pushButton_28">
+           <widget class="QPushButton" name="btnTable2_light">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -915,6 +1715,9 @@ height: 50px;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#2e3436;&quot;&gt;Coffee table&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
@@ -930,7 +1733,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_29">
+           <widget class="QPushButton" name="btnTable2_grey">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -939,6 +1742,9 @@ background-repeat: none;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Coffee table&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
@@ -954,7 +1760,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_30">
+           <widget class="QPushButton" name="btnTable2_white">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -963,6 +1769,9 @@ background-repeat: none;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#2e3436;&quot;&gt;Coffee table&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
@@ -980,9 +1789,9 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <layout class="QHBoxLayout" name="horLO_tables_4">
           <item>
-           <widget class="QPushButton" name="pushButton_31">
+           <widget class="QPushButton" name="btnTable3_dark">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1006,7 +1815,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_32">
+           <widget class="QPushButton" name="btnTable3_light">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1030,7 +1839,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_33">
+           <widget class="QPushButton" name="btnTable4_dark">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1043,8 +1852,8 @@ background-repeat: none;</string>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/tables/table_4_dark_wood.png);
-width: 50px;
-height: 50px;
+width: 60px;
+height: 40px;
 background: none;
 background-repeat: none;</string>
             </property>
@@ -1056,9 +1865,9 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_8">
+         <layout class="QHBoxLayout" name="horLO_tables_5">
           <item>
-           <widget class="QPushButton" name="pushButton_35">
+           <widget class="QPushButton" name="btnTable5_dark">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1082,7 +1891,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_36">
+           <widget class="QPushButton" name="btnTable5_blue">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1106,7 +1915,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_37">
+           <widget class="QPushButton" name="btnTable5_brown">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1132,9 +1941,9 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_9">
+         <layout class="QHBoxLayout" name="horLO_tables_6">
           <item>
-           <widget class="QPushButton" name="pushButton_38">
+           <widget class="QPushButton" name="btnTable6_dark">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1158,7 +1967,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_39">
+           <widget class="QPushButton" name="btnTable6_light">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1182,7 +1991,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_34">
+           <widget class="QPushButton" name="btnTable4_light">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1208,7 +2017,92 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_10">
+         <layout class="QHBoxLayout" name="horLO_tables_7">
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <property name="bottomMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnTable7_dark">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/tables/table_7_dark.png);
+width: 70px;
+height: 45px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnTable7_light">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/tables/table_7_light.png);
+width: 70px;
+height: 45px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnTableGlass">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Glass table&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/tables/glass_table.png);
+width: 70px;
+height: 45px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_tables_8">
           <property name="topMargin">
            <number>25</number>
           </property>
@@ -1216,7 +2110,7 @@ background-repeat: none;</string>
            <number>15</number>
           </property>
           <item>
-           <widget class="QPushButton" name="pushButton_40">
+           <widget class="QPushButton" name="btnTVStand_brown">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1243,7 +2137,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_42">
+           <widget class="QPushButton" name="btnTVStand_darkgrey">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1270,7 +2164,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_41">
+           <widget class="QPushButton" name="btnTVStand_lightgrey">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1299,7 +2193,7 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_11">
+         <layout class="QHBoxLayout" name="horLO_tables_9">
           <property name="topMargin">
            <number>0</number>
           </property>
@@ -1307,7 +2201,7 @@ background-repeat: none;</string>
            <number>15</number>
           </property>
           <item>
-           <widget class="QPushButton" name="pushButton_43">
+           <widget class="QPushButton" name="btnTVStand_dark">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1334,7 +2228,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_45">
+           <widget class="QPushButton" name="btnChair1_black">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1347,8 +2241,8 @@ background-repeat: none;</string>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/chairs/chair_1_black.png);
-width: 30px;
-height: 30px;
+width: 35px;
+height: 35px;
 background: none;
 background-repeat: none;</string>
             </property>
@@ -1358,7 +2252,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_46">
+           <widget class="QPushButton" name="btnChair1_grey">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1371,8 +2265,8 @@ background-repeat: none;</string>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/chairs/chair_1_grey.png);
-width: 30px;
-height: 30px;
+width: 35px;
+height: 35px;
 background: none;
 background-repeat: none;</string>
             </property>
@@ -1384,9 +2278,12 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_12">
+         <layout class="QHBoxLayout" name="horLO_tables_10">
+          <property name="topMargin">
+           <number>10</number>
+          </property>
           <item>
-           <widget class="QPushButton" name="pushButton_47">
+           <widget class="QPushButton" name="btnChair1_blue">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1399,8 +2296,8 @@ background-repeat: none;</string>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/chairs/chair_1_blue.png);
-width: 30px;
-height: 30px;
+width: 35px;
+height: 35px;
 background: none;
 background-repeat: none;</string>
             </property>
@@ -1410,7 +2307,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_48">
+           <widget class="QPushButton" name="btnChair1_red">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1423,8 +2320,8 @@ background-repeat: none;</string>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/chairs/chair_1_red.png);
-width: 30px;
-height: 30px;
+width: 35px;
+height: 35px;
 background: none;
 background-repeat: none;</string>
             </property>
@@ -1434,7 +2331,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_49">
+           <widget class="QPushButton" name="btnChair1_yellow">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1447,8 +2344,8 @@ background-repeat: none;</string>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/chairs/chair_1_yellow.png);
-width: 30px;
-height: 30px;
+width: 35px;
+height: 35px;
 background: none;
 background-repeat: none;</string>
             </property>
@@ -1460,7 +2357,162 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_13"/>
+         <layout class="QHBoxLayout" name="horLO_tables_11">
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnChair2_light">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/chairs/chair_2_light.png);
+width: 35px;
+height: 35px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnChair2_dark">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/chairs/chair_2_dark.png);
+width: 35px;
+height: 35px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnChair3_dark">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/chairs/chair_3_dark.png);
+width: 35px;
+height: 35px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_tables_12">
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnChair3_light">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/chairs/chair_3_light.png);
+width: 35px;
+height: 35px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnStool_brown">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/chairs/stool_brown.png);
+width: 35px;
+height: 35px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnStool_light">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/chairs/stool_light_brown.png);
+width: 35px;
+height: 35px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
        </layout>
       </widget>
@@ -1470,17 +2522,17 @@ background-repeat: none;</string>
          <x>0</x>
          <y>0</y>
          <width>272</width>
-         <height>300</height>
+         <height>430</height>
         </rect>
        </property>
        <attribute name="label">
         <string>Cabinets and Wardrobes</string>
        </attribute>
-       <layout class="QVBoxLayout" name="verticalLayout_8">
+       <layout class="QVBoxLayout" name="verticalLayout_6">
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <layout class="QHBoxLayout" name="horLO_Cabs_Wards_1">
           <item>
-           <widget class="QPushButton" name="pushButton_79">
+           <widget class="QPushButton" name="btnNightTable_darkblue">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1489,6 +2541,9 @@ background-repeat: none;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#eeeeec;&quot;&gt;Cabinet&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
@@ -1504,7 +2559,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_77">
+           <widget class="QPushButton" name="btnNightTable_normal">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1513,6 +2568,9 @@ background-repeat: none;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Cabinet&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
@@ -1528,7 +2586,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_78">
+           <widget class="QPushButton" name="btnNightTable_white">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1537,6 +2595,9 @@ background-repeat: none;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Cabinet&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
@@ -1554,9 +2615,222 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <layout class="QHBoxLayout" name="horLO_Cabs_Wards_2">
+          <property name="topMargin">
+           <number>10</number>
+          </property>
           <item>
-           <widget class="QPushButton" name="pushButton_80">
+           <widget class="QPushButton" name="btnCabinet1_brown">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Cabinet&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/wardrobes \&amp; cabinets/cabinet_1_brown.png);
+width: 40px;
+height: 30px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnCabinet1_light">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Cabinet&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/wardrobes \&amp; cabinets/cabinet_1_light.png);
+width: 40px;
+height: 30px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnCabinet1_white">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Cabinet&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/wardrobes \&amp; cabinets/cabinet_1_white.png);
+width: 40px;
+height: 30px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_Cabs_Wards_3">
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnCabinet2_dark">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Cabinet&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/wardrobes \&amp; cabinets/cabinet_2_dark_brown.png);
+width: 40px;
+height: 30px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnCabinet2_brown">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Cabinet&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/wardrobes \&amp; cabinets/cabinet_2_brown.png);
+width: 40px;
+height: 30px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnCabinet3_dark">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Cabinet&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/wardrobes \&amp; cabinets/cabinet_3_dark.png);
+width: 35px;
+height: 35px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_Cabs_Wards_4">
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <property name="bottomMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnCabinet3_light">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Cabinet&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/wardrobes \&amp; cabinets/cabinet_3_light.png);
+width: 35px;
+height: 35px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_Cabs_Wards_5">
+          <item>
+           <widget class="QPushButton" name="btnWardrobe1_black">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1570,7 +2844,7 @@ background-repeat: none;</string>
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/wardrobes \&amp; cabinets/wardrobe_1_black.png);
 width: 75px;
-height: 45px;
+height: 40px;
 background: none;
 background-repeat: none;</string>
             </property>
@@ -1580,7 +2854,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_81">
+           <widget class="QPushButton" name="btnWardrobe1_grey">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1594,7 +2868,7 @@ background-repeat: none;</string>
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/wardrobes \&amp; cabinets/wardrobe_1_grey.png);
 width: 75px;
-height: 45px;
+height: 40px;
 background: none;
 background-repeat: none;</string>
             </property>
@@ -1604,7 +2878,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_82">
+           <widget class="QPushButton" name="btnWardrobe1_white">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1618,7 +2892,7 @@ background-repeat: none;</string>
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/wardrobes \&amp; cabinets/wardrobe_1_white.png);
 width: 75px;
-height: 45px;
+height: 40px;
 background: none;
 background-repeat: none;</string>
             </property>
@@ -1630,9 +2904,9 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_29">
+         <layout class="QHBoxLayout" name="horLO_Cabs_Wards_6">
           <item>
-           <widget class="QPushButton" name="pushButton_83">
+           <widget class="QPushButton" name="btnWardrobe1_brown">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1646,7 +2920,7 @@ background-repeat: none;</string>
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/wardrobes \&amp; cabinets/wardrobe_1_brown.png);
 width: 75px;
-height: 45px;
+height: 40px;
 background: none;
 background-repeat: none;</string>
             </property>
@@ -1656,7 +2930,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_84">
+           <widget class="QPushButton" name="btnWardrobe1_normal">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1670,7 +2944,7 @@ background-repeat: none;</string>
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/wardrobes \&amp; cabinets/wardrobe_1_normal.png);
 width: 75px;
-height: 45px;
+height: 40px;
 background: none;
 background-repeat: none;</string>
             </property>
@@ -1680,7 +2954,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_85">
+           <widget class="QPushButton" name="btnWardrobe1_light">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1694,7 +2968,7 @@ background-repeat: none;</string>
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/wardrobes \&amp; cabinets/wardrobe_1_light.png);
 width: 75px;
-height: 45px;
+height: 40px;
 background: none;
 background-repeat: none;</string>
             </property>
@@ -1706,9 +2980,9 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_30">
+         <layout class="QHBoxLayout" name="horLO_Cabs_Wards_7">
           <item>
-           <widget class="QPushButton" name="pushButton_86">
+           <widget class="QPushButton" name="btnWardrobe2_black">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1722,7 +2996,7 @@ background-repeat: none;</string>
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/wardrobes \&amp; cabinets/wardrobe_2_black.png);
 width: 80px;
-height: 40px;
+height: 35px;
 background: none;
 background-repeat: none;</string>
             </property>
@@ -1732,7 +3006,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_87">
+           <widget class="QPushButton" name="btnWardrobe2_grey">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1746,7 +3020,7 @@ background-repeat: none;</string>
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/wardrobes \&amp; cabinets/wardrobe_2_grey.png);
 width: 80px;
-height: 40px;
+height: 35px;
 background: none;
 background-repeat: none;</string>
             </property>
@@ -1756,7 +3030,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_88">
+           <widget class="QPushButton" name="btnWardrobe2_white">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1770,7 +3044,7 @@ background-repeat: none;</string>
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/wardrobes \&amp; cabinets/wardrobe_2_white.png);
 width: 80px;
-height: 40px;
+height: 35px;
 background: none;
 background-repeat: none;</string>
             </property>
@@ -1782,9 +3056,9 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_31">
+         <layout class="QHBoxLayout" name="horLO_Cabs_Wards_8">
           <item>
-           <widget class="QPushButton" name="pushButton_89">
+           <widget class="QPushButton" name="btnWardrobe2_dark">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1798,7 +3072,7 @@ background-repeat: none;</string>
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/wardrobes \&amp; cabinets/wardrobe_2_dark.png);
 width: 80px;
-height: 40px;
+height: 35px;
 background: none;
 background-repeat: none;</string>
             </property>
@@ -1808,7 +3082,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_90">
+           <widget class="QPushButton" name="btnWardrobe2_normal">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1822,7 +3096,7 @@ background-repeat: none;</string>
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/wardrobes \&amp; cabinets/wardrobe_2_normal.png);
 width: 80px;
-height: 40px;
+height: 35px;
 background: none;
 background-repeat: none;</string>
             </property>
@@ -1832,7 +3106,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_91">
+           <widget class="QPushButton" name="btnWardrobe2_light">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1846,7 +3120,7 @@ background-repeat: none;</string>
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/wardrobes \&amp; cabinets/wardrobe_2_light.png);
 width: 80px;
-height: 40px;
+height: 35px;
 background: none;
 background-repeat: none;</string>
             </property>
@@ -1858,9 +3132,9 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_32">
+         <layout class="QHBoxLayout" name="horLO_Cabs_Wards_9">
           <item>
-           <widget class="QPushButton" name="pushButton_92">
+           <widget class="QPushButton" name="btnWardrobe3">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1874,9 +3148,183 @@ background-repeat: none;</string>
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/wardrobes \&amp; cabinets/wardrobe_3.png);
 width: 90px;
-height: 40px;
+height: 30px;
 background: none;
 background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tbKitchen">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>248</width>
+         <height>216</height>
+        </rect>
+       </property>
+       <attribute name="label">
+        <string>Kitchen</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <layout class="QHBoxLayout" name="horLO_Kitchen_1">
+          <item>
+           <widget class="QPushButton" name="btnBottomCabinet1">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/kitchen/bottom_cabinet_1.png);
+width: 70px;
+height: 60px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnBottomCabinet2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/kitchen/bottom_cabinet_2.png);
+width: 70px;
+height: 60px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnBottomCabinet3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/kitchen/bottom_cabinet_3.png);
+width: 60px;
+height: 40px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_Kitchen_2">
+          <item>
+           <widget class="QPushButton" name="btnTopCabinet1">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/kitchen/top_cabinet_1.png);
+width: 70px;
+height: 60px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnTopCabinet2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/kitchen/top_cabinet_2.png);
+width: 70px;
+height: 60px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnTopCabinet3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/kitchen/top_cabinet_3.png);
+width: 60px;
+height: 40px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_Kitchen_3">
+          <item>
+           <widget class="QPushButton" name="btnStove">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/kitchen/stove.png);
+width: 70px;
+height: 60px;</string>
             </property>
             <property name="text">
              <string/>
@@ -1891,7 +3339,7 @@ background-repeat: none;</string>
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>-102</y>
+         <y>0</y>
          <width>272</width>
          <height>312</height>
         </rect>
@@ -1901,9 +3349,9 @@ background-repeat: none;</string>
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout_4">
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_19">
+         <layout class="QHBoxLayout" name="horLO_Beds_1">
           <item>
-           <widget class="QPushButton" name="pushButton_53">
+           <widget class="QPushButton" name="btnBabyBed_blue">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1930,7 +3378,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_54">
+           <widget class="QPushButton" name="btnBabyBed_yellow">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1957,7 +3405,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_55">
+           <widget class="QPushButton" name="btnSingleBed1_blue">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -1983,9 +3431,9 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_22">
+         <layout class="QHBoxLayout" name="horLO_Beds_2">
           <item>
-           <widget class="QPushButton" name="pushButton_62">
+           <widget class="QPushButton" name="btnSingleBed1_yellow">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2009,7 +3457,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_63">
+           <widget class="QPushButton" name="btnSingleBed1_white">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2033,7 +3481,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_64">
+           <widget class="QPushButton" name="btnSingleBed2_blue">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2059,7 +3507,7 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_23">
+         <layout class="QHBoxLayout" name="horLO_Beds_3">
           <property name="spacing">
            <number>10</number>
           </property>
@@ -2067,7 +3515,7 @@ background-repeat: none;</string>
            <number>15</number>
           </property>
           <item>
-           <widget class="QPushButton" name="pushButton_65">
+           <widget class="QPushButton" name="btnSingleBed2_green">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2091,7 +3539,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_66">
+           <widget class="QPushButton" name="btnSingleBed2_purple">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2118,7 +3566,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_67">
+           <widget class="QPushButton" name="btnKingBed1_lightblue">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2144,7 +3592,7 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_20">
+         <layout class="QHBoxLayout" name="horLO_Beds_4">
           <property name="spacing">
            <number>30</number>
           </property>
@@ -2155,7 +3603,7 @@ background-repeat: none;</string>
            <number>10</number>
           </property>
           <item>
-           <widget class="QPushButton" name="pushButton_56">
+           <widget class="QPushButton" name="btnKingBed1_lightred">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2179,7 +3627,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_57">
+           <widget class="QPushButton" name="btnKingBed1_white">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2203,7 +3651,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_58">
+           <widget class="QPushButton" name="btnKingBed2_lightred">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2229,9 +3677,9 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_21">
+         <layout class="QHBoxLayout" name="horLO_Beds_5">
           <item>
-           <widget class="QPushButton" name="pushButton_59">
+           <widget class="QPushButton" name="btnKingBed2_white">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2262,8 +3710,8 @@ background-repeat: none;</string>
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>-188</y>
-         <width>222</width>
+         <y>0</y>
+         <width>248</width>
          <height>384</height>
         </rect>
        </property>
@@ -2272,9 +3720,9 @@ background-repeat: none;</string>
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout_5">
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_34">
+         <layout class="QHBoxLayout" name="horLO_Electrics_1">
           <item>
-           <widget class="QPushButton" name="pushButton_96">
+           <widget class="QPushButton" name="btnFridge_dark">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2301,7 +3749,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_95">
+           <widget class="QPushButton" name="btnFridge_light">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2328,7 +3776,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_97">
+           <widget class="QPushButton" name="btnRefrigerator">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2357,9 +3805,9 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_35">
+         <layout class="QHBoxLayout" name="horLO_Electrics_2">
           <item>
-           <widget class="QPushButton" name="pushButton_98">
+           <widget class="QPushButton" name="btnWashingMachine_grey">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2386,7 +3834,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_99">
+           <widget class="QPushButton" name="btnWashingMachine_white">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2413,7 +3861,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_100">
+           <widget class="QPushButton" name="btnMicrowave">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2442,9 +3890,9 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_36">
+         <layout class="QHBoxLayout" name="horLO_Electrics_3">
           <item>
-           <widget class="QPushButton" name="pushButton_101">
+           <widget class="QPushButton" name="btnVent">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2471,7 +3919,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_102">
+           <widget class="QPushButton" name="btnAirConditioner">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2498,7 +3946,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_103">
+           <widget class="QPushButton" name="btnTV1_black">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2527,7 +3975,7 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_37">
+         <layout class="QHBoxLayout" name="horLO_Electrics_4">
           <property name="topMargin">
            <number>10</number>
           </property>
@@ -2538,7 +3986,7 @@ background-repeat: none;</string>
            <number>10</number>
           </property>
           <item>
-           <widget class="QPushButton" name="pushButton_104">
+           <widget class="QPushButton" name="btnTV1_white">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2565,7 +4013,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_105">
+           <widget class="QPushButton" name="btnTV2_black">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2592,7 +4040,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_106">
+           <widget class="QPushButton" name="btnTV2_white">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2621,9 +4069,9 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_38">
+         <layout class="QHBoxLayout" name="horLO_Electrics_5">
           <item>
-           <widget class="QPushButton" name="pushButton_107">
+           <widget class="QPushButton" name="btnLaptopMac">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2650,7 +4098,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_108">
+           <widget class="QPushButton" name="btnLaptop_black">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2677,7 +4125,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_109">
+           <widget class="QPushButton" name="btnLaptop_white">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2706,7 +4154,7 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_39">
+         <layout class="QHBoxLayout" name="horLO_Electrics_6">
           <property name="topMargin">
            <number>10</number>
           </property>
@@ -2714,7 +4162,7 @@ background-repeat: none;</string>
            <number>10</number>
           </property>
           <item>
-           <widget class="QPushButton" name="pushButton_110">
+           <widget class="QPushButton" name="btnPC">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2738,7 +4186,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_111">
+           <widget class="QPushButton" name="btnSpeakers1_black">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2765,7 +4213,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_112">
+           <widget class="QPushButton" name="btnSpeakers1_brown">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2794,9 +4242,9 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_40">
+         <layout class="QHBoxLayout" name="horLO_Electrics_7">
           <item>
-           <widget class="QPushButton" name="pushButton_113">
+           <widget class="QPushButton" name="btnSpeakers2_black">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2823,7 +4271,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_114">
+           <widget class="QPushButton" name="btnSpeakers2_brown">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2857,8 +4305,8 @@ background-repeat: none;</string>
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>-38</y>
-         <width>212</width>
+         <y>0</y>
+         <width>248</width>
          <height>234</height>
         </rect>
        </property>
@@ -2867,9 +4315,9 @@ background-repeat: none;</string>
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout_2">
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_41">
+         <layout class="QHBoxLayout" name="horLO_Bath_1">
           <item>
-           <widget class="QPushButton" name="pushButton_116">
+           <widget class="QPushButton" name="btnBath1_dark">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2893,7 +4341,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_117">
+           <widget class="QPushButton" name="btnBath1_light">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2917,7 +4365,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_118">
+           <widget class="QPushButton" name="btnBath1_white">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2943,9 +4391,9 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_42">
+         <layout class="QHBoxLayout" name="horLO_Bath_2">
           <item>
-           <widget class="QPushButton" name="pushButton_119">
+           <widget class="QPushButton" name="btnBath2">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2968,7 +4416,7 @@ height: 50px;
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_120">
+           <widget class="QPushButton" name="btnShower">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -2995,7 +4443,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_121">
+           <widget class="QPushButton" name="btnBathroomCabinet">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3024,9 +4472,9 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_43">
+         <layout class="QHBoxLayout" name="horLO_Bath_3">
           <item>
-           <widget class="QPushButton" name="pushButton_122">
+           <widget class="QPushButton" name="btnBathSink1">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3047,7 +4495,7 @@ height: 50px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_123">
+           <widget class="QPushButton" name="btnBathSink2">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3068,7 +4516,7 @@ height: 50px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_124">
+           <widget class="QPushButton" name="btnToilet1">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3092,9 +4540,9 @@ height: 50px;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_44">
+         <layout class="QHBoxLayout" name="horLO_Bath_4">
           <item>
-           <widget class="QPushButton" name="pushButton_125">
+           <widget class="QPushButton" name="btnToilet2_white">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3115,7 +4563,7 @@ height: 40px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_126">
+           <widget class="QPushButton" name="btnToilet2_grey">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3145,17 +4593,17 @@ height: 40px;</string>
          <x>0</x>
          <y>0</y>
          <width>252</width>
-         <height>370</height>
+         <height>603</height>
         </rect>
        </property>
        <attribute name="label">
         <string>Other</string>
        </attribute>
-       <layout class="QVBoxLayout" name="verticalLayout_6">
+       <layout class="QVBoxLayout" name="verticalLayout">
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_45">
+         <layout class="QHBoxLayout" name="horLO_Other_1">
           <item>
-           <widget class="QPushButton" name="pushButton_128">
+           <widget class="QPushButton" name="btnCarpet1_dark">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3182,7 +4630,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_129">
+           <widget class="QPushButton" name="btnCarpet1_brown">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3209,7 +4657,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_130">
+           <widget class="QPushButton" name="btnCarpet1_blue">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3238,9 +4686,9 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_46">
+         <layout class="QHBoxLayout" name="horLO_Other_2">
           <item>
-           <widget class="QPushButton" name="pushButton_131">
+           <widget class="QPushButton" name="btnCarpet1_purple">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3267,7 +4715,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_132">
+           <widget class="QPushButton" name="btnCarpet2Col2">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3294,7 +4742,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_133">
+           <widget class="QPushButton" name="btnCarpet2Col1">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3323,9 +4771,9 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_47">
+         <layout class="QHBoxLayout" name="horLO_Other_3">
           <item>
-           <widget class="QPushButton" name="pushButton_134">
+           <widget class="QPushButton" name="btnCarpet2Col3">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3352,7 +4800,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_135">
+           <widget class="QPushButton" name="btnPiano_black">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3376,7 +4824,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_136">
+           <widget class="QPushButton" name="btnPiano_brown">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3402,9 +4850,9 @@ background-repeat: none;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_48">
+         <layout class="QHBoxLayout" name="horLO_Other_4">
           <item>
-           <widget class="QPushButton" name="pushButton_139">
+           <widget class="QPushButton" name="btnBenchPress">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3425,7 +4873,7 @@ height: 50px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_137">
+           <widget class="QPushButton" name="btnIroning_white">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3446,7 +4894,7 @@ height: 25px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_138">
+           <widget class="QPushButton" name="btnIroning_lightblue">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3469,9 +4917,9 @@ height: 25px;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_49">
+         <layout class="QHBoxLayout" name="horLO_Other_5">
           <item>
-           <widget class="QPushButton" name="pushButton_140">
+           <widget class="QPushButton" name="btnExerciseBike">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3493,7 +4941,7 @@ height: 50px;
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_141">
+           <widget class="QPushButton" name="btnChristmasTree">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3514,7 +4962,7 @@ height: 50px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_142">
+           <widget class="QPushButton" name="btnPlant">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3537,12 +4985,264 @@ height: 50px;</string>
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_50">
+         <layout class="QHBoxLayout" name="horLO_Other_6">
+          <property name="topMargin">
+           <number>10</number>
+          </property>
+          <property name="bottomMargin">
+           <number>10</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnBin">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/other/bin.png);
+width: 45px;
+height: 35px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnShelf_dark">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Shelf&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/other/shelf_dark.png);
+width: 70px;
+height: 15px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnShelf_light">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Shelf&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/other/shelf_light.png);
+width: 70px;
+height: 15px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_Other_7">
+          <item>
+           <widget class="QPushButton" name="btnShelf_grey">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Shelf&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/other/shelf_grey.png);
+width: 70px;
+height: 15px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnShelf_white">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Shelf&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/other/shelf_white.png);
+width: 70px;
+height: 15px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnFireplace">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/other/fireplace.png);
+width: 75px;
+height: 35px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_Other_8">
+          <item>
+           <widget class="QPushButton" name="btnLamp1">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/other/lamp_1.png);
+width: 45px;
+height: 45px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnLamp2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/other/lamp_2.png);
+width: 40px;
+height: 40px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnLamp3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/other/lamp_3.png);
+width: 30px;
+height: 40px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_Other_9">
+          <property name="topMargin">
+           <number>10</number>
+          </property>
           <property name="rightMargin">
            <number>20</number>
           </property>
+          <property name="bottomMargin">
+           <number>10</number>
+          </property>
           <item>
-           <widget class="QPushButton" name="pushButton_143">
+           <widget class="QPushButton" name="btnBooks">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3563,7 +5263,7 @@ height: 25px;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_144">
+           <widget class="QPushButton" name="btnBowl">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3587,7 +5287,7 @@ background-repeat: none;</string>
            </widget>
           </item>
           <item>
-           <widget class="QPushButton" name="pushButton_145">
+           <widget class="QPushButton" name="btnDuckie">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
               <horstretch>0</horstretch>
@@ -3610,6 +5310,34 @@ height: 20px;</string>
           </item>
          </layout>
         </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_Other_10">
+          <item>
+           <widget class="QPushButton" name="btnCat">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">background-color: transparent;
+border-image: url(:/img/furniture/other/cat.png);
+width: 30px;
+height: 50px;
+background: none;
+background-repeat: none;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
        </layout>
       </widget>
      </widget>
@@ -3621,20 +5349,10 @@ height: 20px;</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>988</width>
+     <width>960</width>
      <height>22</height>
     </rect>
    </property>
-   <widget class="QMenu" name="menuEdit">
-    <property name="title">
-     <string>Edit</string>
-    </property>
-    <addaction name="separator"/>
-    <addaction name="actionClear_All"/>
-    <addaction name="separator"/>
-    <addaction name="actionQuit"/>
-   </widget>
-   <addaction name="menuEdit"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionClear_All">
