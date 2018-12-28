@@ -5,7 +5,8 @@
 #include <QtDebug>
 #include "../headers/furniture.hpp"
 
-Furniture::Furniture(QGraphicsItem *parent) : QGraphicsItem(parent)
+Furniture::Furniture(QString urlPath, int width, int height, QGraphicsItem *parent)
+    : QGraphicsItem(parent), m_urlPath(urlPath), m_width(width), m_height(height)
 {
     setFlags(QGraphicsItem::ItemIsMovable | QGraphicsItem::ItemIsFocusable |
              QGraphicsItem::ItemIsSelectable);
@@ -16,7 +17,7 @@ Furniture::Furniture(QGraphicsItem *parent) : QGraphicsItem(parent)
     /* Setting position to center of scene (screen) */
     int screenWidth  = QApplication::desktop()->width();
     int screenHeight = QApplication::desktop()->height();
-    setPos(screenWidth/2, screenHeight/2);
+    setPos(screenWidth/3, screenHeight/3);
 }
 
 void Furniture::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
@@ -30,13 +31,12 @@ void Furniture::paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
         painter->drawRect(boundingRect());
     }
 
-    painter->drawPixmap(0,0,75,75, QPixmap(":/img/furniture/tables/table_3_round_light_wood.png"));
+    painter->drawPixmap(0,0, m_width, m_height, QPixmap(m_urlPath));
 }
 
 QRectF Furniture::boundingRect() const
 {
-    // Testing...
-    return QRectF(0,0, 75,75);
+    return QRectF(0,0, m_width, m_height);
 }
 
 void Furniture::keyPressEvent(QKeyEvent *event)
