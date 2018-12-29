@@ -19,8 +19,15 @@ protected:
     void hoverEnterEvent(QGraphicsSceneHoverEvent *event) override;
     void hoverLeaveEvent(QGraphicsSceneHoverEvent *event) override;
 
-    void setRotation(qreal angle);  // <- Could be redundant
-    void drawOutline();
+/* These are public because they are needed in TemplateWindow */
+public:
+
+    /* Necessary for QGraphicsItem casting */
+    enum { Type = UserType + 1 };
+    int type() const override;
+
+    void move(qreal x, qreal y);
+    void rotate(qreal angleParam);
 
 private:
     QPen m_pen;
