@@ -57,10 +57,10 @@ void MainMenuWindow::on_btnBack_clicked()
 void MainMenuWindow::on_btnAbout_clicked()
 {
     QMessageBox::about(this, "About Us",
-       "This is a university project done by Nenad Ajvaz and Nevena Ajvaz "
+       "Home Planner 2D is a university project created by Nenad Ajvaz and Nevena Ajvaz "
        "for a Software Development course.\n\nThis course is "
        "held at Computer Science department of Faculty of "
-       "Mathematics, University of Belgrade, Serbia.");
+       "Mathematics, University of Belgrade in Serbia.");
 }
 
 void MainMenuWindow::on_btnInstructions_clicked()

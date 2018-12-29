@@ -1,5 +1,4 @@
 #include <QDesktopWidget>
-#include <QDebug>
 
 #include "ui_template_window.h"
 #include "../headers/furniture.hpp"
@@ -24,13 +23,14 @@ void TemplateWindow::drawGraphicsScene()
 {
     scene = new QGraphicsScene(this);
     /* screenWidth and screenHeight are inherited from CenteredWindow */
-    scene->setSceneRect(0,0, screenWidth/1.5,screenHeight/1.5);
+    scene->setSceneRect(0,0, screenWidth/1.5, screenHeight/1.5);
+
     ui->graphicsView->setScene(scene);
     ui->graphicsView->setRenderHint(QPainter::Antialiasing);
     ui->graphicsView->setDragMode(QGraphicsView::ScrollHandDrag);
 
     /* Probably will delete this line after connecting buttons */
-    ui->graphicsView->scale(2.5, 2.5);
+//    ui->graphicsView->scale(2.5, 2.5);
 
     scene->addText("Living room");
 }
