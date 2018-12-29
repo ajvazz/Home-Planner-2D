@@ -19,17 +19,15 @@ protected:
     void hoverEnterEvent(QGraphicsSceneHoverEvent *event) override;
     void hoverLeaveEvent(QGraphicsSceneHoverEvent *event) override;
 
-    void setRotation(qreal angle);
+    void setRotation(qreal angle);  // <- Could be redundant
     void drawOutline();
-
-    /* Variables */
 
 private:
     QPen m_pen;
     qreal angle;
-    QString m_urlPath;
     int m_width;
     int m_height;
+    QString m_urlPath;
 };
 
 #endif // FURNITURE_HPP

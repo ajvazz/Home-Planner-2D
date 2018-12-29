@@ -6,10 +6,9 @@
 #include "../headers/furniture.hpp"
 
 Furniture::Furniture(QString urlPath, int width, int height, QGraphicsItem *parent)
-    : QGraphicsItem(parent), m_urlPath(urlPath), m_width(width), m_height(height)
+    : QGraphicsItem(parent), m_width(width), m_height(height), m_urlPath(urlPath)
 {
-    setFlags(QGraphicsItem::ItemIsMovable | QGraphicsItem::ItemIsFocusable |
-             QGraphicsItem::ItemIsSelectable);
+    setFlags(ItemIsMovable | ItemIsFocusable | ItemIsSelectable);
     setAcceptHoverEvents(true);
 
     angle = 0;
@@ -41,8 +40,9 @@ QRectF Furniture::boundingRect() const
 
 void Furniture::keyPressEvent(QKeyEvent *event)
 {
-    switch (event->key())
+    switch ( event->key() )
     {
+        /* Moving */
         case Qt::Key_Right:
             moveBy(10, 0);
             break;
@@ -54,6 +54,42 @@ void Furniture::keyPressEvent(QKeyEvent *event)
             break;
         case Qt::Key_Down:
             moveBy(0, 10);
+            break;
+
+        /* Rotating */
+        case Qt::Key_R:
+
+            setTransformOriginPoint(m_width/2, m_height/2);
+
+            /* If SHIFT is pressed, rotate 90 degrees, else normal */
+            if (event->modifiers() & Qt::ShiftModifier) {
+                angle += 90;
+                setRotation(angle);
+            } else {
+                angle += 5;
+                setRotation(angle);
+            }
+
+            break;
+
+        case Qt::Key_E:
+
+            setTransformOriginPoint(m_width/2, m_height/2);
+
+            /* If SHIFT is pressed, rotate 90 degrees, else normal */
+            if (event->modifiers() & Qt::ShiftModifier) {
+                angle -= 90;
+                setRotation(angle);
+            } else {
+                angle -= 5;
+                setRotation(angle);
+            }
+
+            break;
+
+        /* Deleting */
+        case Qt::Key_Delete:
+            delete this;
             break;
     }
 
