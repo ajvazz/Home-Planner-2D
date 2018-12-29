@@ -221,7 +221,7 @@
        <enum>QFrame::NoFrame</enum>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>4</number>
       </property>
       <property name="tabSpacing">
        <number>6</number>
@@ -230,7 +230,7 @@
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>-838</y>
+         <y>-1170</y>
          <width>248</width>
          <height>1365</height>
         </rect>
@@ -1535,8 +1535,8 @@ height: 35px;</string>
       <widget class="QWidget" name="tbTablesChairs">
        <property name="geometry">
         <rect>
-         <x>0</x>
-         <y>0</y>
+         <x>-16</x>
+         <y>-540</y>
          <width>272</width>
          <height>721</height>
         </rect>
@@ -2520,7 +2520,7 @@ background-repeat: none;</string>
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>0</y>
+         <y>-249</y>
          <width>272</width>
          <height>430</height>
         </rect>
@@ -3231,8 +3231,8 @@ height: 60px;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">border-image: url(:/img/furniture/kitchen/bottom_cabinet_3.png);
-width: 60px;
-height: 40px;</string>
+width: 35px;
+height: 60px;</string>
             </property>
             <property name="text">
              <string/>
@@ -3298,8 +3298,8 @@ height: 60px;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">border-image: url(:/img/furniture/kitchen/top_cabinet_3.png);
-width: 60px;
-height: 40px;</string>
+width: 35px;
+height: 60px;</string>
             </property>
             <property name="text">
              <string/>
@@ -3339,7 +3339,7 @@ height: 60px;</string>
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>0</y>
+         <y>-131</y>
          <width>272</width>
          <height>312</height>
         </rect>
@@ -3362,13 +3362,13 @@ height: 60px;</string>
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
             <property name="toolTip">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#000000;&quot;&gt;Baby cot - blue&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic; color:#000000;&quot;&gt;Baby cot&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: none;
 border-image: url(:/img/furniture/beds/baby_bed_lightblue.png);
-width: 80px;
-height: 40px;
+width: 50px;
+height: 25px;
 background: none;
 background-repeat: none;</string>
             </property>
@@ -3389,13 +3389,13 @@ background-repeat: none;</string>
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
             <property name="toolTip">
-             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Baby cot - yellow&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Baby cot&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/beds/baby_bed_lightyellow.png);
-width: 80px;
-height: 40px;
+width: 50px;
+height: 25px;
 background: none;
 background-repeat: none;</string>
             </property>
