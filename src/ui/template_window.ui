@@ -62,6 +62,9 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnRotateSceneLeft">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Rotate scene left&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
           <property name="text">
            <string>Rotate Left</string>
           </property>
@@ -69,6 +72,9 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnRotateSceneRight">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Rotate scene right&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
           <property name="text">
            <string>Rotate Right</string>
           </property>
@@ -76,6 +82,9 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnCenterScene">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Center&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
           <property name="text">
            <string>Center</string>
           </property>
@@ -83,6 +92,9 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnZoomOut">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Zoom Out&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
           <property name="text">
            <string>Zoom Out</string>
           </property>
@@ -90,6 +102,9 @@
         </item>
         <item>
          <widget class="QPushButton" name="btnZoomIn">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Zoom In&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
           <property name="text">
            <string>Zoom In</string>
           </property>
@@ -133,6 +148,9 @@
           <property name="cursor">
            <cursorShape>PointingHandCursor</cursorShape>
           </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Left move&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
           <property name="text">
            <string>&lt;</string>
           </property>
@@ -142,6 +160,9 @@
          <widget class="QPushButton" name="btnMoveRight">
           <property name="cursor">
            <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Right move&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="text">
            <string>&gt;</string>
@@ -153,6 +174,9 @@
           <property name="cursor">
            <cursorShape>PointingHandCursor</cursorShape>
           </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Left rotate&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
           <property name="text">
            <string>Rotate Left</string>
           </property>
@@ -162,6 +186,9 @@
          <widget class="QPushButton" name="btnRotateRight">
           <property name="cursor">
            <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Right rotate&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="text">
            <string>Rotate Right</string>
@@ -173,6 +200,9 @@
           <property name="cursor">
            <cursorShape>PointingHandCursor</cursorShape>
           </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Left rotate 90&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
           <property name="text">
            <string>Rotate 90L</string>
           </property>
@@ -183,6 +213,9 @@
           <property name="cursor">
            <cursorShape>PointingHandCursor</cursorShape>
           </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Right rotate 90&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
           <property name="text">
            <string>Rotate 90R</string>
           </property>
@@ -192,6 +225,9 @@
          <widget class="QPushButton" name="btnDeleteItem">
           <property name="cursor">
            <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Delete&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="text">
            <string>Delete</string>
@@ -230,7 +266,7 @@
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>-1170</y>
+         <y>0</y>
          <width>248</width>
          <height>1365</height>
         </rect>
@@ -1535,8 +1571,8 @@ height: 35px;</string>
       <widget class="QWidget" name="tbTablesChairs">
        <property name="geometry">
         <rect>
-         <x>-16</x>
-         <y>-540</y>
+         <x>0</x>
+         <y>0</y>
          <width>272</width>
          <height>721</height>
         </rect>
@@ -2520,7 +2556,7 @@ background-repeat: none;</string>
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>-249</y>
+         <y>0</y>
          <width>272</width>
          <height>430</height>
         </rect>
@@ -3339,7 +3375,7 @@ height: 60px;</string>
        <property name="geometry">
         <rect>
          <x>0</x>
-         <y>-131</y>
+         <y>0</y>
          <width>272</width>
          <height>312</height>
         </rect>
@@ -3415,6 +3451,9 @@ background-repeat: none;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Kid's bed&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/beds/single_bed_lightblue.png);
@@ -3443,6 +3482,9 @@ background-repeat: none;</string>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
             </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Kid's bed&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+            </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;
 border-image: url(:/img/furniture/beds/single_bed_lightyellow.png);
@@ -3466,6 +3508,9 @@ background-repeat: none;</string>
             </property>
             <property name="cursor">
              <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; font-style:italic;&quot;&gt;Kid's bed&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
             </property>
             <property name="styleSheet">
              <string notr="true">background-color: transparent;

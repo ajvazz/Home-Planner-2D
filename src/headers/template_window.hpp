@@ -2,6 +2,8 @@
 #define TEMPLATE_WINDOW_HPP
 
 #include <QGraphicsScene>
+#include <QKeyEvent>
+
 #include "centered_window.hpp"
 #include "furniture.hpp"
 
@@ -15,7 +17,8 @@ class TemplateWindow : public CenteredWindow /*QMainWindow*/
 
 public:
     explicit TemplateWindow(QWidget *parent = nullptr);
-    ~TemplateWindow();
+    ~TemplateWindow() override; // 'override' needed cause of keypressevent, not sure why
+    void keyPressEvent(QKeyEvent *event) override;
 
 private:
     Ui::TemplateWindow *ui;

@@ -29,39 +29,109 @@ void TemplateWindow::drawGraphicsScene()
     ui->graphicsView->setRenderHint(QPainter::Antialiasing);
     ui->graphicsView->setDragMode(QGraphicsView::ScrollHandDrag);
 
-    /* Probably will delete this line after connecting buttons */
-//    ui->graphicsView->scale(2.5, 2.5);
+    /* Initial 'zoom' */
+    ui->graphicsView->scale(1.5, 1.5);
 
     scene->addText("Living room");
 }
 
 /* Furniture manipulation */
-void TemplateWindow::on_btnMoveLeft_clicked() {
-    // TODO
+void TemplateWindow::on_btnMoveLeft_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            // if (item.type() == UserType+1)   produces error!
+            Furniture *itemFurniture = qgraphicsitem_cast<Furniture*>(item);
+            itemFurniture->move(-10, 0);
+        }
+    }
 }
 
-void TemplateWindow::on_btnMoveRight_clicked() {
-    // TODO
+void TemplateWindow::on_btnMoveRight_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            // if (item.type() == UserType+1)   produces error!
+            Furniture *itemFurniture = qgraphicsitem_cast<Furniture*>(item);
+            itemFurniture->move(10, 0);
+        }
+    }
 }
 
-void TemplateWindow::on_btnRotateLeft_clicked() {
-    // TODO
+void TemplateWindow::on_btnRotateRight_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            // if (item.type() == UserType+1)   produces error!
+            Furniture *itemFurniture = qgraphicsitem_cast<Furniture*>(item);
+            itemFurniture->rotate(5);
+        }
+    }
 }
 
-void TemplateWindow::on_btnRotateRight_clicked() {
-    // TODO
+void TemplateWindow::on_btnRotateLeft_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            // if (item.type() == UserType+1)   produces error!
+            Furniture *itemFurniture = qgraphicsitem_cast<Furniture*>(item);
+            itemFurniture->rotate(-5);
+        }
+    }
 }
 
-void TemplateWindow::on_btnRotate90Left_clicked() {
-    // TODO
+void TemplateWindow::on_btnRotate90Right_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            // if (item.type() == UserType+1)   produces error!
+            Furniture *itemFurniture = qgraphicsitem_cast<Furniture*>(item);
+            itemFurniture->rotate(90);
+        }
+    }
 }
 
-void TemplateWindow::on_btnRotate90Right_clicked() {
-    // TODO
+void TemplateWindow::on_btnRotate90Left_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            // if (item.type() == UserType+1)   produces error!
+            Furniture *itemFurniture = qgraphicsitem_cast<Furniture*>(item);
+            itemFurniture->rotate(-90);
+        }
+    }
 }
 
-void TemplateWindow::on_btnDeleteItem_clicked() {
-    // TODO
+void TemplateWindow::on_btnDeleteItem_clicked()
+{
+    /* Here, dynamic casting is not needed */
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems)
+            delete item;
+    }
 }
 
 /* Scene manipulation */
@@ -84,6 +154,40 @@ void TemplateWindow::on_btnZoomIn_clicked() {
 
 void TemplateWindow::on_btnZoomOut_clicked() {
     ui->graphicsView->scale(0.9, 0.9);
+}
+
+void TemplateWindow::keyPressEvent(QKeyEvent *event)
+{
+    /*
+     * +   zooms in  the scene
+     * -   zooms out the scene
+     * C   centers the scene
+     * Z   rotates the scene left
+     * X   rotates the scene right
+     */
+
+    switch ( event->key() )
+    {
+        case Qt::Key_Plus:
+            ui->btnZoomIn->click();
+            break;
+
+        case Qt::Key_Minus:
+            ui->btnZoomOut->click();
+            break;
+
+        case Qt::Key_C:
+            ui->btnCenterScene->click();
+            break;
+
+        case Qt::Key_Z:
+            ui->btnRotateSceneLeft->click();
+            break;
+
+        case Qt::Key_X:
+            ui->btnRotateSceneRight->click();
+            break;
+    }
 }
 
 /* Additional options */
@@ -689,15 +793,15 @@ void TemplateWindow::on_btnBabyBed_yellow_clicked() {
 /* BEDS - category 2 (single beds 1) */
 
 void TemplateWindow::on_btnSingleBed1_blue_clicked() {
-    Furniture *f = new Furniture(":/img/furniture/beds/single_bed_lightblue.png", 55, 25);
+    Furniture *f = new Furniture(":/img/furniture/beds/single_bed_lightblue.png", 40, 25);
     scene->addItem(f);
 }
 void TemplateWindow::on_btnSingleBed1_yellow_clicked() {
-    Furniture *f = new Furniture(":/img/furniture/beds/single_bed_lightyellow.png", 55, 25);
+    Furniture *f = new Furniture(":/img/furniture/beds/single_bed_lightyellow.png", 40, 25);
     scene->addItem(f);
 }
 void TemplateWindow::on_btnSingleBed1_white_clicked() {
-    Furniture *f = new Furniture(":/img/furniture/beds/single_bed_white.png", 55, 25);
+    Furniture *f = new Furniture(":/img/furniture/beds/single_bed_white.png", 40, 25);
     scene->addItem(f);
 }
 
