@@ -18,14 +18,16 @@ SOURCES += \
         source/template_window.cpp \
         source/design_window.cpp \
         source/centered_window.cpp \
-        source/furniture.cpp
+        source/furniture.cpp \
+        source/room.cpp
 
 HEADERS += \
         headers/main_menu_window.hpp \
         headers/template_window.hpp \
         headers/design_window.hpp \
         headers/centered_window.hpp \
-        headers/furniture.hpp
+        headers/furniture.hpp \
+        headers/room.hpp
 
 FORMS += \
         ui/main_menu_window.ui \
