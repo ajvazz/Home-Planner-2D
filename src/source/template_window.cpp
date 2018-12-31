@@ -1,4 +1,5 @@
 #include <QDesktopWidget>
+#include <QMessageBox>
 
 #include "ui_template_window.h"
 #include "../headers/furniture.hpp"
@@ -11,6 +12,9 @@ TemplateWindow::TemplateWindow(QWidget *parent)
 
     setWindowCenter(1.25, 1.25);
     setWindowTitle("Home Planner 2D");
+
+    /* Always start with first tab opened */
+    ui->toolBox->setCurrentIndex(0);
 
     drawGraphicsScene();
 }
@@ -31,8 +35,6 @@ void TemplateWindow::drawGraphicsScene()
 
     /* Initial 'zoom' */
     ui->graphicsView->scale(1.5, 1.5);
-
-    scene->addText("Living room");
 }
 
 /* Furniture manipulation */
@@ -193,6 +195,28 @@ void TemplateWindow::keyPressEvent(QKeyEvent *event)
 /* Additional options */
 void TemplateWindow::on_actionClear_All_triggered() {
     ui->graphicsView->scene()->clear();
+}
+
+void TemplateWindow::on_actionShortcuts_triggered()
+{
+    QMessageBox::information(this, "Shortcuts",
+        "SHORTCUT \t\t ACTION \n\n"
+        "CTRL + S \t\t Opens this window \n"
+        "CTRL + L \t\t Clears everything from the scene \n"
+        "CTRL + Q \t\t Quits HomePlanner2D \n\n"
+
+        "ITEMS (must be selected): \n"
+        "E   [E+SHIFT]"  "\t"   "Left rotate  [by 90] \n"
+        "R   [R+SHIFT]"  "\t"   "Right rotate [by 90] \n"
+        "Arrows [SHIFT]" "\t"   "Move [by 10px] \n"
+        "DEL"           "\t\t"  "Delete selection \n\n"
+
+        "SCENE: (when no items are selected) \n"
+        "+/-"           "\t\t"  "Zoom in/out \n"
+        "C"             "\t\t"  "Center scene \n"
+        "Z   [Z+SHIFT]"  "\t"   "Left rotate  [by 90] \n"
+        "X   [X+SHIFT]"  "\t"   "Right rotate  [by 90] \n"
+    );
 }
 
 void TemplateWindow::on_actionQuit_triggered() {

@@ -27,7 +27,9 @@ private:
 
 private slots:
 
+    /* Menu bar options */
     void on_actionClear_All_triggered();
+    void on_actionShortcuts_triggered();
     void on_actionQuit_triggered();
 
     /* Item manipulation */
