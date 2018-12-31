@@ -2,7 +2,6 @@
 #include <QApplication>
 #include <QDesktopWidget>
 
-#include <QtDebug>
 #include "../headers/furniture.hpp"
 
 Furniture::Furniture(QString urlPath, int width, int height, QGraphicsItem *parent)
@@ -99,7 +98,8 @@ void Furniture::keyPressEvent(QKeyEvent *event)
 
         /* Deleting */
         case Qt::Key_Delete:
-            // delete all selected
+            /* BUG - this deletes only the last selected item.
+             * Use button to delete all */
             delete this;
             break;
     }
