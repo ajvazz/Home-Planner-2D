@@ -202,5 +202,21 @@
         <file>img/furniture/armchairs/armchair_3_green.png</file>
         <file>img/furniture/armchairs/armchair_3_blue.png</file>
         <file>img/furniture/armchairs/armchair_3_black.png</file>
+        <file>img/furniture/floor/floor_beige.jpg</file>
+        <file>img/furniture/floor/floor_dark.jpg</file>
+        <file>img/furniture/floor/floor_grey.jpeg</file>
+        <file>img/furniture/floor/floor_light_1.jpg</file>
+        <file>img/furniture/floor/floor_light_2.jpg</file>
+        <file>img/furniture/floor/floor_light_3.jpg</file>
+        <file>img/furniture/floor/floor_light_4.jpg</file>
+        <file>img/furniture/floor/floor_light_5.jpg</file>
+        <file>img/furniture/floor/floor_light_6.jpg</file>
+        <file>img/furniture/floor/tiles_beige.jpg</file>
+        <file>img/furniture/floor/tiles_grey.jpg</file>
+        <file>img/furniture/floor/tiles_lightgrey.jpg</file>
+        <file>img/furniture/floor/tiles_light_grey.jpeg</file>
+        <file>img/furniture/floor/tiles_white_1.jpg</file>
+        <file>img/furniture/floor/tiles_white_2.jpg</file>
+        <file>img/furniture/floor/tiles_white_3.jpg</file>
     </qresource>
 </RCC>
