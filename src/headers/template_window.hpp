@@ -17,7 +17,7 @@ class TemplateWindow : public CenteredWindow /*QMainWindow*/
 
 public:
     explicit TemplateWindow(QWidget *parent = nullptr);
-    ~TemplateWindow() override; // 'override' needed cause of keypressevent, not sure why
+    ~TemplateWindow() override;     // 'override' needed cause of keypressevent, not sure why
     void keyPressEvent(QKeyEvent *event) override;
 
 private:

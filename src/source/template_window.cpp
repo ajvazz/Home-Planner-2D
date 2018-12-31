@@ -125,14 +125,15 @@ void TemplateWindow::on_btnRotate90Left_clicked()
 
 void TemplateWindow::on_btnDeleteItem_clicked()
 {
-    /* Here, dynamic casting is not needed */
     QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
-
     if (selectedItems.isEmpty())
         return;
     else {
-        for (auto item : selectedItems)
-            delete item;
+        for (auto item : selectedItems) {
+            // if (item.type() == UserType+1)   produces error!
+            Furniture *itemFurniture = qgraphicsitem_cast<Furniture*>(item);
+            delete itemFurniture;
+        }
     }
 }
 
@@ -188,6 +189,10 @@ void TemplateWindow::keyPressEvent(QKeyEvent *event)
 
         case Qt::Key_X:
             ui->btnRotateSceneRight->click();
+            break;
+
+        case Qt::Key_Delete:
+            ui->btnDeleteItem->click();
             break;
     }
 }
