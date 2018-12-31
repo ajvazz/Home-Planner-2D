@@ -28,9 +28,6 @@
         <property name="cursor" stdset="0">
          <cursorShape>ArrowCursor</cursorShape>
         </property>
-        <property name="autoFillBackground">
-         <bool>false</bool>
-        </property>
         <property name="backgroundBrush">
          <brush brushstyle="CrossPattern">
           <color alpha="255">
@@ -5398,16 +5395,49 @@ background-repeat: none;</string>
      <height>22</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>Options</string>
+    </property>
+    <addaction name="actionClear_All"/>
+    <addaction name="actionShortcuts"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuit"/>
+   </widget>
+   <addaction name="menuOptions"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionClear_All">
    <property name="text">
     <string>Clear All</string>
    </property>
+   <property name="toolTip">
+    <string>Delete everything from the scene</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+L</string>
+   </property>
+  </action>
+  <action name="actionShortcuts">
+   <property name="text">
+    <string>Shortcuts</string>
+   </property>
+   <property name="toolTip">
+    <string>Show shortcuts cheat sheet</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
   </action>
   <action name="actionQuit">
    <property name="text">
     <string>Quit</string>
+   </property>
+   <property name="toolTip">
+    <string>Quit HomePlanner2D</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
    </property>
   </action>
  </widget>
