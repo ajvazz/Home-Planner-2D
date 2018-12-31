@@ -1,7 +1,7 @@
 #include <QApplication>
 #include <QDesktopWidget>
 #include <QInputDialog>
-#include <QDebug>
+#include <QMessageBox>
 
 #include "ui_design_window.h"
 #include "../headers/design_window.hpp"
@@ -12,6 +12,7 @@ DesignWindow::DesignWindow(QWidget *parent)
 {
     ui->setupUi(this);
     setWindowCenter(1.25, 1.25);
+    setWindowTitle("Home Planner 2D");
 
     scene = new QGraphicsScene(this);
     /* screenWidth and screenHeight are inherited from CenteredWindow */
@@ -43,6 +44,347 @@ void DesignWindow::on_btnNewRoom_clicked()
     int height = dimensions.at(1).toInt();
 
     /* By our measurements, 1.5m equals 50px, hence 1m equals ~33px */
-    Room *r = new Room(width*33, height*33);
+    Room *r = new Room(width*33, height*33, "");
     ui->graphicsView->scene()->addItem(r);
+}
+
+
+/* Scene manipulation */
+
+void DesignWindow::on_btnRotate_clicked()
+{
+    QList<QGraphicsItem*> selectedRooms = ui->graphicsView->scene()->selectedItems();
+    if (selectedRooms.isEmpty())
+        return;
+    else {
+        for (auto room : selectedRooms) {
+            // if (item.type() == UserType+1)   produces error!
+            Room *selectedRoom = qgraphicsitem_cast<Room*>(room);
+            selectedRoom->rotate(-90);
+        }
+    }
+}
+
+void DesignWindow::on_btnZoomOut_clicked() {
+    ui->graphicsView->scale(0.9, 0.9);
+}
+
+void DesignWindow::on_btnZoomIn_clicked() {
+    ui->graphicsView->scale(1.1, 1.1);
+}
+
+void DesignWindow::on_btnDelete_clicked()
+{
+    QList<QGraphicsItem*> selectedRooms = ui->graphicsView->scene()->selectedItems();
+    if (selectedRooms.isEmpty())
+        return;
+    else {
+        for (auto room : selectedRooms) {
+            // if (item.type() == UserType+1)   produces error!
+            Room *selectedRoom = qgraphicsitem_cast<Room*>(room);
+            delete selectedRoom;
+        }
+    }
+}
+
+void DesignWindow::keyPressEvent(QKeyEvent *event)
+{
+    /*
+     * +   zooms in  the scene
+     * -   zooms out the scene
+     * R   room rotate
+     */
+
+    switch ( event->key() )
+    {
+        case Qt::Key_Plus:
+            ui->btnZoomIn->click();
+            break;
+
+        case Qt::Key_Minus:
+            ui->btnZoomOut->click();
+            break;
+
+        case Qt::Key_R:
+            ui->btnRotate->click();
+            break;
+
+        case Qt::Key_Delete:
+            ui->btnDelete->click();
+            break;
+    }
+}
+
+/* Menu bar options */
+
+void DesignWindow::on_actionClear_All_triggered() {
+    ui->graphicsView->scene()->clear();
+}
+
+void DesignWindow::on_actionShortcuts_triggered()
+{
+    QMessageBox::information(this, "Shortcuts",
+        "SHORTCUT \t\t ACTION \n\n"
+        "CTRL + S \t\t Opens this window \n"
+        "CTRL + L \t\t Clears everything from the scene \n"
+        "CTRL + Q \t\t Quits HomePlanner2D \n\n"
+
+        "ITEMS (must be selected): \n"
+        "R"        "\t\t"   "Rotate room by 90 degrees \n"
+        "R   [R+SHIFT]"  "\t"   "Right rotate [by 90] \n"
+        "Arrows [SHIFT]" "\t"   "Move [by 10px] \n"
+        "DEL"           "\t\t"  "Delete selection \n\n"
+
+        "SCENE: (when no items are selected) \n"
+        "+/-"           "\t\t"  "Zoom in/out \n"
+        "C"             "\t\t"  "Center scene \n"
+        "Z   [Z+SHIFT]"  "\t"   "Left rotate  [by 90] \n"
+        "X   [X+SHIFT]"  "\t"   "Right rotate  [by 90] \n"
+    );
+}
+
+void DesignWindow::on_actionQuit_triggered() {
+    close();
+}
+
+/* FLOOR & TILES */
+
+void DesignWindow::on_btnTileWhite1_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            Room *r = qgraphicsitem_cast<Room*>(item);
+            r->setFloorPath(":/img/furniture/floor/tiles_white_1.jpg");
+
+            r->update();    // Immediately call paint() which redraws the room with new floor texture
+        }
+    } // if-else
+}
+
+void DesignWindow::on_btnTileWhite3_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            Room *r = qgraphicsitem_cast<Room*>(item);
+            r->setFloorPath(":/img/furniture/floor/tiles_white_3.jpg");
+
+            r->update();    // Immediately call paint() which redraws the room with new floor texture
+        }
+    } // if-else
+}
+
+void DesignWindow::on_btnTileWhite2_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            Room *r = qgraphicsitem_cast<Room*>(item);
+            r->setFloorPath(":/img/furniture/floor/tiles_white_2.jpg");
+
+            r->update();    // Immediately call paint() which redraws the room with new floor texture
+        }
+    } // if-else
+}
+
+void DesignWindow::on_btnTileBeige_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            Room *r = qgraphicsitem_cast<Room*>(item);
+            r->setFloorPath(":/img/furniture/floor/tiles_beige.jpg");
+
+            r->update();    // Immediately call paint() which redraws the room with new floor texture
+        }
+    } // if-else
+}
+
+void DesignWindow::on_btnTileLightGrey1_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            Room *r = qgraphicsitem_cast<Room*>(item);
+            r->setFloorPath(":/img/furniture/floor/tiles_light_grey.jpeg");
+
+            r->update();    // Immediately call paint() which redraws the room with new floor texture
+        }
+    } // if-else
+}
+
+void DesignWindow::on_btnTileLightGrey2_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            Room *r = qgraphicsitem_cast<Room*>(item);
+            r->setFloorPath(":/img/furniture/floor/tiles_lightgrey.jpg");
+
+            r->update();    // Immediately call paint() which redraws the room with new floor texture
+        }
+    } // if-else
+}
+
+void DesignWindow::on_btnTileGrey_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            Room *r = qgraphicsitem_cast<Room*>(item);
+            r->setFloorPath(":/img/furniture/floor/tiles_grey.jpg");
+
+            r->update();    // Immediately call paint() which redraws the room with new floor texture
+        }
+    } // if-else
+}
+
+void DesignWindow::on_btnFloorLight5_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            Room *r = qgraphicsitem_cast<Room*>(item);
+            r->setFloorPath(":/img/furniture/floor/floor_light_5.jpg");
+
+            r->update();    // Immediately call paint() which redraws the room with new floor texture
+        }
+    } // if-else
+}
+
+void DesignWindow::on_btnFloorBeige_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            Room *r = qgraphicsitem_cast<Room*>(item);
+            r->setFloorPath(":/img/furniture/floor/floor_beige.jpg");
+
+            r->update();    // Immediately call paint() which redraws the room with new floor texture
+        }
+    } // if-else
+}
+
+void DesignWindow::on_btnFloorLight4_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            Room *r = qgraphicsitem_cast<Room*>(item);
+            r->setFloorPath(":/img/furniture/floor/floor_light_4.jpg");
+
+            r->update();    // Immediately call paint() which redraws the room with new floor texture
+        }
+    } // if-else
+}
+
+void DesignWindow::on_btnFloorLight3_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            Room *r = qgraphicsitem_cast<Room*>(item);
+            r->setFloorPath(":/img/furniture/floor/floor_light_3.jpg");
+
+            r->update();    // Immediately call paint() which redraws the room with new floor texture
+        }
+    } // if-else
+}
+
+void DesignWindow::on_btnFloorLight2_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            Room *r = qgraphicsitem_cast<Room*>(item);
+            r->setFloorPath(":/img/furniture/floor/floor_light_2.jpg");
+
+            r->update();    // Immediately call paint() which redraws the room with new floor texture
+        }
+    } // if-else
+}
+
+void DesignWindow::on_btnFloorLight1_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            Room *r = qgraphicsitem_cast<Room*>(item);
+            r->setFloorPath(":/img/furniture/floor/floor_light_1.jpg");
+
+            r->update();    // Immediately call paint() which redraws the room with new floor texture
+        }
+    } // if-else
+}
+
+void DesignWindow::on_btnFloorLight6_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            Room *r = qgraphicsitem_cast<Room*>(item);
+            r->setFloorPath(":/img/furniture/floor/floor_light_6.jpg");
+
+            r->update();    // Immediately call paint() which redraws the room with new floor texture
+        }
+    } // if-else
+}
+
+void DesignWindow::on_btnFloorDark_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            Room *r = qgraphicsitem_cast<Room*>(item);
+            r->setFloorPath(":/img/furniture/floor/floor_dark.jpg");
+
+            r->update();    // Immediately call paint() which redraws the room with new floor texture
+        }
+    } // if-else
+}
+
+void DesignWindow::on_btnFloorGrey_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            Room *r = qgraphicsitem_cast<Room*>(item);
+            r->setFloorPath(":/img/furniture/floor/floor_grey.jpeg");
+
+            r->update();    // Immediately call paint() which redraws the room with new floor texture
+        }
+    } // if-else
 }
