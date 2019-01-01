@@ -5,6 +5,7 @@
 #include <QKeyEvent>
 
 #include "centered_window.hpp"
+#include "template_window.hpp"
 
 namespace Ui {
 class DesignWindow;
@@ -22,6 +23,7 @@ public:
 private:
     Ui::DesignWindow *ui;
     QGraphicsScene *scene;
+    TemplateWindow *tempWind;
 
 private slots:
 
@@ -29,6 +31,7 @@ private slots:
     void on_actionClear_All_triggered();
     void on_actionShortcuts_triggered();
     void on_actionQuit_triggered();
+    void on_btnNext_clicked();
 
     /* Scene manipulation */
     void on_btnZoomOut_clicked();

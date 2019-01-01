@@ -2,6 +2,8 @@
 #include <QDesktopWidget>
 #include <QInputDialog>
 #include <QMessageBox>
+#include <QRegularExpression>
+#include <QRegularExpressionMatch>
 
 #include "ui_design_window.h"
 #include "../headers/design_window.hpp"
@@ -33,21 +35,51 @@ DesignWindow::~DesignWindow()
 void DesignWindow::on_btnNewRoom_clicked()
 {
     QString text = QInputDialog::getText(this,"Room dimesions",
-        "Enter dimensions of your room in meters (width, height)");
+        "Enter dimensions of your room in meters: (width, height)");
 
     if (text.isEmpty())
         return;
 
-    /* Parsing isn't foolproof */
+    /* This regex searches for two numbers separated by a coma, with
+     * as many spaces in between. */
+    QRegularExpression regex("(\\d+\\s*,\\s*\\d+)");
+    QRegularExpressionMatch match = regex.match(text);
+    bool hasMatch = match.hasMatch();
+
+    /* If the input was not correct, return */
+    if (hasMatch == false)
+        return;
+
     QStringList dimensions = text.split(",");
-    int width  = dimensions.at(0).toInt();
-    int height = dimensions.at(1).toInt();
+    double width  = dimensions.at(0).toDouble();
+    double height = dimensions.at(1).toDouble();
 
     /* By our measurements, 1.5m equals 50px, hence 1m equals ~33px */
     Room *r = new Room(width*33, height*33, "");
     ui->graphicsView->scene()->addItem(r);
 }
 
+void DesignWindow::on_btnNext_clicked()
+{
+    QMessageBox::StandardButton reply;
+
+    reply = QMessageBox::question(this, "Proceed to the next stage?",
+        "Are you sure you want to send this room scheme for furniture equipment?",
+        QMessageBox::No | QMessageBox::Yes);
+
+    /* If the reply is yes, send data to TemplateWindow and hide DesignWindow */
+    if (reply == QMessageBox::Yes) {
+
+        QList<QGraphicsItem*> itemList = ui->graphicsView->scene()->items(Qt::AscendingOrder);
+
+        tempWind = new TemplateWindow(this, itemList);
+        DesignWindow::hide();
+        tempWind->show();
+
+    } else {
+        return;
+    }
+}
 
 /* Scene manipulation */
 
@@ -112,6 +144,10 @@ void DesignWindow::keyPressEvent(QKeyEvent *event)
         case Qt::Key_Delete:
             ui->btnDelete->click();
             break;
+
+        case Qt::Key_N:
+            ui->btnNewRoom->click();
+            break;
     }
 }
 
@@ -144,7 +180,7 @@ void DesignWindow::on_actionShortcuts_triggered()
 }
 
 void DesignWindow::on_actionQuit_triggered() {
-    close();
+    DesignWindow::close();
 }
 
 /* FLOOR & TILES */
