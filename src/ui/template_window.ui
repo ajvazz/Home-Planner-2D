@@ -123,7 +123,7 @@
        </layout>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="controlsBottom" stretch="0,1,1,1,1,1,1,1,0">
+       <layout class="QHBoxLayout" name="controlsBottom" stretch="0,1,1,1,1,0,1,1,1,0">
         <property name="spacing">
          <number>10</number>
         </property>
@@ -193,6 +193,13 @@
          </widget>
         </item>
         <item>
+         <widget class="QPushButton" name="btnFlip">
+          <property name="text">
+           <string>Flip</string>
+          </property>
+         </widget>
+        </item>
+        <item>
          <widget class="QPushButton" name="btnRotate90Left">
           <property name="cursor">
            <cursorShape>PointingHandCursor</cursorShape>
@@ -254,7 +261,7 @@
        <enum>QFrame::NoFrame</enum>
       </property>
       <property name="currentIndex">
-       <number>4</number>
+       <number>3</number>
       </property>
       <property name="tabSpacing">
        <number>6</number>
@@ -264,7 +271,7 @@
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>248</width>
+         <width>242</width>
          <height>1365</height>
         </rect>
        </property>
@@ -3197,10 +3204,10 @@ background-repeat: none;</string>
       <widget class="QWidget" name="tbKitchen">
        <property name="geometry">
         <rect>
-         <x>0</x>
-         <y>0</y>
-         <width>248</width>
-         <height>216</height>
+         <x>-30</x>
+         <y>-121</y>
+         <width>217</width>
+         <height>330</height>
         </rect>
        </property>
        <attribute name="label">
@@ -3358,6 +3365,149 @@ height: 60px;</string>
              <string notr="true">border-image: url(:/img/furniture/kitchen/stove.png);
 width: 70px;
 height: 60px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_Kitchen_4">
+          <property name="topMargin">
+           <number>15</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnSink5">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sinks/sink_5.png);
+width: 60px;
+height: 30px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnSink6">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sinks/sink_6.png);
+width: 60px;
+height: 30px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnSink3">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sinks/sink_3.png);
+width: 65px;
+height: 30px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horLO_Kitchen_5">
+          <property name="topMargin">
+           <number>15</number>
+          </property>
+          <property name="rightMargin">
+           <number>15</number>
+          </property>
+          <item>
+           <widget class="QPushButton" name="btnSink4">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sinks/sink_4.png);
+width: 70px;
+height: 25px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnSink2">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sinks/sink_2.png);
+width: 45px;
+height: 30px;</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnSink1">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border-image: url(:/img/furniture/sinks/sink_1.png);
+width: 40px;
+height: 40px;</string>
             </property>
             <property name="text">
              <string/>
@@ -3753,7 +3903,7 @@ background-repeat: none;</string>
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>248</width>
+         <width>222</width>
          <height>384</height>
         </rect>
        </property>
@@ -4348,7 +4498,7 @@ background-repeat: none;</string>
         <rect>
          <x>0</x>
          <y>0</y>
-         <width>248</width>
+         <width>212</width>
          <height>234</height>
         </rect>
        </property>
