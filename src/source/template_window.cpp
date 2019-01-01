@@ -4,19 +4,23 @@
 #include "ui_template_window.h"
 #include "../headers/furniture.hpp"
 #include "../headers/template_window.hpp"
+#include "../headers/room.hpp"
 
-TemplateWindow::TemplateWindow(QWidget *parent)
-    : CenteredWindow(parent), ui(new Ui::TemplateWindow)
+TemplateWindow::TemplateWindow(QWidget *parent,
+                               QList<QGraphicsItem*> roomList)
+    : CenteredWindow(parent), ui(new Ui::TemplateWindow), m_roomList(roomList)
 {
     ui->setupUi(this);
 
     setWindowCenter(1.25, 1.25);
     setWindowTitle("Home Planner 2D");
 
-    /* Always start with first tab opened */
+    /* Always start with the first tab opened */
     ui->toolBox->setCurrentIndex(0);
 
+    /* Creates and initializes the scene, then rooms */
     drawGraphicsScene();
+    drawRooms();
 }
 
 TemplateWindow::~TemplateWindow() {
@@ -36,6 +40,36 @@ void TemplateWindow::drawGraphicsScene()
     /* Initial 'zoom' */
     ui->graphicsView->scale(1.5, 1.5);
 }
+
+void TemplateWindow::drawRooms()
+{
+    /* If we chose 'Use Default Template', this list will be empty */
+    if (m_roomList.isEmpty()) {
+        // default
+    }
+
+    else {
+        /* This rooms list is created in DesignWindow, it contains rooms
+         * which user has made there. They are drawn, but not interactable. */
+
+        for (auto room : m_roomList) {
+
+            /* Disable all flags (selection, focus and moving) */
+            auto currentFlags = room->flags();
+            room->setFlags(currentFlags & (~currentFlags));
+
+            ui->graphicsView->scene()->addItem(room);
+
+            /* This could've been done with dynamic cast, but that is not necessary */
+            // Room *itemRoom = qgraphicsitem_cast<Room*>(room);
+            // auto currentFlags = itemRoom->flags();
+            // itemRoom->setFlags(currentFlags & (~currentFlags));
+            // ui->graphicsView->scene()->addItem(itemRoom);
+
+        } // for
+    } // if-else
+}
+
 
 /* Furniture manipulation */
 void TemplateWindow::on_btnMoveLeft_clicked()
@@ -95,6 +129,21 @@ void TemplateWindow::on_btnRotateLeft_clicked()
     }
 }
 
+void TemplateWindow::on_btnFlip_clicked()
+{
+    QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
+    if (selectedItems.isEmpty())
+        return;
+    else {
+        for (auto item : selectedItems) {
+            // if (item.type() == UserType+1)   produces error!
+            Furniture *itemFurniture = qgraphicsitem_cast<Furniture*>(item);
+            itemFurniture->swapFlipped();
+            itemFurniture->update();
+        }
+    } // if-else
+}
+
 void TemplateWindow::on_btnRotate90Right_clicked()
 {
     QList<QGraphicsItem*> selectedItems = ui->graphicsView->scene()->selectedItems();
@@ -148,7 +197,7 @@ void TemplateWindow::on_btnRotateSceneLeft_clicked() {
 }
 
 void TemplateWindow::on_btnCenterScene_clicked() {
-    ui->graphicsView->centerOn(screenWidth/2, screenHeight/2);
+    ui->graphicsView->centerOn(screenWidth/3, screenHeight/3);
 }
 
 void TemplateWindow::on_btnZoomIn_clicked() {
@@ -225,7 +274,7 @@ void TemplateWindow::on_actionShortcuts_triggered()
 }
 
 void TemplateWindow::on_actionQuit_triggered() {
-    close();
+    TemplateWindow::close();
 }
 
 
@@ -805,6 +854,33 @@ void TemplateWindow::on_btnTopCabinet3_clicked() {
 }
 void TemplateWindow::on_btnStove_clicked() {
     Furniture *f = new Furniture(":/img/furniture/kitchen/stove.png", 24, 24);
+    scene->addItem(f);
+}
+
+/* SINKS */
+
+void TemplateWindow::on_btnSink1_clicked() {
+    Furniture *f = new Furniture(":/img/furniture/sinks/sink_1.png", 15, 15);
+    scene->addItem(f);
+}
+void TemplateWindow::on_btnSink2_clicked() {
+    Furniture *f = new Furniture(":/img/furniture/sinks/sink_2.png", 20, 15);
+    scene->addItem(f);
+}
+void TemplateWindow::on_btnSink3_clicked() {
+    Furniture *f = new Furniture(":/img/furniture/sinks/sink_3.png", 35, 15);
+    scene->addItem(f);
+}
+void TemplateWindow::on_btnSink4_clicked() {
+    Furniture *f = new Furniture(":/img/furniture/sinks/sink_4.png", 35, 15);
+    scene->addItem(f);
+}
+void TemplateWindow::on_btnSink5_clicked() {
+    Furniture *f = new Furniture(":/img/furniture/sinks/sink_5.png", 25, 17);
+    scene->addItem(f);
+}
+void TemplateWindow::on_btnSink6_clicked() {
+    Furniture *f = new Furniture(":/img/furniture/sinks/sink_6.png", 24, 16);
     scene->addItem(f);
 }
 
