@@ -28,12 +28,15 @@ public:
 
     void move(qreal x, qreal y);
     void rotate(qreal angleParam);
+    bool isFlipped() const;
+    void swapFlipped();
 
 private:
     QPen m_pen;
     qreal angle;
     int m_width;
     int m_height;
+    bool m_isFlipped;
     QString m_urlPath;
 };
 

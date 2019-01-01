@@ -11,6 +11,7 @@ Furniture::Furniture(QString urlPath, int width, int height, QGraphicsItem *pare
     setAcceptHoverEvents(true);
 
     angle = 0;
+    m_isFlipped = false;
 
     /* Setting position to center of scene (screen) */
     int screenWidth  = QApplication::desktop()->width();
@@ -29,12 +30,16 @@ void Furniture::paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
 
     if (isSelected()) {
         painter->setPen(m_pen);
-        m_pen.setWidth(2);
+        m_pen.setWidth(1);
         m_pen.setColor(Qt::green);
         painter->drawRect(boundingRect());
     }
 
-    painter->drawPixmap(0,0, m_width, m_height, QPixmap(m_urlPath));
+    if (isFlipped())    // Draws a flipped image
+        painter->drawPixmap(0,0, m_width, m_height,
+                            QPixmap(m_urlPath).transformed(QTransform().scale(-1,1)));
+    else
+        painter->drawPixmap(0,0, m_width, m_height, QPixmap(m_urlPath));
 }
 
 QRectF Furniture::boundingRect() const {
@@ -57,28 +62,28 @@ void Furniture::keyPressEvent(QKeyEvent *event)
             if (shiftPressed)
                 move(10, 0);
             else
-                move(2, 0);
+                move(1, 0);
             break;
 
         case Qt::Key_Left:
             if (shiftPressed)
                 move(-10, 0);
             else
-                move(-2, 0);
+                move(-1, 0);
             break;
 
         case Qt::Key_Up:
             if (shiftPressed)
                 move(0, -10);
             else
-                move(0, -2);
+                move(0, -1);
             break;
 
         case Qt::Key_Down:
             if (shiftPressed)
                 move(0, 10);
             else
-                move(0, 2);
+                move(0, 1);
             break;
 
         /* Rotating */
@@ -114,9 +119,20 @@ void Furniture::move(qreal x, qreal y)
 
 void Furniture::rotate(qreal angleParam)
 {
+    /* Rotation origin point needs to be moved to the center of the object */
     setTransformOriginPoint(m_width/2, m_height/2);
     angle += angleParam;
     setRotation(angle);
+}
+
+bool Furniture::isFlipped() const
+{
+    return m_isFlipped;
+}
+
+void Furniture::swapFlipped()
+{
+    m_isFlipped = !m_isFlipped;
 }
 
 void Furniture::mousePressEvent(QGraphicsSceneMouseEvent *event)
