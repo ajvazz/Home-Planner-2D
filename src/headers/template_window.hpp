@@ -35,6 +35,7 @@ private slots:
     void on_actionClear_All_triggered();
     void on_actionShortcuts_triggered();
     void on_actionQuit_triggered();
+    void on_SaveAsImage_triggered();
 
     /* Item manipulation */
     void on_btnFlip_clicked();

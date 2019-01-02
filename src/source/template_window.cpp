@@ -1,5 +1,6 @@
 #include <QDesktopWidget>
 #include <QMessageBox>
+#include <QFileDialog>
 
 #include "ui_template_window.h"
 #include "../headers/furniture.hpp"
@@ -26,6 +27,7 @@ TemplateWindow::TemplateWindow(QWidget *parent,
 TemplateWindow::~TemplateWindow() {
     delete ui;
 }
+
 
 void TemplateWindow::drawGraphicsScene()
 {
@@ -208,6 +210,7 @@ void TemplateWindow::on_btnZoomOut_clicked() {
     ui->graphicsView->scale(0.9, 0.9);
 }
 
+
 void TemplateWindow::keyPressEvent(QKeyEvent *event)
 {
     /*
@@ -246,9 +249,24 @@ void TemplateWindow::keyPressEvent(QKeyEvent *event)
     }
 }
 
+
 /* Additional options */
 void TemplateWindow::on_actionClear_All_triggered() {
     ui->graphicsView->scene()->clear();
+}
+
+void TemplateWindow::on_actionQuit_triggered() {
+    TemplateWindow::close();
+}
+
+void TemplateWindow::on_SaveAsImage_triggered()
+{
+    QString fileName = QFileDialog::getSaveFileName(this, "Save Scene As",
+            "", "PNG(*.png);; JPEG(*.jpg *.jpeg)");
+
+    //    QPixmap pixmap = QWidget::grab(ui->graphicsView->rect()); // Not deprecated
+    QPixmap pixmap = QPixmap::grabWidget(ui->graphicsView);   // Deprecated, but works better
+    pixmap.save(fileName);
 }
 
 void TemplateWindow::on_actionShortcuts_triggered()
@@ -271,10 +289,6 @@ void TemplateWindow::on_actionShortcuts_triggered()
         "Z   [Z+SHIFT]"  "\t"   "Left rotate  [by 90] \n"
         "X   [X+SHIFT]"  "\t"   "Right rotate  [by 90] \n"
     );
-}
-
-void TemplateWindow::on_actionQuit_triggered() {
-    TemplateWindow::close();
 }
 
 
