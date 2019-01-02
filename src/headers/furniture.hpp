@@ -18,6 +18,7 @@ protected:
     void mousePressEvent(QGraphicsSceneMouseEvent * event) override;
     void hoverEnterEvent(QGraphicsSceneHoverEvent *event) override;
     void hoverLeaveEvent(QGraphicsSceneHoverEvent *event) override;
+    void mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event) override;
 
 /* These are public because they are needed in TemplateWindow */
 public:
@@ -36,6 +37,7 @@ private:
     qreal angle;
     int m_width;
     int m_height;
+    qreal zValue;
     bool m_isFlipped;
     QString m_urlPath;
 };

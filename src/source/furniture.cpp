@@ -1,6 +1,7 @@
 #include <QtGui>
 #include <QApplication>
 #include <QDesktopWidget>
+#include <QGraphicsSceneMouseEvent>
 
 #include "../headers/furniture.hpp"
 
@@ -11,6 +12,7 @@ Furniture::Furniture(QString urlPath, int width, int height, QGraphicsItem *pare
     setAcceptHoverEvents(true);
 
     angle = 0;
+    zValue = 0;
     m_isFlipped = false;
 
     /* Setting position to center of scene (screen) */
@@ -101,6 +103,10 @@ void Furniture::keyPressEvent(QKeyEvent *event)
                 rotate(-5);
             break;
 
+        case Qt::Key_F:
+            swapFlipped();
+            break;
+
         /* Deleting */
         case Qt::Key_Delete:
             /* BUG - this deletes only the last selected item.
@@ -109,7 +115,7 @@ void Furniture::keyPressEvent(QKeyEvent *event)
             break;
     }
 
-    update();   // Apparently unnecessary?
+    this->update();
 }
 
 void Furniture::move(qreal x, qreal y)
@@ -145,10 +151,22 @@ void Furniture::hoverEnterEvent(QGraphicsSceneHoverEvent *event)
 {
     Q_UNUSED(event);
     QApplication::setOverrideCursor(Qt::PointingHandCursor);
+//    this->setZValue(1);     // Experimenting
 }
 
 void Furniture::hoverLeaveEvent(QGraphicsSceneHoverEvent *event)
 {
     Q_UNUSED(event);
     QApplication::restoreOverrideCursor();
+    //    this->setZValue(-1);    // Experimenting
+}
+
+void Furniture::mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event)
+{
+    if (event->button() == Qt::LeftButton)
+        zValue++;
+    else if (event->button() == Qt::RightButton)
+        zValue--;
+
+    this->setZValue(zValue);
 }
