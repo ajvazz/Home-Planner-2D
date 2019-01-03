@@ -40,9 +40,9 @@ void DesignWindow::on_btnNewRoom_clicked()
     if (text.isEmpty())
         return;
 
-    /* This regex searches for two numbers separated by a coma, with
+    /* This regex searches for two numbers separated by a comma, with
      * as many spaces in between. */
-    QRegularExpression regex("(\\d+\\s*,\\s*\\d+)");
+    QRegularExpression regex("\\d+\\s*,\\s*\\d+");
     QRegularExpressionMatch match = regex.match(text);
     bool hasMatch = match.hasMatch();
 
@@ -161,21 +161,16 @@ void DesignWindow::on_actionShortcuts_triggered()
 {
     QMessageBox::information(this, "Shortcuts",
         "SHORTCUT \t\t ACTION \n\n"
-        "CTRL + S \t\t Opens this window \n"
+        "CTRL + H \t\t Opens this window \n"
         "CTRL + L \t\t Clears everything from the scene \n"
         "CTRL + Q \t\t Quits HomePlanner2D \n\n"
 
-        "ITEMS (must be selected): \n"
-        "R"        "\t\t"   "Rotate room by 90 degrees \n"
-        "R   [R+SHIFT]"  "\t"   "Right rotate [by 90] \n"
-        "Arrows [SHIFT]" "\t"   "Move [by 10px] \n"
-        "DEL"           "\t\t"  "Delete selection \n\n"
+        "+/-"           "\t\t"  "Zoom in/out \n\n"
 
-        "SCENE: (when no items are selected) \n"
-        "+/-"           "\t\t"  "Zoom in/out \n"
-        "C"             "\t\t"  "Center scene \n"
-        "Z   [Z+SHIFT]"  "\t"   "Left rotate  [by 90] \n"
-        "X   [X+SHIFT]"  "\t"   "Right rotate  [by 90] \n"
+        "ROOMS (must be selected): \n"
+        "R"        "\t\t"   "Rotate room(s) by 90 degrees \n"
+        "Arrows [SHIFT]" "\t"   "Move room(s) [by 10px] \n"
+        "DEL"           "\t\t"  "Delete room(s)"
     );
 }
 

@@ -273,11 +273,12 @@ void TemplateWindow::on_actionShortcuts_triggered()
 {
     QMessageBox::information(this, "Shortcuts",
         "SHORTCUT \t\t ACTION \n\n"
-        "CTRL + S \t\t Opens this window \n"
+        "CTRL + H \t\t Opens this window \n"
         "CTRL + L \t\t Clears everything from the scene \n"
+        "CTRL + S \t\t Saves scene as image \n"
         "CTRL + Q \t\t Quits HomePlanner2D \n\n"
 
-        "ITEMS (must be selected): \n"
+        "FURNITURE (must be selected): \n"
         "E   [E+SHIFT]"  "\t"   "Left rotate  [by 90] \n"
         "R   [R+SHIFT]"  "\t"   "Right rotate [by 90] \n"
         "Arrows [SHIFT]" "\t"   "Move [by 10px] \n"
