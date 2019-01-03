@@ -163,10 +163,21 @@ void Furniture::hoverLeaveEvent(QGraphicsSceneHoverEvent *event)
 
 void Furniture::mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event)
 {
-    if (event->button() == Qt::LeftButton)
+    if (event->button() == Qt::LeftButton) {
         zValue++;
-    else if (event->button() == Qt::RightButton)
+        /* Constraining maximum depth of z-buffer to 10 */
+        if (zValue > 10)
+            zValue = 10;
+    }
+
+    else if (event->button() == Qt::RightButton) {
         zValue--;
+        /* This negative value check is needed because if there is a room in the scheme,
+         * going negative will draw furniture UNDER the room. Other solution is to set
+         * zValue of rooms to -50 e.g. This is easier. */
+        if (zValue < 0)
+            zValue = 0;
+    }
 
     this->setZValue(zValue);
 }
