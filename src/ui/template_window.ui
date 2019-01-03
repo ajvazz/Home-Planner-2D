@@ -63,7 +63,17 @@
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Rotate scene left&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="text">
-           <string>Rotate Left</string>
+           <string> Rotate scene</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../resources.qrc">
+            <normaloff>:/img/buttons/rotate_left.png</normaloff>:/img/buttons/rotate_left.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
           </property>
          </widget>
         </item>
@@ -73,7 +83,17 @@
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Rotate scene right&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="text">
-           <string>Rotate Right</string>
+           <string> Rotate scene</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../resources.qrc">
+            <normaloff>:/img/buttons/rotate_right.png</normaloff>:/img/buttons/rotate_right.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
           </property>
          </widget>
         </item>
@@ -83,7 +103,17 @@
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Center&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="text">
-           <string>Center</string>
+           <string> Center</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../resources.qrc">
+            <normaloff>:/img/buttons/center.png</normaloff>:/img/buttons/center.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
           </property>
          </widget>
         </item>
@@ -93,7 +123,17 @@
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Zoom Out&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="text">
-           <string>Zoom Out</string>
+           <string> Zoom out</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../resources.qrc">
+            <normaloff>:/img/buttons/zoom_out.png</normaloff>:/img/buttons/zoom_out.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
           </property>
          </widget>
         </item>
@@ -103,7 +143,17 @@
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Zoom In&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="text">
-           <string>Zoom In</string>
+           <string> Zoom in</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../resources.qrc">
+            <normaloff>:/img/buttons/zoom_in.png</normaloff>:/img/buttons/zoom_in.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
           </property>
          </widget>
         </item>
@@ -123,9 +173,12 @@
        </layout>
       </item>
       <item>
-       <layout class="QHBoxLayout" name="controlsBottom" stretch="0,1,1,1,1,0,1,1,1,0">
+       <layout class="QHBoxLayout" name="controlsBottom" stretch="0,1,1,1,1,1,1,1,1,0">
         <property name="spacing">
          <number>10</number>
+        </property>
+        <property name="topMargin">
+         <number>5</number>
         </property>
         <item>
          <spacer name="horizSpacerControlsBottomLeft">
@@ -146,10 +199,23 @@
            <cursorShape>PointingHandCursor</cursorShape>
           </property>
           <property name="toolTip">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Left move&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Move left&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true"/>
           </property>
           <property name="text">
-           <string>&lt;</string>
+           <string> Move</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../resources.qrc">
+            <normaloff>:/img/buttons/move_left.png</normaloff>:/img/buttons/move_left.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
           </property>
          </widget>
         </item>
@@ -159,10 +225,20 @@
            <cursorShape>PointingHandCursor</cursorShape>
           </property>
           <property name="toolTip">
-           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Right move&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Move right&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="text">
-           <string>&gt;</string>
+           <string> Move</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../resources.qrc">
+            <normaloff>:/img/buttons/move_right.png</normaloff>:/img/buttons/move_right.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
           </property>
          </widget>
         </item>
@@ -175,7 +251,17 @@
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Left rotate&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="text">
-           <string>Rotate Left</string>
+           <string> Rotate</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../resources.qrc">
+            <normaloff>:/img/buttons/rotate_left_red.png</normaloff>:/img/buttons/rotate_left_red.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
           </property>
          </widget>
         </item>
@@ -188,14 +274,37 @@
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Right rotate&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="text">
-           <string>Rotate Right</string>
+           <string> Rotate</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../resources.qrc">
+            <normaloff>:/img/buttons/rotate_right_red.png</normaloff>:/img/buttons/rotate_right_red.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
           </property>
          </widget>
         </item>
         <item>
          <widget class="QPushButton" name="btnFlip">
+          <property name="toolTip">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Flip&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
           <property name="text">
-           <string>Flip</string>
+           <string> Flip</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../resources.qrc">
+            <normaloff>:/img/buttons/flip.png</normaloff>:/img/buttons/flip.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
           </property>
          </widget>
         </item>
@@ -208,7 +317,17 @@
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Left rotate 90&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="text">
-           <string>Rotate 90L</string>
+           <string> Rotate 90</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../resources.qrc">
+            <normaloff>:/img/buttons/rotate_left_90.png</normaloff>:/img/buttons/rotate_left_90.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
           </property>
          </widget>
         </item>
@@ -221,7 +340,17 @@
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Right rotate 90&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="text">
-           <string>Rotate 90R</string>
+           <string> Rotate 90</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../resources.qrc">
+            <normaloff>:/img/buttons/rotate_right_90.png</normaloff>:/img/buttons/rotate_right_90.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
           </property>
          </widget>
         </item>
@@ -234,7 +363,17 @@
            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Delete&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
           </property>
           <property name="text">
-           <string>Delete</string>
+           <string> Delete</string>
+          </property>
+          <property name="icon">
+           <iconset resource="../resources.qrc">
+            <normaloff>:/img/buttons/delete.png</normaloff>:/img/buttons/delete.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>20</width>
+            <height>20</height>
+           </size>
           </property>
          </widget>
         </item>
@@ -257,11 +396,14 @@
     </item>
     <item>
      <widget class="QToolBox" name="toolBox">
+      <property name="styleSheet">
+       <string notr="true"/>
+      </property>
       <property name="frameShape">
        <enum>QFrame::NoFrame</enum>
       </property>
       <property name="currentIndex">
-       <number>3</number>
+       <number>0</number>
       </property>
       <property name="tabSpacing">
        <number>6</number>
@@ -276,7 +418,7 @@
         </rect>
        </property>
        <attribute name="label">
-        <string>Sofas and Armchairs</string>
+        <string>Sofas &amp;&amp; Armchairs</string>
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout_7">
         <item>
@@ -1582,7 +1724,7 @@ height: 35px;</string>
         </rect>
        </property>
        <attribute name="label">
-        <string>Tables and Chairs</string>
+        <string>Tables &amp;&amp; Chairs</string>
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout_3">
         <item>
@@ -2566,7 +2708,7 @@ background-repeat: none;</string>
         </rect>
        </property>
        <attribute name="label">
-        <string>Cabinets and Wardrobes</string>
+        <string>Cabinets &amp;&amp; Wardrobes</string>
        </attribute>
        <layout class="QVBoxLayout" name="verticalLayout_6">
         <item>
@@ -3204,8 +3346,8 @@ background-repeat: none;</string>
       <widget class="QWidget" name="tbKitchen">
        <property name="geometry">
         <rect>
-         <x>-30</x>
-         <y>-121</y>
+         <x>0</x>
+         <y>0</y>
          <width>217</width>
          <height>330</height>
         </rect>
@@ -5551,6 +5693,7 @@ background-repeat: none;</string>
     </property>
     <addaction name="actionClear_All"/>
     <addaction name="actionShortcuts"/>
+    <addaction name="SaveAsImage"/>
     <addaction name="separator"/>
     <addaction name="actionQuit"/>
    </widget>
@@ -5576,7 +5719,7 @@ background-repeat: none;</string>
     <string>Show shortcuts cheat sheet</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+S</string>
+    <string>Ctrl+H</string>
    </property>
   </action>
   <action name="actionQuit">
@@ -5590,7 +5733,17 @@ background-repeat: none;</string>
     <string>Ctrl+Q</string>
    </property>
   </action>
+  <action name="SaveAsImage">
+   <property name="text">
+    <string>Save as Image</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="../resources.qrc"/>
+ </resources>
  <connections/>
 </ui>

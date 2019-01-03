@@ -74,7 +74,17 @@
           <item>
            <widget class="QPushButton" name="btnNewRoom">
             <property name="text">
-             <string>New Room</string>
+             <string>  New room</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../resources.qrc">
+              <normaloff>:/img/buttons/new.png</normaloff>:/img/buttons/new.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>18</width>
+              <height>20</height>
+             </size>
             </property>
            </widget>
           </item>
@@ -111,28 +121,68 @@
           <item>
            <widget class="QPushButton" name="btnRotate">
             <property name="text">
-             <string>Rotate</string>
+             <string> Rotate</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../resources.qrc">
+              <normaloff>:/img/buttons/rotate_left_90.png</normaloff>:/img/buttons/rotate_left_90.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="btnZoomOut">
             <property name="text">
-             <string>Zoom Out</string>
+             <string> Zoom out</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../resources.qrc">
+              <normaloff>:/img/buttons/zoom_out.png</normaloff>:/img/buttons/zoom_out.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="btnZoomIn">
             <property name="text">
-             <string>Zoom In</string>
+             <string> Zoom in</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../resources.qrc">
+              <normaloff>:/img/buttons/zoom_in.png</normaloff>:/img/buttons/zoom_in.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
             </property>
            </widget>
           </item>
           <item>
            <widget class="QPushButton" name="btnDelete">
             <property name="text">
-             <string>Delete</string>
+             <string> Delete</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../resources.qrc">
+              <normaloff>:/img/buttons/delete.png</normaloff>:/img/buttons/delete.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
             </property>
            </widget>
           </item>
@@ -571,7 +621,7 @@ height: 65px;</string>
     <string>Shortcuts</string>
    </property>
    <property name="shortcut">
-    <string>Ctrl+S</string>
+    <string>Ctrl+H</string>
    </property>
   </action>
   <action name="actionQuit">
@@ -583,6 +633,8 @@ height: 65px;</string>
    </property>
   </action>
  </widget>
- <resources/>
+ <resources>
+  <include location="../resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
