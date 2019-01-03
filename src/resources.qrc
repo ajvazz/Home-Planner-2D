@@ -218,5 +218,19 @@
         <file>img/furniture/floor/tiles_white_1.jpg</file>
         <file>img/furniture/floor/tiles_white_2.jpg</file>
         <file>img/furniture/floor/tiles_white_3.jpg</file>
+        <file>img/buttons/center.png</file>
+        <file>img/buttons/delete.png</file>
+        <file>img/buttons/flip.png</file>
+        <file>img/buttons/move_left.png</file>
+        <file>img/buttons/move_right.png</file>
+        <file>img/buttons/new.png</file>
+        <file>img/buttons/rotate_left.png</file>
+        <file>img/buttons/rotate_left_90.png</file>
+        <file>img/buttons/rotate_left_red.png</file>
+        <file>img/buttons/rotate_right.png</file>
+        <file>img/buttons/rotate_right_90.png</file>
+        <file>img/buttons/rotate_right_red.png</file>
+        <file>img/buttons/zoom_in.png</file>
+        <file>img/buttons/zoom_out.png</file>
     </qresource>
 </RCC>
