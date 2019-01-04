@@ -31,25 +31,8 @@
 *.out
 *.app
 
-# Directories
-build-src-Desktop_Qt_5_12_0_GCC_64bit-Debug/
-
-# Qt-es
-*.pro.user
-*.pro.user.*
-
-# C++ objects and libs
-*.slo
-*.lo
-*.o
-*.a
-*.la
-*.lai
-*.so
-*.dll
-*.dylib
-
 # This Qt.gitignore list is taken from: https://github.com/github/gitignore
+
 # Qt-es
 object_script.*.Release
 object_script.*.Debug
