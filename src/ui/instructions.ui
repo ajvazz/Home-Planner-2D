@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Instructions</class>
+ <widget class="QMainWindow" name="Instructions">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>778</width>
+    <height>516</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="styleSheet">
+       <string notr="true">font-family: Verdana, Geneva, sans-serif;
+background-color: rgb(239, 239, 239);
+</string>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <property name="documentMode">
+       <bool>false</bool>
+      </property>
+      <widget class="QWidget" name="tabMain">
+       <attribute name="title">
+        <string>Main</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QLabel" name="lblTextMain">
+          <property name="text">
+           <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600; color:#14248c;&quot;&gt;WELCOME TO HOME PLANNER 2D!&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;Home Planner 2D is a university project created by &lt;/span&gt;&lt;a href=&quot;https://github.com/ajvazz&quot;&gt;&lt;span style=&quot; font-size:12pt; text-decoration: underline; color:#007af4;&quot;&gt;Nenad Ajvaz&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; and &lt;/span&gt;&lt;a href=&quot;https://github.com/ajvaznevena&quot;&gt;&lt;span style=&quot; font-size:12pt; text-decoration: underline; color:#007af4;&quot;&gt;Nevena Ajvaz&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; for a Software Development course. It is written in C++ using Qt framework.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;This course is held at &lt;/span&gt;&lt;a href=&quot;http://www.racunarstvo.matf.bg.ac.rs/?locale=sr_RS&quot;&gt;&lt;span style=&quot; font-size:12pt; text-decoration: underline; color:#007af4;&quot;&gt;Computer Science department&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; of &lt;/span&gt;&lt;a href=&quot;http://www.matf.bg.ac.rs/&quot;&gt;&lt;span style=&quot; font-size:12pt; text-decoration: underline; color:#007af4;&quot;&gt;Faculty of Mathematics&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt;, &lt;/span&gt;&lt;a href=&quot;http://www.bg.ac.rs/&quot;&gt;&lt;span style=&quot; font-size:12pt; text-decoration: underline; color:#007af4;&quot;&gt;University of Belgrade&lt;/span&gt;&lt;/a&gt;&lt;span style=&quot; font-size:12pt;&quot;&gt; in Serbia.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/MATF-RS19/RS027-home-planner-2d&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#007af4;&quot;&gt;Link to this project's Github.&lt;/span&gt;&lt;/a&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; text-decoration: underline; color:#000000;&quot;&gt;Create New&lt;/span&gt;&lt;/p&gt;&lt;p&gt;The user can choose to create rooms first or use a pre-made template and go straight to furniture editor.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+          </property>
+          <property name="wordWrap">
+           <bool>true</bool>
+          </property>
+          <property name="margin">
+           <number>0</number>
+          </property>
+          <property name="openExternalLinks">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabRooms">
+       <attribute name="title">
+        <string>Creating rooms</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_6">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QScrollArea" name="scrollAreaRooms">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaContainerRooms">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>760</width>
+             <height>613</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_7">
+            <item>
+             <widget class="QLabel" name="lblTextRooms">
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Creating rooms (Start from scratch)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; text-decoration: underline;&quot;&gt;Overview&lt;/span&gt;&lt;/p&gt;&lt;p&gt;On the left side of this window is the working area and control buttons. On the right side is a catalog of available floor textures.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; text-decoration: underline;&quot;&gt;Working area&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Here is a preview of all rooms the user has created. In this view, he can interact with them by dragging, selecting, rotating and deleting. Control buttons provide these actions.&lt;/p&gt;&lt;p&gt;Multiple room selection is supported: Ctrl + LeftClick.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; text-decoration: underline;&quot;&gt;Controls&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Zooming in/out doesn't require room(s) to be selected. Rotation, deletion and translation require room(s) to be selected.&lt;/p&gt;&lt;p&gt;'New room' button can take dimensions of any precision, and they are measured in meters.&lt;/p&gt;&lt;p&gt;'Next' button finishes with room design and goes to the next stage. They are passed to furniture equipment.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; text-decoration: underline;&quot;&gt;Texture catalog&lt;/span&gt;&lt;/p&gt;&lt;p&gt;The user must specify which rooms are to be floored by selecting them. &lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; text-decoration: underline;&quot;&gt;Menu bar options&lt;/span&gt;&lt;/p&gt;&lt;p&gt;• Clear All (Ctrl+L) - clears everything from the scene&lt;/p&gt;&lt;p&gt;• Shortcuts (Ctrl+H) - shows list of shortcuts for this window&lt;/p&gt;&lt;p&gt;• Quit (Ctrl+Q) - quits Home Planner 2D&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tabFurniture">
+       <attribute name="title">
+        <string>Adding furniture</string>
+       </attribute>
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <property name="spacing">
+         <number>0</number>
+        </property>
+        <property name="leftMargin">
+         <number>0</number>
+        </property>
+        <property name="topMargin">
+         <number>0</number>
+        </property>
+        <property name="rightMargin">
+         <number>0</number>
+        </property>
+        <property name="bottomMargin">
+         <number>0</number>
+        </property>
+        <item>
+         <widget class="QScrollArea" name="scrollAreaFurniture">
+          <property name="frameShape">
+           <enum>QFrame::NoFrame</enum>
+          </property>
+          <property name="widgetResizable">
+           <bool>true</bool>
+          </property>
+          <widget class="QWidget" name="scrollAreaContentsFurniture">
+           <property name="geometry">
+            <rect>
+             <x>0</x>
+             <y>0</y>
+             <width>760</width>
+             <height>663</height>
+            </rect>
+           </property>
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QLabel" name="lblTextFurniture">
+              <property name="text">
+               <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:16pt; font-weight:600;&quot;&gt;Adding furniture (Use default template)&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600; text-decoration: underline;&quot;&gt;Overview&lt;/span&gt;&lt;/p&gt;&lt;p&gt;On the left side of this window is the working area and control buttons. On the right side is a catalog of available furniture.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; text-decoration: underline;&quot;&gt;Working area&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Here, the user has a preview of all furniture and rooms. In this view, he can interact with furniture by dragging, selecting, rotating, flipping and deleting. Control buttons provide these actions. Rooms are not interactable in this window.&lt;/p&gt;&lt;p&gt;Multiple furniture selection is supported: Ctrl + LeftClick.&lt;/p&gt;&lt;p&gt;Double left/right click: increases/decreases furniture's priority to be drawn on top.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; text-decoration: underline;&quot;&gt;Controls&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Zooming in/out, scene rotation and scene centering don't require furniture to be selected. Rotation, deletion, flipping and translation require furniture to be selected.&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; text-decoration: underline;&quot;&gt;Furniture catalog&lt;/span&gt;&lt;/p&gt;&lt;p&gt;Furniture is sorted by category in different tabs. When the user clicks on a furniture icon, it is created in the center of the scene.&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;span style=&quot; font-size:12pt; font-weight:600; text-decoration: underline;&quot;&gt;Menu bar options&lt;/span&gt;&lt;/p&gt;&lt;p&gt;• Clear All (Ctrl+L) - clears everything from the scene&lt;/p&gt;&lt;p&gt;• Shortcuts (CTRL+H) - shows list of shortcuts for this window&lt;/p&gt;&lt;p&gt;• Save as Image (Ctrl+S) - saves current scene as an image. User has to specify extension (.png, .jpg...). Zooming out the scene first is recommended.&lt;/p&gt;&lt;p&gt;• Quit (Ctrl+Q) - quits Home Planner 2D&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
