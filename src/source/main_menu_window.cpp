@@ -65,37 +65,9 @@ void MainMenuWindow::on_btnAbout_clicked()
 
 void MainMenuWindow::on_btnInstructions_clicked()
 {
-    QMessageBox::about(this, "Instructions",
-        "MAIN MENU\n\n"
-        "Upon clicking 'Create New', the user is prompted with a choice between "
-        "creating everything from the beginning or choosing a pre-made template.\n\n"
-
-        "START FROM SCRATCH (not available yet)\n"
-        ". . .\n\n"
-
-        "CHOOSE A TEMPLATE\n\n"
-        "(1) The right part of the working area is a sorted catalog of furniture.\n"
-        "(2) The left part of the working area is the current scheme and output, on which "
-        "the user can interact with furniture.\n"
-        "(3) On the bottom-left are the controls for that interaction.\n\n"
-
-        "(1) Here the user can choose from a range of various pieces of furniture. "
-        "For some hardly recognizable furniture, the user can hover over its icon for "
-        "a short description. Items are created by clicking in the catalog and they "
-        "will always appear in the center of the scene.\n\n"
-
-        "(2) This is the working area. Here the furniture will be created and manipulated "
-        "with. Item and scene manipulation is under (3).\n"
-        "When the item on the scene is selected, a green outline is shown. Multi selection is "
-        "supported, which can be done in a standard way : CTRL + left click, and "
-        "everything selected is treated as a single item.\n\n"
-
-        "(3) Top row of buttons controls the scene, and the bottom row controls furniture. "
-        "Supported transformations are rotation, translation and zooming. "
-        "Hovering over control buttons will create a bubble with short info.\n\n"
-
-        "List of shortcuts can be seen in menu bar or by clicking CTRL + S when the program starts.\n"
-    );
+    instructions = new Instructions;
+    instructions->show();
+    // FIXME - every time this button is clicked, it will create new instance of Instructions
 }
 
 void MainMenuWindow::on_btnTemplate_clicked()

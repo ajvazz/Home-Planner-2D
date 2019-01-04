@@ -4,6 +4,7 @@
 #include "centered_window.hpp"
 #include "template_window.hpp"
 #include "design_window.hpp"
+#include "instructions.hpp"
 
 namespace Ui {
 class MainMenuWindow;
@@ -31,6 +32,8 @@ private:
     Ui::MainMenuWindow *ui;
     TemplateWindow *tempWind;
     DesignWindow *designWind;
+    Instructions *instructions;
+
     void setBackgroundImage();
 };
 
