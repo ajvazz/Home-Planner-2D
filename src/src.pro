@@ -19,7 +19,8 @@ SOURCES += \
         source/design_window.cpp \
         source/centered_window.cpp \
         source/furniture.cpp \
-        source/room.cpp
+        source/room.cpp \
+        source/instructions.cpp
 
 HEADERS += \
         headers/main_menu_window.hpp \
@@ -27,13 +28,15 @@ HEADERS += \
         headers/design_window.hpp \
         headers/centered_window.hpp \
         headers/furniture.hpp \
-        headers/room.hpp
+        headers/room.hpp \
+        headers/instructions.hpp
 
 FORMS += \
         ui/main_menu_window.ui \
         ui/template_window.ui \
         ui/design_window.ui \
-        ui/centered_window.ui
+        ui/centered_window.ui \
+        ui/instructions.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
