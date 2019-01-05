@@ -232,5 +232,13 @@
         <file>img/buttons/rotate_right_red.png</file>
         <file>img/buttons/zoom_in.png</file>
         <file>img/buttons/zoom_out.png</file>
+        <file>img/buttons/move_up.png</file>
+        <file>img/buttons/move_down.png</file>
+        <file>img/furniture/doors/doors_6.png</file>
+        <file>img/furniture/doors/doors_5.png</file>
+        <file>img/furniture/doors/doors_4.png</file>
+        <file>img/furniture/doors/doors_3.png</file>
+        <file>img/furniture/doors/doors_2.png</file>
+        <file>img/furniture/doors/doors_1.png</file>
     </qresource>
 </RCC>
