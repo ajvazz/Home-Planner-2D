@@ -10,11 +10,26 @@ Room::Room(double width, double height, QString urlPath)
     setFlags(ItemIsMovable | ItemIsFocusable | ItemIsSelectable);
 
     angle = 0;
+    numberRooms++;
 
     /* Setting position to center of scene (screen) */
     int screenWidth  = QApplication::desktop()->width();
     int screenHeight = QApplication::desktop()->height();
     setPos(screenWidth/3, screenHeight/3);
+}
+
+Room::~Room()
+{
+    numberRooms--;
+//    QGraphicsItem::~QGraphicsItem();    // ???
+}
+
+/* Initialization of a static variable */
+int Room::numberRooms= 0;
+
+double Room::getArea() const
+{
+    return m_width * m_height / (33 * 33);
 }
 
 void Room::setFloorPath(QString urlP)

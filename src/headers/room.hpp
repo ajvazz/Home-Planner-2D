@@ -8,6 +8,7 @@ class Room : public QGraphicsItem
 {
 public:
     Room(double width, double height, QString urlPath);
+    ~Room() override;
 
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
                QWidget *widget = nullptr) override;
@@ -17,6 +18,8 @@ public:
     QString floorPath() const;
     void setFloorPath(QString urlP);
     void rotate(qreal angleParam);
+    double getArea() const;
+    static int numberRooms;     // Room counter
 
 private:
     qreal angle;
