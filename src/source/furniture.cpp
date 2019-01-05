@@ -14,6 +14,7 @@ Furniture::Furniture(QString urlPath, int width, int height, QGraphicsItem *pare
     angle = 0;
     zValue = 0;
     m_isFlipped = false;
+    numberFurniture++;
 
     /* Setting position to center of scene (screen) */
     int screenWidth  = QApplication::desktop()->width();
@@ -21,10 +22,19 @@ Furniture::Furniture(QString urlPath, int width, int height, QGraphicsItem *pare
     setPos(screenWidth/3, screenHeight/3);
 }
 
+Furniture::~Furniture()
+{
+    numberFurniture--;
+//    QGraphicsItem::~QGraphicsItem();    // ???
+}
+
 /* Necessary for QGraphicsItem casting */
 int Furniture::type() const {
     return Type;
 }
+
+/* Initialization of a static variable */
+int Furniture::numberFurniture = 0;
 
 void Furniture::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
@@ -50,11 +60,7 @@ QRectF Furniture::boundingRect() const {
 
 void Furniture::keyPressEvent(QKeyEvent *event)
 {
-    /*
-     * SHIFT makes every transformation action 'bigger'
-     * Rotation + SHIFT = 90 deg, else 5 deg
-     * Translation + SHIFT = 10px, else 2px
-     */
+    /* Translation + SHIFT = 10px, else 2px */
     bool shiftPressed = event->modifiers() & Qt::ShiftModifier;
 
     switch ( event->key() )
@@ -62,40 +68,39 @@ void Furniture::keyPressEvent(QKeyEvent *event)
         /* Moving */
         case Qt::Key_Right:
             if (shiftPressed)
-                move(10, 0);
+                move(5, 0);
             else
                 move(1, 0);
             break;
 
         case Qt::Key_Left:
             if (shiftPressed)
-                move(-10, 0);
+                move(-5, 0);
             else
                 move(-1, 0);
             break;
 
         case Qt::Key_Up:
             if (shiftPressed)
-                move(0, -10);
+                move(0, -5);
             else
                 move(0, -1);
             break;
 
         case Qt::Key_Down:
             if (shiftPressed)
-                move(0, 10);
+                move(0, 5);
             else
                 move(0, 1);
             break;
 
-        /* Rotating */
+        /* Furniture rotation */
         case Qt::Key_R:
             if (shiftPressed)
                 rotate(90);
             else
                 rotate(5);
             break;
-
         case Qt::Key_E:
             if (shiftPressed)
                 rotate(-90);
@@ -107,10 +112,7 @@ void Furniture::keyPressEvent(QKeyEvent *event)
             swapFlipped();
             break;
 
-        /* Deleting */
         case Qt::Key_Delete:
-            /* BUG - this deletes only the last selected item.
-             * Use button to delete all */
             delete this;
             break;
     }
@@ -165,9 +167,9 @@ void Furniture::mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event)
 {
     if (event->button() == Qt::LeftButton) {
         zValue++;
-        /* Constraining maximum depth of z-buffer to 10 */
-        if (zValue > 10)
-            zValue = 10;
+        /* Constraining maximum depth of z-buffer to 5 */
+        if (zValue > 5)
+            zValue = 5;
     }
 
     else if (event->button() == Qt::RightButton) {

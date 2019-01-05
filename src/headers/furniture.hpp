@@ -8,6 +8,7 @@ class Furniture : public QGraphicsItem
 {
 public:
     Furniture (QString urlPath, int width, int height, QGraphicsItem *parent = nullptr);
+    ~Furniture() override;
 
 protected:
     void paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
@@ -20,7 +21,6 @@ protected:
     void hoverLeaveEvent(QGraphicsSceneHoverEvent *event) override;
     void mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event) override;
 
-/* These are public because they are needed in TemplateWindow */
 public:
 
     /* Necessary for QGraphicsItem casting */
@@ -29,8 +29,9 @@ public:
 
     void move(qreal x, qreal y);
     void rotate(qreal angleParam);
-    bool isFlipped() const;
     void swapFlipped();
+    bool isFlipped() const;
+    static int numberFurniture;     // Furniture counter
 
 private:
     QPen m_pen;
