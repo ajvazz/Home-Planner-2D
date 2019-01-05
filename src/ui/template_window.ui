@@ -5840,10 +5840,12 @@ background-repeat: none;</string>
     <property name="title">
      <string>Options</string>
     </property>
+    <addaction name="actionStatsInfo"/>
+    <addaction name="actionImportProject"/>
+    <addaction name="actionExportProject"/>
+    <addaction name="SaveAsImage"/>
     <addaction name="actionClear_All"/>
     <addaction name="actionShortcuts"/>
-    <addaction name="actionStatsInfo"/>
-    <addaction name="SaveAsImage"/>
     <addaction name="separator"/>
     <addaction name="actionQuit"/>
    </widget>
@@ -5897,6 +5899,22 @@ background-repeat: none;</string>
    </property>
    <property name="shortcut">
     <string>Ctrl+I</string>
+   </property>
+  </action>
+  <action name="actionExportProject">
+   <property name="text">
+    <string>Export Project</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionImportProject">
+   <property name="text">
+    <string>Import Project</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+M</string>
    </property>
   </action>
  </widget>

@@ -1,6 +1,8 @@
 #include <QDesktopWidget>
 #include <QMessageBox>
 #include <QFileDialog>
+#include <QDebug>
+#include <QSettings>
 
 #include "ui_template_window.h"
 #include "../headers/furniture.hpp"
@@ -104,6 +106,11 @@ void TemplateWindow::setDefaultApartmentScheme()
      * scene before rooms and they will be drawn under them. Because of that,
      * we created a m_doorsList and put these door (Furniture) objects in that list
      * to be drawn later, after rooms. */
+
+    /* Enter door */
+    Furniture *d0 = new Furniture(":/img/furniture/doors/doors_5.png", 20, 30);
+    d0->setPos(470, 259); d0->rotate(-90);
+    m_doorList.append(d0);
 
     /* Hallway-living room door */
     Furniture *d1 = new Furniture(":/img/furniture/doors/doors_5.png", 20, 30);
@@ -332,6 +339,8 @@ void TemplateWindow::on_SaveAsImage_triggered()
 {
     QString fileName = QFileDialog::getSaveFileName(this, "Save Scene As",
             "", "PNG(*.png);; JPEG(*.jpg *.jpeg)");
+    if (fileName.isEmpty())
+        return;
 
 //    QPixmap pixmap = QWidget::grab(ui->graphicsView->rect()); // Not deprecated
     QPixmap pixmap = QPixmap::grabWidget(ui->graphicsView);   // Deprecated, but works better
@@ -345,6 +354,56 @@ void TemplateWindow::on_actionStatsInfo_triggered()
         "Used pieces of furniture: " + QString::number(Furniture::numberFurniture) + "\n"
     );
 }
+
+/* EXPORT */
+void TemplateWindow::on_actionExportProject_triggered()
+{
+    QString fileName = QFileDialog::getSaveFileName(this, "Choose where to export project",
+                "", "Text (*.txt);; All Files (*)");
+
+    if (fileName.isEmpty())
+        return;
+
+    QFile file(fileName);
+
+    if (file.open(QIODevice::WriteOnly))
+    {
+        QDataStream out(&file);
+
+        /* Grab all items from the scene */
+        QList<QGraphicsItem*> items = ui->graphicsView->scene()->items();
+        out << items;
+    }
+
+    file.close();
+}
+
+/* IMPORT */
+void TemplateWindow::on_actionImportProject_triggered()
+{
+    QString fileName = QFileDialog::getOpenFileName(this, "Choose a project to import",
+                "", "Text (*.txt);; All Files (*)");
+    if (fileName.isEmpty())
+        return;
+
+    QFile file(fileName);
+
+    if (file.open(QIODevice::ReadOnly))
+    {
+        QDataStream in(&file);
+        ui->graphicsView->scene()->clear();
+
+        QList<QGraphicsItem*> inputItems;
+//        in >> inputItems;
+
+//        for (auto item : inputItems)
+//            ui->graphicsView->scene()->addItem(item);
+    }
+
+    file.close();
+    TemplateWindow::update();
+}
+
 
 void TemplateWindow::on_actionShortcuts_triggered()
 {

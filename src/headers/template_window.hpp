@@ -40,6 +40,8 @@ private slots:
     void on_actionQuit_triggered();
     void on_SaveAsImage_triggered();
     void on_actionStatsInfo_triggered();
+    void on_actionExportProject_triggered();
+    void on_actionImportProject_triggered();
 
     /* Item manipulation */
     void on_btnFlip_clicked();
