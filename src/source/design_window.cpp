@@ -119,6 +119,58 @@ void DesignWindow::on_btnDelete_clicked()
     }
 }
 
+void DesignWindow::on_btnMoveUp_clicked()
+{
+    QList<QGraphicsItem*> selectedRooms = ui->graphicsView->scene()->selectedItems();
+    if (selectedRooms.isEmpty())
+        return;
+    else {
+        for (auto room : selectedRooms) {
+            Room *selectedRoom = qgraphicsitem_cast<Room*>(room);
+            selectedRoom->moveBy(0,-0.75); // Up
+        }
+    }
+}
+
+void DesignWindow::on_btnMoveDown_clicked()
+{
+    QList<QGraphicsItem*> selectedRooms = ui->graphicsView->scene()->selectedItems();
+    if (selectedRooms.isEmpty())
+        return;
+    else {
+        for (auto room : selectedRooms) {
+            Room *selectedRoom = qgraphicsitem_cast<Room*>(room);
+            selectedRoom->moveBy(0,0.75); // Down
+        }
+    }
+}
+
+void DesignWindow::on_btnMoveRight_clicked()
+{
+    QList<QGraphicsItem*> selectedRooms = ui->graphicsView->scene()->selectedItems();
+    if (selectedRooms.isEmpty())
+        return;
+    else {
+        for (auto room : selectedRooms) {
+            Room *selectedRoom = qgraphicsitem_cast<Room*>(room);
+            selectedRoom->moveBy(0.75,0); // Right
+        }
+    }
+}
+
+void DesignWindow::on_btnMoveLeft_clicked()
+{
+    QList<QGraphicsItem*> selectedRooms = ui->graphicsView->scene()->selectedItems();
+    if (selectedRooms.isEmpty())
+        return;
+    else {
+        for (auto room : selectedRooms) {
+            Room *selectedRoom = qgraphicsitem_cast<Room*>(room);
+            selectedRoom->moveBy(-0.75,0); // Left
+        }
+    }
+}
+
 void DesignWindow::keyPressEvent(QKeyEvent *event)
 {
     /*
@@ -147,6 +199,20 @@ void DesignWindow::keyPressEvent(QKeyEvent *event)
 
         case Qt::Key_N:
             ui->btnNewRoom->click();
+            break;
+
+        /* These don't work for some reason */
+        case Qt::Key_Up:
+            ui->btnMoveUp->click();
+            break;
+        case Qt::Key_Down:
+            ui->btnMoveDown->click();
+            break;
+        case Qt::Key_Left:
+            ui->btnMoveLeft->click();
+            break;
+        case Qt::Key_Right:
+            ui->btnMoveRight->click();
             break;
     }
 }

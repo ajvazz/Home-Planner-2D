@@ -38,6 +38,10 @@ private slots:
     void on_btnZoomIn_clicked();
     void on_btnRotate_clicked();
     void on_btnDelete_clicked();
+    void on_btnMoveUp_clicked();
+    void on_btnMoveDown_clicked();
+    void on_btnMoveRight_clicked();
+    void on_btnMoveLeft_clicked();
 
     /* Floors & Tiles */
     void on_btnNewRoom_clicked();

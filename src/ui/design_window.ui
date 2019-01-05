@@ -104,7 +104,7 @@
          </layout>
         </item>
         <item>
-         <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="2,2,2,2,2,2,5,5,5,5,2">
           <item>
            <spacer name="horizontalSpacer_4">
             <property name="orientation">
@@ -117,6 +117,84 @@
              </size>
             </property>
            </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnMoveLeft">
+            <property name="text">
+             <string> Left</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../resources.qrc">
+              <normaloff>:/img/buttons/move_left.png</normaloff>:/img/buttons/move_left.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnMoveRight">
+            <property name="text">
+             <string> Right</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../resources.qrc">
+              <normaloff>:/img/buttons/move_right.png</normaloff>:/img/buttons/move_right.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnMoveDown">
+            <property name="text">
+             <string> Down</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../resources.qrc">
+              <normaloff>:/img/buttons/move_down.png</normaloff>:/img/buttons/move_down.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="btnMoveUp">
+            <property name="styleSheet">
+             <string notr="true">width: 5px;</string>
+            </property>
+            <property name="text">
+             <string> Up</string>
+            </property>
+            <property name="icon">
+             <iconset resource="../resources.qrc">
+              <normaloff>:/img/buttons/move_up.png</normaloff>:/img/buttons/move_up.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>20</width>
+              <height>20</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="Line" name="lineVertical">
+            <property name="orientation">
+             <enum>Qt::Vertical</enum>
+            </property>
+           </widget>
           </item>
           <item>
            <widget class="QPushButton" name="btnRotate">
