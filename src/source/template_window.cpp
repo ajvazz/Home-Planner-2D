@@ -19,6 +19,8 @@ TemplateWindow::TemplateWindow(QWidget *parent,
     /* Always start with the first tab opened */
     ui->toolBox->setCurrentIndex(0);
 
+    m_roomArea = 0;
+
     /* Creates and initializes the scene, then rooms */
     drawGraphicsScene();
     drawRooms();
@@ -27,7 +29,6 @@ TemplateWindow::TemplateWindow(QWidget *parent,
 TemplateWindow::~TemplateWindow() {
     delete ui;
 }
-
 
 void TemplateWindow::drawGraphicsScene()
 {
@@ -47,29 +48,82 @@ void TemplateWindow::drawRooms()
 {
     /* If we chose 'Use Default Template', this list will be empty */
     if (m_roomList.isEmpty()) {
-        // default
+        setDefaultApartmentScheme();
     }
 
-    else {
-        /* This rooms list is created in DesignWindow, it contains rooms
-         * which user has made there. They are drawn, but not interactable. */
+    /* Now this list contains either user-created rooms or default rooms.
+     * First we need to forbid these rooms to be selected, focused and moved. */
+    for (auto room : m_roomList) {
 
-        for (auto room : m_roomList) {
+        /* room is of type QGraphicsItem*, need cast */
+         Room *itemRoom = qgraphicsitem_cast<Room*>(room);
+        /* Disable all flags (selection, focus and moving) */
+         auto currentFlags = itemRoom->flags();
+         itemRoom->setFlags(currentFlags & (~currentFlags));
+         ui->graphicsView->scene()->addItem(itemRoom);
 
-            /* Disable all flags (selection, focus and moving) */
-            auto currentFlags = room->flags();
-            room->setFlags(currentFlags & (~currentFlags));
+         /* While we are here, we can calculate room area */
+         m_roomArea += itemRoom->getArea();
+    }
+    /* Draw doors on top of rooms */
+    for(auto door: m_doorList) {
+        ui->graphicsView->scene()->addItem(door);
+    }
+}
 
-            ui->graphicsView->scene()->addItem(room);
+void TemplateWindow::setDefaultApartmentScheme()
+{
+    /* Living room with kitchen:  6.5 x 4  */
+    Room *living = new Room(6.5*33, 4*33, ":/img/furniture/floor/floor_light_3.jpg");
+    living->setPos(225, 150);
+    m_roomList.append(living);
 
-            /* This could've been done with dynamic cast, but that is not necessary */
-            // Room *itemRoom = qgraphicsitem_cast<Room*>(room);
-            // auto currentFlags = itemRoom->flags();
-            // itemRoom->setFlags(currentFlags & (~currentFlags));
-            // ui->graphicsView->scene()->addItem(itemRoom);
+    /* Hallway:  3.5 x 1  */
+    Room *hallway = new Room(3.5*33, 1*33, ":/img/furniture/floor/tiles_light_grey.jpeg");
+    hallway->setPos(440, 249);
+    m_roomList.append(hallway);
 
-        } // for
-    } // if-else
+    /* Bedroom 1:  3.5 x 3  */
+    Room *bedroom1 = new Room(3.5*33, 3*33, ":/img/furniture/floor/floor_light_3.jpg");
+    bedroom1->setPos(523, 150);
+    m_roomList.append(bedroom1);
+
+    /* Bedroom 2:  2.5 x 4  */
+    Room *bedroom2 = new Room(2.5*33, 4*33, ":/img/furniture/floor/floor_light_3.jpg");
+    bedroom2->setPos(556, 249);
+    m_roomList.append(bedroom2);
+
+    /* Bathroom: 2.5 x 3 */
+    Room *bathroom = new Room(2.5*33, 3*33, ":/img/furniture/floor/tiles_white_1.jpg");
+    bathroom->setPos(440, 150);
+    m_roomList.append(bathroom);
+
+    /* ADDING DOORS */
+    /* Because we have put all default rooms in m_roomList, they will be drawn
+     * right after this function finishes. Problem is the doors are added to the
+     * scene before rooms and they will be drawn under them. Because of that,
+     * we created a m_doorsList and put these door (Furniture) objects in that list
+     * to be drawn later, after rooms. */
+
+    /* Hallway-living room door */
+    Furniture *d1 = new Furniture(":/img/furniture/doors/doors_5.png", 20, 30);
+    d1->setPos(421.5, 251); d1->rotate(180);
+    m_doorList.append(d1);
+
+    /* Hallway-bathroom door */
+    Furniture *d2 = new Furniture(":/img/furniture/doors/doors_6.png", 20, 30);
+    d2->setPos(447, 226.3); d2->rotate(-90);
+    m_doorList.append(d2);
+
+    /* Hallway-bedroom1 door */
+    Furniture *d3 = new Furniture(":/img/furniture/doors/doors_3.png", 20, 30);
+    d3->setPos(529, 226.3); d3->rotate(-90);
+    m_doorList.append(d3);
+
+    /* Hallway-bedroom2 door */
+    Furniture *d4 = new Furniture(":/img/furniture/doors/doors_3.png", 20, 30);
+    d4->setPos(553.5, 251);
+    m_doorList.append(d4);
 }
 
 
@@ -82,9 +136,8 @@ void TemplateWindow::on_btnMoveLeft_clicked()
         return;
     else {
         for (auto item : selectedItems) {
-            // if (item.type() == UserType+1)   produces error!
             Furniture *itemFurniture = qgraphicsitem_cast<Furniture*>(item);
-            itemFurniture->move(-10, 0);
+            itemFurniture->move(-5, 0);
         }
     }
 }
@@ -96,9 +149,8 @@ void TemplateWindow::on_btnMoveRight_clicked()
         return;
     else {
         for (auto item : selectedItems) {
-            // if (item.type() == UserType+1)   produces error!
             Furniture *itemFurniture = qgraphicsitem_cast<Furniture*>(item);
-            itemFurniture->move(10, 0);
+            itemFurniture->move(5, 0);
         }
     }
 }
@@ -110,7 +162,6 @@ void TemplateWindow::on_btnRotateRight_clicked()
         return;
     else {
         for (auto item : selectedItems) {
-            // if (item.type() == UserType+1)   produces error!
             Furniture *itemFurniture = qgraphicsitem_cast<Furniture*>(item);
             itemFurniture->rotate(5);
         }
@@ -124,7 +175,6 @@ void TemplateWindow::on_btnRotateLeft_clicked()
         return;
     else {
         for (auto item : selectedItems) {
-            // if (item.type() == UserType+1)   produces error!
             Furniture *itemFurniture = qgraphicsitem_cast<Furniture*>(item);
             itemFurniture->rotate(-5);
         }
@@ -138,7 +188,6 @@ void TemplateWindow::on_btnFlip_clicked()
         return;
     else {
         for (auto item : selectedItems) {
-            // if (item.type() == UserType+1)   produces error!
             Furniture *itemFurniture = qgraphicsitem_cast<Furniture*>(item);
             itemFurniture->swapFlipped();
             itemFurniture->update();
@@ -153,7 +202,6 @@ void TemplateWindow::on_btnRotate90Right_clicked()
         return;
     else {
         for (auto item : selectedItems) {
-            // if (item.type() == UserType+1)   produces error!
             Furniture *itemFurniture = qgraphicsitem_cast<Furniture*>(item);
             itemFurniture->rotate(90);
         }
@@ -167,7 +215,6 @@ void TemplateWindow::on_btnRotate90Left_clicked()
         return;
     else {
         for (auto item : selectedItems) {
-            // if (item.type() == UserType+1)   produces error!
             Furniture *itemFurniture = qgraphicsitem_cast<Furniture*>(item);
             itemFurniture->rotate(-90);
         }
@@ -181,7 +228,6 @@ void TemplateWindow::on_btnDeleteItem_clicked()
         return;
     else {
         for (auto item : selectedItems) {
-            // if (item.type() == UserType+1)   produces error!
             Furniture *itemFurniture = qgraphicsitem_cast<Furniture*>(item);
             delete itemFurniture;
         }
@@ -213,7 +259,7 @@ void TemplateWindow::on_btnZoomOut_clicked() {
 
 void TemplateWindow::keyPressEvent(QKeyEvent *event)
 {
-    /*
+    /* CONTROLS:
      * +   zooms in  the scene
      * -   zooms out the scene
      * C   centers the scene
@@ -221,30 +267,53 @@ void TemplateWindow::keyPressEvent(QKeyEvent *event)
      * X   rotates the scene right
      */
 
+    /* Rotation and translation are "bigger" if shift is pressed */
+    bool shiftPressed = event->modifiers() & Qt::ShiftModifier;
+
     switch ( event->key() )
     {
+        /* Zooming in/out */
         case Qt::Key_Plus:
             ui->btnZoomIn->click();
             break;
-
         case Qt::Key_Minus:
             ui->btnZoomOut->click();
             break;
 
+        /* Centering */
         case Qt::Key_C:
             ui->btnCenterScene->click();
             break;
 
+        /* Scene rotation */
         case Qt::Key_Z:
             ui->btnRotateSceneLeft->click();
             break;
-
         case Qt::Key_X:
             ui->btnRotateSceneRight->click();
             break;
 
+        /* Furniture manipulation */
         case Qt::Key_Delete:
             ui->btnDeleteItem->click();
+            break;
+
+        case Qt::Key_F:
+            ui->btnFlip->click();
+            break;
+
+        /* Furniture rotation */
+        case Qt::Key_R:
+            if (shiftPressed)
+                ui->btnRotate90Right->click();
+            else
+                ui->btnRotateRight->click();
+            break;
+        case Qt::Key_E:
+            if (shiftPressed)
+                ui->btnRotate90Left->click();
+            else
+                ui->btnRotateLeft->click();
             break;
     }
 }
@@ -264,9 +333,17 @@ void TemplateWindow::on_SaveAsImage_triggered()
     QString fileName = QFileDialog::getSaveFileName(this, "Save Scene As",
             "", "PNG(*.png);; JPEG(*.jpg *.jpeg)");
 
-    //    QPixmap pixmap = QWidget::grab(ui->graphicsView->rect()); // Not deprecated
+//    QPixmap pixmap = QWidget::grab(ui->graphicsView->rect()); // Not deprecated
     QPixmap pixmap = QPixmap::grabWidget(ui->graphicsView);   // Deprecated, but works better
     pixmap.save(fileName);
+}
+void TemplateWindow::on_actionStatsInfo_triggered()
+{
+    QMessageBox::information(this, "Apartment info",
+        "Rooms created: " + QString::number(Room::numberRooms) + "\n\n" +
+        "Apartment size: " + QString::number(m_roomArea) + " m2\n\n" +
+        "Used pieces of furniture: " + QString::number(Furniture::numberFurniture) + "\n"
+    );
 }
 
 void TemplateWindow::on_actionShortcuts_triggered()
@@ -1105,6 +1182,42 @@ void TemplateWindow::on_btnToilet2_white_clicked() {
 }
 void TemplateWindow::on_btnToilet2_grey_clicked() {
     Furniture *f = new Furniture(":/img/furniture/bathroom/toilet_2_grey.png", 12, 15);
+    scene->addItem(f);
+}
+
+/* DOORS */
+void TemplateWindow::on_btnDoor1_clicked()
+{
+    Furniture *f = new Furniture(":/img/furniture/doors/doors_1.png", 20, 30);
+    scene->addItem(f);
+}
+void TemplateWindow::on_btnDoor2_clicked()
+{
+    Furniture *f = new Furniture(":/img/furniture/doors/doors_2.png", 20, 30);
+    scene->addItem(f);
+}
+
+void TemplateWindow::on_btnDoor3_clicked()
+{
+    Furniture *f = new Furniture(":/img/furniture/doors/doors_3.png", 20, 30);
+    scene->addItem(f);
+}
+
+void TemplateWindow::on_btnDoor4_clicked()
+{
+    Furniture *f = new Furniture(":/img/furniture/doors/doors_4.png", 20, 30);
+    scene->addItem(f);
+}
+
+void TemplateWindow::on_btnDoor5_clicked()
+{
+    Furniture *f = new Furniture(":/img/furniture/doors/doors_5.png", 20, 30);
+    scene->addItem(f);
+}
+
+void TemplateWindow::on_btnDoor6_clicked()
+{
+    Furniture *f = new Furniture(":/img/furniture/doors/doors_6.png", 20, 30);
     scene->addItem(f);
 }
 

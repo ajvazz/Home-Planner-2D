@@ -21,13 +21,16 @@ public:
     ~TemplateWindow() override;     // 'override' needed cause of keypressevent, not sure why
     void keyPressEvent(QKeyEvent *event) override;
 
-    void drawGraphicsScene();
     void drawRooms();
+    void drawGraphicsScene();
+    void setDefaultApartmentScheme();
 
 private:
     Ui::TemplateWindow *ui;
     QGraphicsScene *scene;
     QList<QGraphicsItem*> m_roomList;
+    QList<Furniture*> m_doorList;
+    double m_roomArea;
 
 private slots:
 
@@ -36,6 +39,7 @@ private slots:
     void on_actionShortcuts_triggered();
     void on_actionQuit_triggered();
     void on_SaveAsImage_triggered();
+    void on_actionStatsInfo_triggered();
 
     /* Item manipulation */
     void on_btnFlip_clicked();
@@ -238,6 +242,13 @@ private slots:
     void on_btnToilet1_clicked();
     void on_btnToilet2_white_clicked();
     void on_btnToilet2_grey_clicked();
+    /* DOORS */
+    void on_btnDoor1_clicked();
+    void on_btnDoor2_clicked();
+    void on_btnDoor3_clicked();
+    void on_btnDoor4_clicked();
+    void on_btnDoor5_clicked();
+    void on_btnDoor6_clicked();
     /* OTHER */
     void on_btnCarpet1_dark_clicked();
     void on_btnCarpet1_brown_clicked();
