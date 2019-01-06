@@ -350,7 +350,7 @@ void TemplateWindow::on_actionStatsInfo_triggered()
 {
     QMessageBox::information(this, "Apartment info",
         "Rooms created: " + QString::number(Room::numberRooms) + "\n\n" +
-        "Apartment size: " + QString::number(m_roomArea) + " m2\n\n" +
+        "Apartment size: " + QString::number(m_roomArea) + " m²\n\n" +
         "Used pieces of furniture: " + QString::number(Furniture::numberFurniture) + "\n"
     );
 }
