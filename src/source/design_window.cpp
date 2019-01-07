@@ -90,7 +90,6 @@ void DesignWindow::on_btnRotate_clicked()
         return;
     else {
         for (auto room : selectedRooms) {
-            // if (item.type() == UserType+1)   produces error!
             Room *selectedRoom = qgraphicsitem_cast<Room*>(room);
             selectedRoom->rotate(-90);
         }
@@ -112,7 +111,6 @@ void DesignWindow::on_btnDelete_clicked()
         return;
     else {
         for (auto room : selectedRooms) {
-            // if (item.type() == UserType+1)   produces error!
             Room *selectedRoom = qgraphicsitem_cast<Room*>(room);
             delete selectedRoom;
         }
@@ -127,7 +125,7 @@ void DesignWindow::on_btnMoveUp_clicked()
     else {
         for (auto room : selectedRooms) {
             Room *selectedRoom = qgraphicsitem_cast<Room*>(room);
-            selectedRoom->moveBy(0,-0.75); // Up
+            selectedRoom->moveBy(0, -0.75); // Up
         }
     }
 }
@@ -140,7 +138,7 @@ void DesignWindow::on_btnMoveDown_clicked()
     else {
         for (auto room : selectedRooms) {
             Room *selectedRoom = qgraphicsitem_cast<Room*>(room);
-            selectedRoom->moveBy(0,0.75); // Down
+            selectedRoom->moveBy(0, 0.75); // Down
         }
     }
 }
@@ -153,7 +151,7 @@ void DesignWindow::on_btnMoveRight_clicked()
     else {
         for (auto room : selectedRooms) {
             Room *selectedRoom = qgraphicsitem_cast<Room*>(room);
-            selectedRoom->moveBy(0.75,0); // Right
+            selectedRoom->moveBy(0.75, 0); // Right
         }
     }
 }
@@ -166,7 +164,7 @@ void DesignWindow::on_btnMoveLeft_clicked()
     else {
         for (auto room : selectedRooms) {
             Room *selectedRoom = qgraphicsitem_cast<Room*>(room);
-            selectedRoom->moveBy(-0.75,0); // Left
+            selectedRoom->moveBy(-0.75, 0); // Left
         }
     }
 }
@@ -177,6 +175,8 @@ void DesignWindow::keyPressEvent(QKeyEvent *event)
      * +   zooms in  the scene
      * -   zooms out the scene
      * R   room rotate
+     * N   new room
+     * DEL deletes room
      */
 
     switch ( event->key() )

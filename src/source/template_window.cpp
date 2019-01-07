@@ -18,7 +18,7 @@ TemplateWindow::TemplateWindow(QWidget *parent,
     setWindowCenter(1.25, 1.25);
     setWindowTitle("Home Planner 2D");
 
-    /* Always start with the first tab opened */
+    /* Always start with the first catalog tab opened */
     ui->toolBox->setCurrentIndex(0);
 
     m_roomArea = 0;
@@ -54,10 +54,10 @@ void TemplateWindow::drawRooms()
     }
 
     /* Now this list contains either user-created rooms or default rooms.
-     * First we need to forbid these rooms to be selected, focused and moved. */
+     * First we need to remove select, focus and move flags. */
     for (auto room : m_roomList) {
 
-        /* room is of type QGraphicsItem*, need cast */
+        /* room is of type QGraphicsItem*, need cast to Room */
          Room *itemRoom = qgraphicsitem_cast<Room*>(room);
         /* Disable all flags (selection, focus and moving) */
          auto currentFlags = itemRoom->flags();
@@ -68,13 +68,16 @@ void TemplateWindow::drawRooms()
          m_roomArea += itemRoom->getArea();
     }
     /* Draw doors on top of rooms */
-    for(auto door: m_doorList) {
+    for (auto door : m_doorList) {
         ui->graphicsView->scene()->addItem(door);
     }
 }
 
 void TemplateWindow::setDefaultApartmentScheme()
 {
+    /* Rooms are added to m_roomList because they will be drawn later.
+     * Reason for that -> they would be drawn over the doors. */
+
     /* Living room with kitchen:  6.5 x 4  */
     Room *living = new Room(6.5*33, 4*33, ":/img/furniture/floor/floor_light_3.jpg");
     living->setPos(225, 150);
@@ -197,7 +200,7 @@ void TemplateWindow::on_btnFlip_clicked()
         for (auto item : selectedItems) {
             Furniture *itemFurniture = qgraphicsitem_cast<Furniture*>(item);
             itemFurniture->swapFlipped();
-            itemFurniture->update();
+            itemFurniture->update();    // Immediately call paint() which redraws the furniture
         }
     } // if-else
 }
@@ -326,7 +329,7 @@ void TemplateWindow::keyPressEvent(QKeyEvent *event)
 }
 
 
-/* Additional options */
+/* Menu bar options */
 void TemplateWindow::on_actionClear_All_triggered() {
     ui->graphicsView->scene()->clear();
 }
@@ -338,7 +341,7 @@ void TemplateWindow::on_actionQuit_triggered() {
 void TemplateWindow::on_SaveAsImage_triggered()
 {
     QString fileName = QFileDialog::getSaveFileName(this, "Save Scene As",
-            "", "PNG(*.png);; JPEG(*.jpg *.jpeg)");
+            "Screenshot.png", "PNG(*.png);; JPEG(*.jpg *.jpeg)");
     if (fileName.isEmpty())
         return;
 

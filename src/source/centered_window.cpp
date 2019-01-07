@@ -29,6 +29,7 @@ void CenteredWindow::setWindowCenter(double widthCoefficient, double heightCoeff
     double width  = screenWidth / widthCoefficient;
     double height = screenHeight / heightCoefficient;
 
+    /* Left corner of window */
     int x = (screenWidth - int(width)) / 2;
     int y = (screenHeight - int(height)) / 2;
 

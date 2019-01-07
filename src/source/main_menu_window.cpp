@@ -15,6 +15,8 @@ MainMenuWindow::MainMenuWindow(QWidget *parent)
     setWindowCenter(2.5, 1.5);
     setFixedSize(size());
     setBackgroundImage();
+
+    /* First page is default on start */
     ui->stackedWidget->setCurrentIndex(0);
 
     setWindowTitle("Home Planner 2D");
@@ -42,6 +44,7 @@ void MainMenuWindow::on_btnQuit_clicked()
 
 void MainMenuWindow::on_btnCreateNew_clicked()
 {
+    /* Go to second page */
     ui->stackedWidget->setCurrentIndex(1);
     setWindowCenter(2, 1.75);
     setFixedSize(size());
@@ -49,6 +52,7 @@ void MainMenuWindow::on_btnCreateNew_clicked()
 
 void MainMenuWindow::on_btnBack_clicked()
 {
+    /* Go to first page */
     ui->stackedWidget->setCurrentIndex(0);
     setWindowCenter(2.5, 1.5);
     setFixedSize(size());
@@ -67,7 +71,6 @@ void MainMenuWindow::on_btnInstructions_clicked()
 {
     instructions = new Instructions;
     instructions->show();
-    // FIXME - every time this button is clicked, it will create new instance of Instructions
 }
 
 void MainMenuWindow::on_btnTemplate_clicked()

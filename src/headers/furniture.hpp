@@ -23,7 +23,7 @@ protected:
 
 public:
 
-    /* Necessary for QGraphicsItem casting */
+    /* Necessary for QGraphicsItem casting (not needed) */
     enum { Type = UserType + 1 };
     int type() const override;
 

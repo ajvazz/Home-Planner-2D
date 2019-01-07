@@ -35,7 +35,6 @@ FORMS += \
         ui/main_menu_window.ui \
         ui/template_window.ui \
         ui/design_window.ui \
-        ui/centered_window.ui \
         ui/instructions.ui
 
 # Default rules for deployment.

@@ -14,6 +14,7 @@ public:
                QWidget *widget = nullptr) override;
 
     QRectF boundingRect() const override;
+    void keyPressEvent(QKeyEvent *event) override;
 
     QString floorPath() const;
     void setFloorPath(QString urlP);

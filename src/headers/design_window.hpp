@@ -17,7 +17,7 @@ class DesignWindow : public CenteredWindow
 
 public:
     explicit DesignWindow(QWidget *parent = nullptr);
-    ~DesignWindow() override;   // 'override' needed cause of keypressevent, not sure why
+    ~DesignWindow() override;   // 'override' needed because of keypressevent
     void keyPressEvent(QKeyEvent *event) override;
 
 private:

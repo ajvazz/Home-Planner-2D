@@ -8,7 +8,7 @@ namespace Ui {
 class Instructions;
 }
 
-class Instructions : public CenteredWindow /*QMainWindow*/
+class Instructions : public CenteredWindow
 {
     Q_OBJECT
 

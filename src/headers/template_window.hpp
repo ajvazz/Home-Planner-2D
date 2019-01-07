@@ -11,14 +11,14 @@ namespace Ui {
 class TemplateWindow;
 }
 
-class TemplateWindow : public CenteredWindow /*QMainWindow*/
+class TemplateWindow : public CenteredWindow
 {
     Q_OBJECT
 
 public:
     explicit TemplateWindow(QWidget *parent = nullptr,
                             QList<QGraphicsItem*> roomList = QList<QGraphicsItem*>() );
-    ~TemplateWindow() override;     // 'override' needed cause of keypressevent, not sure why
+    ~TemplateWindow() override;     // 'override' needed cause of keypressevent
     void keyPressEvent(QKeyEvent *event) override;
 
     void drawRooms();
@@ -30,7 +30,7 @@ private:
     QGraphicsScene *scene;
     QList<QGraphicsItem*> m_roomList;
     QList<Furniture*> m_doorList;
-    double m_roomArea;
+    double m_roomArea;  // variable which holds total apartment area
 
 private slots:
 
@@ -74,6 +74,7 @@ private slots:
     void on_btnSofa2_White_clicked();
     void on_btnSofa2_Red_clicked();
     void on_btnSofa2_Yellow_clicked();
+
     /* CORNER SOFAS */
     void on_btnCornerSofa1_Black_clicked();
     void on_btnCornerSofa1_Beige_clicked();
@@ -95,10 +96,12 @@ private slots:
     void on_btnCornerSofa3_Blue_clicked();
     void on_btnCornerSofa4_Black_clicked();
     void on_btnCornerSofa4_White_clicked();
+
     /* BENCHES */
     void on_btnBenchBamboo_clicked();
     void on_btnBenchWooden_Light_clicked();
     void on_btnBenchWooden_Dark_clicked();
+
     /* ARMCHAIRS */
     void on_btnArmchair1_black_clicked();
     void on_btnArmchair1_white_clicked();
@@ -119,6 +122,7 @@ private slots:
     void on_btnTabouret_brown_clicked();
     void on_btnTabouret_white_clicked();
     void on_btnTabouret_blue_clicked();
+
     /* TABLES */
     void on_btnTable1_dark_clicked();
     void on_btnTable1_grey_clicked();
@@ -145,6 +149,7 @@ private slots:
     void on_btnTVStand_darkgrey_clicked();
     void on_btnTVStand_lightgrey_clicked();
     void on_btnTVStand_dark_clicked();
+
     /* CHAIRS */
     void on_btnChair1_black_clicked();
     void on_btnChair1_grey_clicked();
@@ -157,6 +162,7 @@ private slots:
     void on_btnChair3_light_clicked();
     void on_btnStool_brown_clicked();
     void on_btnStool_light_clicked();
+
     /* CABINETS */
     void on_btnNightTable_darkblue_clicked();
     void on_btnNightTable_normal_clicked();
@@ -168,6 +174,7 @@ private slots:
     void on_btnCabinet2_brown_clicked();
     void on_btnCabinet3_dark_clicked();
     void on_btnCabinet3_light_clicked();
+
     /* WARDROBES */
     void on_btnWardrobe1_black_clicked();
     void on_btnWardrobe1_grey_clicked();
@@ -182,6 +189,7 @@ private slots:
     void on_btnWardrobe2_normal_clicked();
     void on_btnWardrobe2_light_clicked();
     void on_btnWardrobe3_clicked();
+
     /* KITCHEN */
     void on_btnBottomCabinet1_clicked();
     void on_btnBottomCabinet2_clicked();
@@ -190,6 +198,7 @@ private slots:
     void on_btnTopCabinet2_clicked();
     void on_btnTopCabinet3_clicked();
     void on_btnStove_clicked();
+
     /* SINKS */
     void on_btnSink1_clicked();
     void on_btnSink2_clicked();
@@ -197,6 +206,7 @@ private slots:
     void on_btnSink4_clicked();
     void on_btnSink5_clicked();
     void on_btnSink6_clicked();
+
     /* BEDS */
     void on_btnBabyBed_blue_clicked();
     void on_btnBabyBed_yellow_clicked();
@@ -211,6 +221,7 @@ private slots:
     void on_btnKingBed1_white_clicked();
     void on_btnKingBed2_lightred_clicked();
     void on_btnKingBed2_white_clicked();
+
     /* ELECTRONIC DEVICES */
     void on_btnFridge_dark_clicked();
     void on_btnFridge_light_clicked();
@@ -232,6 +243,7 @@ private slots:
     void on_btnSpeakers1_brown_clicked();
     void on_btnSpeakers2_black_clicked();
     void on_btnSpeakers2_brown_clicked();
+
     /* BATHROOM */
     void on_btnBath1_dark_clicked();
     void on_btnBath1_light_clicked();
@@ -244,6 +256,7 @@ private slots:
     void on_btnToilet1_clicked();
     void on_btnToilet2_white_clicked();
     void on_btnToilet2_grey_clicked();
+
     /* DOORS */
     void on_btnDoor1_clicked();
     void on_btnDoor2_clicked();
@@ -251,6 +264,7 @@ private slots:
     void on_btnDoor4_clicked();
     void on_btnDoor5_clicked();
     void on_btnDoor6_clicked();
+
     /* OTHER */
     void on_btnCarpet1_dark_clicked();
     void on_btnCarpet1_brown_clicked();

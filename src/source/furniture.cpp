@@ -25,10 +25,10 @@ Furniture::Furniture(QString urlPath, int width, int height, QGraphicsItem *pare
 Furniture::~Furniture()
 {
     numberFurniture--;
-//    QGraphicsItem::~QGraphicsItem();    // ???
+//    QGraphicsItem::~QGraphicsItem();
 }
 
-/* Necessary for QGraphicsItem casting */
+/* Necessary for QGraphicsItem casting (not needed) */
 int Furniture::type() const {
     return Type;
 }
@@ -40,6 +40,7 @@ void Furniture::paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
 {
     Q_UNUSED(option); Q_UNUSED(widget);
 
+    /* If furniture is selected, draw green outline around its boundingRect */
     if (isSelected()) {
         painter->setPen(m_pen);
         m_pen.setWidth(1);
@@ -47,7 +48,7 @@ void Furniture::paint(QPainter *painter, const QStyleOptionGraphicsItem *option,
         painter->drawRect(boundingRect());
     }
 
-    if (isFlipped())    // Draws a flipped image
+    if (isFlipped())    // Draws a horizontally flipped image
         painter->drawPixmap(0,0, m_width, m_height,
                             QPixmap(m_urlPath).transformed(QTransform().scale(-1,1)));
     else
@@ -60,7 +61,7 @@ QRectF Furniture::boundingRect() const {
 
 void Furniture::keyPressEvent(QKeyEvent *event)
 {
-    /* Translation + SHIFT = 10px, else 2px */
+    /* Translation + SHIFT = 5px, else 1px */
     bool shiftPressed = event->modifiers() & Qt::ShiftModifier;
 
     switch ( event->key() )
@@ -94,7 +95,7 @@ void Furniture::keyPressEvent(QKeyEvent *event)
                 move(0, 1);
             break;
 
-        /* Furniture rotation */
+        /* Rotation + SHIFT = 90, else 5 */
         case Qt::Key_R:
             if (shiftPressed)
                 rotate(90);
@@ -120,6 +121,7 @@ void Furniture::keyPressEvent(QKeyEvent *event)
     this->update();
 }
 
+/* We realized too late that this function is not necessary */
 void Furniture::move(qreal x, qreal y)
 {
     moveBy(x, y);
@@ -133,6 +135,7 @@ void Furniture::rotate(qreal angleParam)
     setRotation(angle);
 }
 
+/* Never used, just for debugging */
 bool Furniture::isFlipped() const
 {
     return m_isFlipped;
@@ -174,7 +177,7 @@ void Furniture::mouseDoubleClickEvent(QGraphicsSceneMouseEvent *event)
 
     else if (event->button() == Qt::RightButton) {
         zValue--;
-        /* This negative value check is needed because if there is a room in the scheme,
+        /* This negative value check is needed because if there is a room in the scene,
          * going negative will draw furniture UNDER the room. Other solution is to set
          * zValue of rooms to -50 e.g. This is easier. */
         if (zValue < 0)
