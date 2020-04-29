@@ -9,6 +9,9 @@ The user can choose to start from arranging room layout by his own or use a defa
 ## :memo: Requirements:
 * [Qt](https://www.qt.io/download) - This project was built using Qt version 5.12.0. Older versions may work as well.
 
+## Overview:
+[![HomePlanner 2D on Youtube](http://i3.ytimg.com/vi/Trcm8Qw8evQ/maxresdefault.jpg)](https://www.youtube.com/watch?v=Trcm8Qw8evQ)
+
 ### :busts_in_silhouette: Creators of Home Planner 2D:
 * [Nenad Ajvaz](https://github.com/ajvazz)
 * [Nevena Ajvaz](https://github.com/ajvaznevena)
